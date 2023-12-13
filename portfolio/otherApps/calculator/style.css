@@ -1,0 +1,549 @@
+html {
+   
+    background: url('./17520.jpg') top center;
+    background-size: cover;
+  }
+  
+
+
+
+#board {
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    margin:0;
+}
+
+
+
+
+
+#calculator {
+    display: flex;
+   flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 400px;
+    height: 500px;
+    margin:0;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,-5);
+    box-shadow:3px 3px 5px black;
+}
+
+#math{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+#screen{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: yellow;
+    width: 96%;
+    height: 90%;
+    margin:5px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,-5);
+}
+
+#current-operand{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: yellow;
+    width: 96%;
+    height: 90%;
+    margin:5px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,-5);
+    font-size: 36pt;
+    color: white;
+}
+
+#operatorScreen {
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: yellow;
+    width: 96%;
+    height: 90%;
+    margin:5px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,-5);
+    font-size: 14pt;
+    color: white;
+}
+
+
+#previous-operand{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: yellow;
+    width: 96%;
+    height: 90%;
+    margin:5px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,-5);
+    font-size: 14pt;
+    color: white;
+}
+
+
+
+#top5 {
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+
+#top4 {
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    margin:0;
+}
+#top3 {
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    margin:0;
+}
+#top2 {
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    margin:0;
+}
+#top1 {
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    margin:0;
+}
+
+#clear{
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 50%;
+    height: 90%;
+    margin:5px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border: none;
+     background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,-5);
+}
+
+#delete{
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 50%;
+    height: 90%;
+    margin:5px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border: none;
+     background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,-5);
+}
+
+
+#nr7{
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 50%;
+    height: 90%;
+    margin:5px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border: none;
+     background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,-5);
+}
+
+#nr8{
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 50%;
+    height: 90%;
+    margin:5px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+     border: none;
+     background: transparent;
+     backdrop-filter: blur(20px);
+     box-shadow: 0 0 30px rgba(0,0,0,-5);
+}
+
+
+#nr9{
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 50%;
+    height: 90%;
+    margin:5px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border: none;
+     background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,-5);
+}
+
+#divide{
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 50%;
+    height: 90%;
+    margin:5px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border: none;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,-5);
+}
+
+#nr4{
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 50%;
+    height: 90%;
+    margin:5px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+     border: none;
+      background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,-5);
+}
+
+#nr5{
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 50%;
+    height: 90%;
+    margin:5px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border: none;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,-5);
+}
+
+
+#nr6{
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 50%;
+    height: 90%;
+    margin:5px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border: none;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,-5);
+}
+
+#multiply{
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 50%;
+    height: 90%;
+    margin:5px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+     border: none;
+     background: transparent;
+     backdrop-filter: blur(20px);
+     box-shadow: 0 0 30px rgba(0,0,0,-5);
+}
+
+#nr1{
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 50%;
+    height: 90%;
+    margin:5px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border: none;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,-5);
+}
+
+#nr2{
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 50%;
+    height: 90%;
+    margin:5px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+     border: none;
+     background: transparent;
+     backdrop-filter: blur(20px);
+     box-shadow: 0 0 30px rgba(0,0,0,-5);
+}
+
+
+#nr3{
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 50%;
+    height: 90%;
+    margin:5px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+     border: none;
+     background: transparent;
+     backdrop-filter: blur(20px);
+     box-shadow: 0 0 30px rgba(0,0,0,-5);
+}
+
+#subtract{
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 50%;
+    height: 90%;
+    margin:5px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+     border: none;
+     background: transparent;
+     backdrop-filter: blur(20px);
+     box-shadow: 0 0 30px rgba(0,0,0,-5);
+}
+
+#dot{
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 50%;
+    height: 90%;
+    margin:5px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+     border: none;
+      background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,-5);
+}
+
+#nr0{
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 50%;
+    height: 90%;
+    margin:5px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border: none;
+     background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,-5);
+}
+
+
+#equal{
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 50%;
+    height: 90%;
+    margin:5px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border: none;
+     background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,-5);
+}
+
+#add{
+    display: flex;
+   flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 50%;
+    height: 90%;
+    margin:5px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border: none;
+     background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,-5);
+}
+
+#clear:hover{
+background-color: black;
+}
+
+#delete:hover{
+background-color: black;
+}
+
+#nr7:hover{
+background-color: black;
+}
+
+#nr8:hover{
+background-color: black;
+}
+
+#nr9:hover{
+background-color: black;
+}
+
+#dividir:hover{
+background-color: black;
+}
+
+#nr4:hover{
+background-color: black;
+}
+
+#nr5:hover{
+background-color: black;
+}
+
+#nr6:hover{
+background-color: black;
+}
+
+#multiply:hover{
+background-color: black;
+}
+
+#nr1:hover{
+background-color: black;
+}
+
+#nr2:hover{
+background-color: black;
+}
+
+#nr3:hover{
+background-color: black;
+}
+
+#subtract:hover{
+background-color: black;
+}
+
+
+#dot:hover{
+background-color: black;
+}
+    
+    #nr0:hover{
+    background-color: black;
+    }
+    
+    #equal:hover{
+    background-color: black;
+    }
+    
+    #add:hover{
+    background-color: black;
+    }
+   

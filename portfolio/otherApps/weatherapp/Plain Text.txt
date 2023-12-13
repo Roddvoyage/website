@@ -1,0 +1,68 @@
+const city = document.getElementById("city");
+const temp = document.getElementById("temp");
+const humidity = document.getElementById("humidty");
+const chanceOfRainb = document.getElementById("chance-of-rainb");
+const windSpeedb = document.getElementById("wind-speedb");
+const time = document.getElementById("time");
+
+const cityName = document.getElementById("cityName");
+const country = document.getElementById("country");
+const countryName = document.getElementById("countryName");
+const whiteScreen = document.getElementById("whiteScreen");
+const cancelButton = document.getElementById("cancel-button");
+const confirmButton = document.getElementById("confirm-button");
+const footerRightSide = document.getElementById("footer-rightSide");
+const changeLocation = document.getElementById("change-location");
+const wara = document.getElementById("wara");
+
+function changeLocationSearch() {
+  whiteScreen.style.display = "flex";
+  footerRightSide.style.display = "none";
+}
+
+function cancelx() {
+  whiteScreen.style.display = "none";
+  footerRightSide.style.display = "flex";
+}
+
+async function fetchCurrentWeather() {
+  try {
+    const countryValue = document.getElementById("country").value;
+    const cityValue = document.getElementById("city").value;
+    console.log(countryValue);
+    console.log(cityValue);
+
+    const response = await fetch(
+      "https://api.weatherapi.com/v1/current.json?key=36cfb7020d414d609a6235544231508&q=" +
+        cityValue,
+    );
+    const currentData = await response.json();
+    console.log(currentData);
+    let str = `${cityValue}`;
+    cityName.innerHTML = str.toUpperCase();
+    console.log(currentData.current.temp_c);
+
+    let climate = "";
+    if (currentData.current.condition.text === "Sunny") {
+      climate = "icon3b.png";
+    } else if (currentData.current.condition.text === "Cloudy") {
+      climate = "icon2b.png";
+    }
+    temp.innerHTML =
+      currentData.current.temp_c + " °C" + "<img src=" + climate + " />";
+    humidity.innerHTML = currentData.current.humidity + " %";
+    chanceOfRainb.innerHTML = currentData.current.precip_in + " %";
+    windSpeedb.innerHTML = currentData.current.wind_kph + " kph";
+    countryName.innerHTML = currentData.location.country;
+    let x = currentData.location.localtime;
+    time.innerHTML = x.slice(-5);
+  } catch (err) {
+    console.log("error");
+  }
+  whiteScreen.style.display = "none";
+  footerRightSide.style.display = "flex";
+}
+
+changeLocation.addEventListener("click", changeLocationSearch);
+cancelButton.addEventListener("click", cancelx);
+confirmButton.addEventListener("click", fetchCurrentWeather);
