@@ -1,0 +1,432 @@
+@font-face {
+  font-family: "OPTIVenus-BoldExtended";
+  src: url("OPTIVenus-BoldExtended.otf");
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "CenturyGothic";
+  src: url("CenturyGothic.ttf");
+}
+
+
+@font-face {
+  font-family: "GOTHICB";
+  src: url("GOTHICB.TTF");
+}
+html {
+  background: url(portfoliobackground.png);
+  background-size: auto ;
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0%;
+}
+
+a {
+  color: #f2eee9;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #f2eee9;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  width: 100%;
+  z-index: 2;
+}
+
+header img {
+  height: 100px;
+  width: auto;
+}
+
+.navbar li {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 60vw;
+  font-size: 12pt;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+section {
+  font-family: "OPTIVenus-BoldExtended";
+  font-size: 21pt;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  padding-top: 20vh;
+}
+
+section p {
+  font-family: "CenturyGothic";
+  font-size: 12pt;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  text-align: left;
+  margin: 0px;
+  font-size: 100;
+}
+#text {
+  font-size: 8pt;
+  width: 50vw;
+}
+#text h1 {
+  font-size: 21pt;
+  width: 50vw;
+}
+
+#text p {
+  font-size: 11pt;
+  width: 90%;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+#thank-you {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#foto {
+  height: 350px;
+  width: auto;
+  box-shadow: 20px 20px 0px 10px rgb(27, 27, 27);
+}
+
+section h1 {
+  width: 80%;
+}
+
+section p {
+  font-size: 14pt;
+  width: 350px;
+  line-height: 20pt;
+}
+
+#signature {
+  height: 40px;
+  width: auto;
+}
+
+#home {
+  opacity: 0.4;
+}
+#about-me {
+  opacity: 1;
+}
+#portfolio {
+  opacity: 0.4;
+}
+#contact {
+  opacity: 0.4;
+}
+
+#h2andslider{
+  position: absolute;
+  top:90%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+#h2andslider p{
+  font-family: "CenturyGothic";
+ color:white;
+ text-align: center;
+}
+
+#h2andslider a{
+  font-family: "GOTHICB";
+ color:rgb(26, 25, 25);
+ font-weight: 400;
+ font-size:18pt;
+ background-color: #f2eee9;
+ padding-left:20px;
+ padding-right:20px;
+ padding-top:10px;
+ padding-bottom:10px;
+ margin-bottom:100px;
+}
+
+#h2andslider a:hover{ 
+ color:#f2eee9;
+ background-color: rgb(26, 25, 25);
+}
+#skills{
+  color:transparent;
+  font-family: "OPTIVenus-BoldExtended";
+  font-size: 11pt;
+}
+#slider {
+  width: 50%;
+  height: 200px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: initial;
+  background-color: rgb(48, 47, 47);
+}
+
+#skills-logos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  gap: 20px;
+}
+
+#logo {
+  position: absolute;
+  background-color: transparent;
+  height: 100px;
+  width: 100px;
+  left: 20px;
+  top: 20px;
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.logo img {
+  height: 100%;
+  width: auto;
+  pointer-events: none;
+}
+
+/* width */
+#slider::-webkit-scrollbar {
+  border: 0px solid #f2eee9;
+  width: 10px;
+}
+
+/* Track */
+#slider::-webkit-scrollbar-track {
+  border: 0px solid black;
+  background: transparent;
+}
+
+/* Handle */
+#slider::-webkit-scrollbar-thumb {
+  background: rgb(37, 37, 37);
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+#slider::-webkit-scrollbar-thumb:hover {
+  background: #f2eee9;
+}
+
+@media (max-width:1380px){
+  #h2andslider{
+    top:100%;
+  }
+}
+
+@media (max-width:1050px){
+  #h2andslider{
+    top:110%;
+  }
+}
+@media (max-width:960px){
+  section{
+    padding:0vh;
+  }
+  section h1{
+    padding-top: 20vh;
+  }
+  #h2andslider{
+   top:110%; 
+  }
+  #slider{
+    width:80%;
+  }
+}
+
+@media(max-width:880px){
+  #h2andslider{
+    top:120%;
+  }
+}
+@media (max-width: 800px) {
+  #h2andslider p{
+   width:80%;
+  }
+  
+  .checkbtn {
+    display: block;
+  }
+
+  ul a {
+    display: none;
+    opacity: animation;
+  }
+  ul {
+    position: fixed;
+    width: 800px;
+    height: 0;
+    background: #f2eee9;
+    top: 140px;
+    left: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav ul li {
+    display: flex;
+    margin: 0px 0;
+    line-height: 45px;
+    width: 800px;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14pt;
+    transition: display 1s ease-out;
+  }
+  #check:checked ~ ul {
+    height: 5vh;
+    width: 800px;
+    padding-left: 20%;
+    padding-right: 20%;
+    color: rgb(20, 19, 19);
+  }
+
+  #check:checked ~ ul a {
+    display: flex;
+    animation: fadeIn 1s;
+    justify-content: space-between;
+    color: rgb(20, 19, 19);
+  }
+
+  .navbar {
+    width: 800px;
+  }
+  section h1{
+    padding-top: 25vh;
+  }
+  #h2andslider{
+   top:130%; 
+  }
+}
+
+@media(max-width:720px){
+  #h2andslider{
+    top:140%;
+  }
+}
+
+@media (max-width: 650px) {
+  nav ul li a {
+    line-height: 40px;
+    font-size: 9pt;
+  }
+
+  section{
+    flex-direction: column-reverse;
+    margin-top:25vh;
+  }
+
+
+
+  section h1{
+    padding-top: 5vh;
+    width:100%;
+  }
+
+  #text{
+    width:80%;
+    padding-right:0%;
+  }
+
+  #text p{
+    width:100%;
+    font-size:12pt;
+  }
+
+  #text h1{
+    width:100%;
+  }
+  #h2andslider{
+   top:160%; 
+  }
+  #slider{
+    width:70%;
+  }
+}
+
+@media (max-width: 520px) {
+  .navbar ul {
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 90%;
+  }
+
+  nav ul li a {
+    line-height: 40px;
+    font-size: 7pt;
+  }
+  #h2andslider{
+    top:170%; 
+   }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
