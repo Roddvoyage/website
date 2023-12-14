@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="javascript.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="plans">plans</h1>
+      <h1 id="week">week</h1>
+    </header>
+    <div id="slider">
+      <div id="body-plans">
+        <div id="nr-of-plans">
+          <h1>How many workout plans do you want to create?</h1>
+          <input
+            type="number"
+            id="nr-of-plans-input"
+            min="1"
+            max="5"
+            required
+          />
+          <p>
+            1 plan means you will use the same workout routine everyday. 2 plans
+            mean you will use two different workout routines, interchangeably.
+            If you plan on working out 5 times per week and you choose 5 plans,
+            that means everyday you will have a different workout plan, which
+            you'll be repeating once a week.
+          </p>
+          <button id="submit">SUBMIT</button>
+        </div>
+        <div class="plans planA" style="display: none">
+          <h1>Plan A</h1>
+          <div class="sets-reps">
+            <h4>sets</h4>
+            <h4>reps</h4>
+          </div>
+          <h5 class="edit">...</h5>
+          <div class="plansbody planAbody">
+            <div class="ex planC-ex1">
+              <div class="cat-ex">
+                <h3 class="category-none">category</h3>
+                <h2 class="exercise-none">exercise</h2>
+              </div>
+              <h3 class="addplus">+</h3>
+              <div class="sets-reps-values-none">
+                <h4></h4>
+                <h4></h4>
+              </div>
+            </div>
+            <div class="exb planC-ex2">
+              <div class="cat-ex">
+                <h3 class="category-none">category</h3>
+                <h2 class="exercise-none">exercise</h2>
+              </div>
+              <h3 class="addplusb">+</h3>
+              <div class="sets-reps-values-none">
+                <h4></h4>
+                <h4></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="plans planB" style="display: none">
+          <h1>Plan B</h1>
+          <div class="sets-reps">
+            <h4>sets</h4>
+            <h4>reps</h4>
+          </div>
+          <h5 class="edit">...</h5>
+          <div class="plansbody planBbody">
+            <div class="ex planC-ex1">
+              <div class="cat-ex">
+                <h3 class="category-none">category</h3>
+                <h2 class="exercise-none">exercise</h2>
+              </div>
+              <h3 class="addplus">+</h3>
+              <div class="sets-reps-values-none">
+                <h4></h4>
+                <h4></h4>
+              </div>
+            </div>
+            <div class="exb planC-ex2">
+              <div class="cat-ex">
+                <h3 class="category-none">category</h3>
+                <h2 class="exercise-none">exercise</h2>
+              </div>
+              <h3 class="addplusb">+</h3>
+              <div class="sets-reps-values-none">
+                <h4></h4>
+                <h4></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="plans planC" style="display: none">
+          <h1>Plan C</h1>
+          <div class="sets-reps">
+            <h4>sets</h4>
+            <h4>reps</h4>
+          </div>
+          <h5 class="edit">...</h5>
+          <div class="plansbody planCbody">
+            <div class="ex planC-ex1">
+              <div class="cat-ex">
+                <h3 class="category-none">category</h3>
+                <h2 class="exercise-none">exercise</h2>
+              </div>
+              <h3 class="addplus">+</h3>
+              <div class="sets-reps-values-none">
+                <h4></h4>
+                <h4></h4>
+              </div>
+            </div>
+            <div class="exb planC-ex2">
+              <div class="cat-ex">
+                <h3 class="category-none">category</h3>
+                <h2 class="exercise-none">exercise</h2>
+              </div>
+              <h3 class="addplusb">+</h3>
+              <div class="sets-reps-values-none">
+                <h4></h4>
+                <h4></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="plans planD" style="display: none">
+          <h1>Plan D</h1>
+          <div class="sets-reps">
+            <h4>sets</h4>
+            <h4>reps</h4>
+          </div>
+          <h5 class="edit">...</h5>
+          <div class="plansbody planDbody">
+            <div class="ex planC-ex1">
+              <div class="cat-ex">
+                <h3 class="category-none">category</h3>
+                <h2 class="exercise-none">exercise</h2>
+              </div>
+              <h3 class="addplus">+</h3>
+              <div class="sets-reps-values-none">
+                <h4></h4>
+                <h4></h4>
+              </div>
+            </div>
+            <div class="exb planC-ex2">
+              <div class="cat-ex">
+                <h3 class="category-none">category</h3>
+                <h2 class="exercise-none">exercise</h2>
+              </div>
+              <h3 class="addplusb">+</h3>
+              <div class="sets-reps-values-none">
+                <h4></h4>
+                <h4></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="plans planE" style="display: none">
+          <h1>Plan E</h1>
+          <div class="sets-reps">
+            <h4>sets</h4>
+            <h4>reps</h4>
+          </div>
+          <h5 class="edit">...</h5>
+          <div class="plansbody planEbody">
+            <div class="ex planC-ex1">
+              <div class="cat-ex">
+                <h3 class="category-none">category</h3>
+                <h2 class="exercise-none">exercise</h2>
+              </div>
+              <h3 class="addplus">+</h3>
+              <div class="sets-reps-values-none">
+                <h4></h4>
+                <h4></h4>
+              </div>
+            </div>
+            <div class="exb planC-ex2">
+              <div class="cat-ex">
+                <h3 class="category-none">category</h3>
+                <h2 class="exercise-none">exercise</h2>
+              </div>
+              <h3 class="addplusb">+</h3>
+              <div class="sets-reps-values-none">
+                <h4></h4>
+                <h4></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="blur">
+          <div id="add-new-ex">
+            <h1 class="close">close</h1>
+            <h1 id="muscle-group">muscle group</h1>
+            <img id="workout-img" src="" />
+            <div id="muscles-list">
+              <h2 class="muscle" id="neck-and-traps">NECK & TRAPS</h2>
+              <h2 class="muscle" id="shoulders">SHOULDERS</h2>
+              <h2 class="muscle" id="chest">CHEST</h2>
+              <h2 class="muscle" id="back">BACK</h2>
+              <h2 class="muscle" id="chore">CHORE</h2>
+              <h2 class="muscle" id="gluteus">GLUTEUS</h2>
+              <h2 class="muscle" id="legs">LEGS</h2>
+              <h2 class="muscle" id="biceps">BICEPS</h2>
+              <h2 class="muscle" id="triceps">TRICEPS</h2>
+              <h2 class="muscle" id="forearms">FOREARMS</h2>
+              <h2 class="muscle" id="cardio">CARDIO</h2>
+            </div>
+          </div>
+          <div id="add-new-exb">
+            <h1 class="closeb">close</h1>
+            <h1 id="goback">back</h1>
+            <h1 id="muscle-groupb"></h1>
+            <img id="workout-img2" src="" />
+            <div id="muscles-listb">
+              <h2 class="muscleb" id="exa"></h2>
+              <h2 class="muscleb" id="exb"></h2>
+              <h2 class="muscleb" id="exc"></h2>
+              <h2 class="muscleb" id="exd"></h2>
+              <h2 class="muscleb" id="exe"></h2>
+              <h2 class="muscleb" id="exf"></h2>
+              <h2 class="muscleb" id="exg"></h2>
+              <h2 class="muscleb" id="exh"></h2>
+              <h2 class="muscleb" id="exi"></h2>
+              <h2 class="muscleb" id="exj"></h2>
+              <h2 class="muscleb" id="exk"></h2>
+            </div>
+          </div>
+
+          <div id="add-new-ex-confirm">
+            <div id="sets-reps-div">
+              <div id="sets-div">
+                <h1>sets</h1>
+                <input
+                  type="number"
+                  id="sets-input"
+                  minlength="1"
+                  maxlength="2"
+                  min="1"
+                  max="12"
+                  required
+                />
+              </div>
+              <div id="reps-div">
+                <h1>reps</h1>
+                <input
+                  type="number"
+                  id="reps-input"
+                  minlength="1"
+                  id="sets-input"
+                  maxlength="2"
+                  max="25"
+                  required
+                />
+              </div>
+            </div>
+            <div id="confirm-cancel">
+              <h2 id="cancel">cancel</h2>
+              <h2 id="confirm">confirm</h2>
+            </div>
+          </div>
+          <div id="edit-box">
+            <div id="close-x">x</div>
+            <h1 class="edit-box-h" id="edit-box-add">add</h1>
+            <h1 class="edit-box-h" id="edit-box-remove">remove last</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="week-section">
+      <div id="week-list">
+        <h1 id="week-1">week 1</h1>
+        <h1>week 2</h1>
+        <h1>week 3</h1>
+        <h1>week 4</h1>
+        <h1>week 5</h1>
+        <h1>week 6</h1>
+        <h1>week 7</h1>
+        <h1>week 8</h1>
+        <h1>week 9</h1>
+        <h1>week 10</h1>
+        <h1>week 11</h1>
+        <h1>week 12</h1>
+      </div>
+      <div id="sliderb">
+        <div id="week-area">
+          <div class="weekday monday">
+            <div class="top-div">
+              <h2>monday</h2>
+              <h3 class="plan-lt"></h3>
+              <h3 class="date">4/12/2023</h3>
+            </div>
+
+            <div class="wsrc">
+              <p>reps</p>
+              <p>sets&nbsp&nbsp</p>
+              <p>weight</p>
+              <p>check</p>
+            </div>
+            <div class="plan-chosen">
+              <h3 class="planx">plan A</h3>
+              <h3 class="planx">plan B</h3>
+              <h3 class="planx">plan C</h3>
+              <h3 class="planx">plan D</h3>
+              <h3 class="planx">plan E</h3>
+              <h3 class="planx">REST</h3>
+            </div>
+          </div>
+          <div class="weekday tuesday">
+            <div class="top-div">
+              <h2>tuesday</h2>
+              <h3 class="plan-lt"></h3>
+              <h3 class="date">5/12/2023</h3>
+            </div>
+            <div class="wsrc">
+              <p>reps</p>
+              <p>sets&nbsp&nbsp</p>
+              <p>weight</p>
+              <p>check</p>
+            </div>
+            <div class="plan-chosen">
+              <h3>plan A</h3>
+              <h3>plan B</h3>
+              <h3>plan C</h3>
+              <h3>plan D</h3>
+              <h3>plan E</h3>
+              <h3>REST</h3>
+            </div>
+            <h3 class="plan-lt"></h3>
+            <h3 class="date"></h3>
+          </div>
+          <div class="weekday wednesday">
+            <div class="top-div">
+              <h2>wednesday</h2>
+              <h3 class="plan-lt"></h3>
+              <h3 class="date">6/12/2023</h3>
+            </div>
+            <h3 class="plan-lt"></h3>
+            <h3 class="date"></h3>
+            <div class="wsrc">
+              <p>reps</p>
+              <p>sets&nbsp&nbsp</p>
+              <p>weight</p>
+              <p>check</p>
+            </div>
+            <div class="plan-chosen">
+              <h3>plan A</h3>
+              <h3>plan B</h3>
+              <h3>plan C</h3>
+              <h3>plan D</h3>
+              <h3>plan E</h3>
+              <h3>REST</h3>
+            </div>
+          </div>
+          <div class="weekday thursday">
+            <div class="top-div">
+              <h2>thursday</h2>
+              <h3 class="plan-lt"></h3>
+              <h3 class="date">7/12/2023</h3>
+            </div>
+            <div class="wsrc">
+              <p>reps</p>
+              <p>sets&nbsp&nbsp</p>
+              <p>weight</p>
+              <p>check</p>
+            </div>
+            <div class="plan-chosen">
+              <h3>plan A</h3>
+              <h3>plan B</h3>
+              <h3>plan C</h3>
+              <h3>plan D</h3>
+              <h3>plan E</h3>
+              <h3>REST</h3>
+            </div>
+            <h3 class="plan-lt"></h3>
+            <h3 class="date"></h3>
+          </div>
+          <div class="weekday friday">
+            <div class="top-div">
+              <h2>friday</h2>
+              <h3 class="plan-lt"></h3>
+              <h3 class="date">8/12/2023</h3>
+            </div>
+            <div class="wsrc">
+              <p>reps</p>
+              <p>sets&nbsp&nbsp</p>
+              <p>weight</p>
+              <p>check</p>
+            </div>
+            <div class="plan-chosen">
+              <h3>plan A</h3>
+              <h3>plan B</h3>
+              <h3>plan C</h3>
+              <h3>plan D</h3>
+              <h3>plan E</h3>
+              <h3>REST</h3>
+            </div>
+            <h3 class="plan-lt"></h3>
+            <h3 class="date"></h3>
+          </div>
+          <div class="weekday saturday">
+            <div class="top-div">
+              <h2>saturday</h2>
+              <h3 class="plan-lt"></h3>
+              <h3 class="date">9/12/2023</h3>
+            </div>
+            <div class="wsrc">
+              <p>reps</p>
+              <p>sets&nbsp&nbsp</p>
+              <p>weight</p>
+              <p>check</p>
+            </div>
+            <div class="plan-chosen">
+              <h3>plan A</h3>
+              <h3>plan B</h3>
+              <h3>plan C</h3>
+              <h3>plan D</h3>
+              <h3>plan E</h3>
+              <h3>REST</h3>
+            </div>
+            <h3 class="plan-lt"></h3>
+            <h3 class="date"></h3>
+          </div>
+          <div class="weekday sunday">
+            <div class="top-div">
+              <h2>sunday</h2>
+              <h3 class="plan-lt"></h3>
+              <h3 class="date">10/12/2023</h3>
+            </div>
+            <div class="wsrc">
+              <p>reps</p>
+              <p>sets&nbsp&nbsp</p>
+              <p>weight</p>
+              <p>check</p>
+            </div>
+            <div class="plan-chosen">
+              <h3>plan A</h3>
+              <h3>plan B</h3>
+              <h3>plan C</h3>
+              <h3>plan D</h3>
+              <h3>plan E</h3>
+              <h3>REST</h3>
+            </div>
+            <h3 class="plan-lt"></h3>
+            <h3 class="date"></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

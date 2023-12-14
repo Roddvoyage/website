@@ -1,0 +1,379 @@
+@font-face {
+    font-family: GothamBold;
+    src:url(GothamBold.ttf);
+}
+
+
+@font-face {
+    font-family: GothamMedium;
+    src:url(GothamMedium.ttf);
+}
+
+@font-face {
+    font-family: GothamBook;
+    src:url(GothamBook.ttf);
+}
+
+
+
+body{
+    display: flex;
+    padding: 4%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: url('./todolistbackground.png') top center;
+    
+}
+
+
+#body{
+    background-color: #2d3039;
+    box-shadow: 80px 80px 80px #0e1015;
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    width: 85vw;
+    filter: none;
+}
+
+
+#menu{
+    background-color: #2d3039;
+    color: #ebe0c7;
+    font-family: GothamBold;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 50px;
+    font-size: 70px;
+    height: 100%;
+    min-width: 500px;
+}
+
+#menu p{
+    margin: 10px;
+    min-width: 50px;
+    width: 400px;
+    cursor: pointer;
+}
+
+
+#screen{
+    background-color: #181b22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    min-width: 1100px;
+}
+
+#line {
+border-top: 2px solid #181b22;
+padding-top: 20px;
+margin-top: 36px;
+width: 50px;
+}
+
+#menu p{
+    margin: 5px;
+    width: 450px;
+    color: #181b22;
+    cursor: pointer;
+}
+
+#menu p:first-child:hover{
+        color: #ebe0c7;
+    margin: 5px;
+    width: 450px;
+    cursor: pointer;
+}
+
+
+#menu p:nth-child(2):hover{
+    color: #ebe0c7;
+    margin: 5px;
+    width: 450px;
+    cursor: pointer;
+}
+
+
+#menu p:nth-child(3):hover{
+    color: #ebe0c7;
+    margin: 5px;
+    width: 450px;
+    cursor: pointer;
+}
+
+#menu p{
+    margin: 5px;
+    width: 450px;
+    cursor: pointer;
+}
+
+
+
+
+
+#screen-body{
+    background-color: #181b22;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 40px;
+    height: 82%;
+    width: 90%;
+}
+
+.linea {
+    font-family: GothamMedium;
+    color: #181b22;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2d3039;
+    height: 34px;
+    width: 100%;
+}
+
+.lineb {
+    font-family: GothamMedium;
+    color: #2d3039;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #181b22;
+    height: 34px;
+    width: 100%;
+}
+
+.squarea {
+    display: none;
+    border: 1px solid #181b22; 
+    height: 15px;
+    width:15px;
+    cursor: pointer;
+}
+
+.squareb {
+    display: none;
+    border: 1px solid #2d3039; 
+    height: 15px;
+    width:15px;
+    cursor: pointer;
+}
+
+.squarea:hover {
+    border: 2px solid #ebe0c7; 
+    height: 15px;
+    width:15px;
+    cursor: pointer;
+}
+
+.squareb:hover {
+    border: 2px solid #ebe0c7; 
+    height: 15px;
+    width:15px;
+    cursor: pointer;
+}
+
+
+#squareDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    min-width: 40%;
+}
+
+#leftside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    min-width: 50%;
+    height: 25px;
+}
+
+.add {
+    font-size: 21pt;
+     width: 50px;
+    cursor: pointer;
+    height: 25px;
+}
+
+
+#blur2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, .5);
+    filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+#blur {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+#blur {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+  #addActivityBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 220px;
+    background-color: #ebe0c7;
+    color: #181b22;
+    font-size: 12pt;
+    font-family: GothamMedium;
+    padding-top: 0px;
+  }
+
+  #activityNameBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0px;
+  }
+
+  #activityName {
+    min-width: 350px;
+    height: 20px;
+     border: 1px solid white;
+  }
+
+  #activityName input{
+    margin-top: 5px;
+    min-width: 350px;
+    border: 1px solid white;
+    border-radius: 0xp;
+  }
+
+  #activityDurationBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  #activityCategoryBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #activityCategory {
+    height: 20px;
+    width:280px;
+    border: 1px solid white;
+  }
+
+  #activityDuration {
+    width: 50px;
+    height: 20px;
+    border: 1px solid white;
+  }
+
+  #activityCategoryDurationBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 200px;
+  }
+
+  #cancelOrAdd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 50px;
+  }
+
+  #cancelButton{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      background-color: #ebe0c7;
+    border: 1px solid #ebe0c7;
+    font-family: GothamBold;
+    cursor: pointer;
+  }
+
+   #addButton{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebe0c7;
+    border: 1px solid #ebe0c7;
+    font-family: GothamBold;
+    cursor: pointer;
+  }
+
+  #cancelButton:hover{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      background-color: #181b22;
+    border: 1px solid #181b22;
+    color: #ebe0c7;
+    font-family: GothamBold;
+    cursor: pointer;
+  }
+
+   #addButton:hover{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #181b22;
+    border: 1px solid #181b22;
+    color: #ebe0c7;
+    font-family: GothamBold;
+    cursor: pointer;
+  }
