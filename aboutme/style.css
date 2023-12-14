@@ -420,8 +420,25 @@ section p {
   #h2andslider{
     top:170%; 
    }
+  .}
+
+  @media (max-width: 440px) {
+  #h2andslider{
+    top:220%; 
+   }
+
+   #h2andslider a{
+    font-size: 12pt;
+   }
 }
 
+
+
+@media (max-width: 400px) {
+  #h2andslider{
+    top:250%; 
+   }
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
