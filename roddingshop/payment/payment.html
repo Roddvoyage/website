@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="payment.css">
+    
+    <script src="payment.js" defer></script>
+  </head>
+  <body>
+    <header>
+        <div class="icons">
+          <a href="../roddingshop.html"><h1>home</h1></i></a>
+          <a href="#"><i class="ri-user-line"></i></a>
+          <a href="#"><i class="ri-shopping-cart-line"></i></a>
+          <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+        <h2>about us</h2>
+      </header>
+    
+      <div class="center">
+        <div id="cc-logos"><img
+            alt="Credit Card Logos"
+            title="Credit Card Logos"
+            src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png"
+            width="400"
+            height="auto"
+        />
+    </div>
+  
+      <div class="card-details">
+          <form>
+              <p>Card Number</p>
+              <div class="c-number" id="c-number">
+                  <input id="number" class="cc-number" placeholder="Card number" max-length="19" required>
+                  <i class="icon ri-refund-fill"></i>
+              </div>
+  
+              <div class="c-details">
+                  <div>
+                      <p>Expiry date</p>
+                      <input id="e-date" class="cc-exp" placeholder="MM/YY" require maxlength="5" required>
+                  </div>
+                  <div>
+                      <p>CVV</p>
+                      <div class="cvv-box" id="cvv-box">
+                          <input id="cvv" class="cc-cvv" placeholders="CVV" required maxlength="3" required>
+                          <i class="icon ri-question-fill" title="3 digits on the back of the card" style="cursor: pointer;"></i>
+                      </div>
+                  </div>
+              </div>
+              <div class="email">
+                  <p>Email</p>
+                  <input type="email" placeholder="example@gmail.com" id="email" required>
+              </div>
+              <button>PAY NOW</button>
+          </form>
+  </div>
+      </div>
+      <!---->
+      <footer>
+        <div id="footer-div">
+          <div id="colorlib">
+            <h1>Colorlib</h1>
+            <p>
+              Enjoy integrating this free dark Bootstrap footer template to your
+              website and offer additional site navigability. The snippet features
+              about us section, links, CTA buttons and social icons.
+            </p>
+          </div>
+          <div class="footer-row">
+            <a href="../index.html">Home</a>
+            <a>About us</a>
+            <a>Portfolio</a>
+            <a>Sercices</a>
+            <a>Contact</a>
+          </div>
+          <div class="footer-row">
+            <a>Clients</a>
+            <a>Team</a>
+            <a>Career</a>
+            <a>Testimonials</a>
+            <a>Journal</a>
+          </div>
+          <div class="footer-row footer-row3">
+            <a>Privacy Policy</a>
+            <a>Terms & Conditions</a>
+            <a>Partners</a>
+          </div>
+          <div id="contact-us-div">
+            <div id="social-media">
+              <a><img src="img/twitter.png" /></a>
+              <a><img src="img/facebook-app-symbol.png" /></a>
+              <a><img src="img/instagram (1).png" /></a>
+              <a><img src="img/pinterest.png" /></a>
+            </div>
+            <a href="../contact/contactus.html" id="contact-us-btn" class="btn">contact us</a>
+          </div>
+        </div>
+        <h4>@ 2023 All Rights Reserved</h4>
+      </footer>
+  </body>
+</html>

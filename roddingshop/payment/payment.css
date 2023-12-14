@@ -1,0 +1,419 @@
+@font-face {
+  font-family: "lemon white";
+  src: url("LEMONMILK-Bold.otf");
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "caviar dreams";
+  src: url("CaviarDreams.ttf");
+  font-style: regular;
+}
+
+@font-face {
+  font-family: "caviar dreams bold";
+  src: url("CaviarDreams_Bold.ttf");
+  font-style: regular;
+}
+
+@font-face {
+  font-family: "montserrat-thin";
+  src: url("Montserrat-VariableFont_wght.ttf");
+  font-style: thin;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "oswald";
+  src: url("Oswald-VariableFont_wght.ttf");
+  font-style: thin;
+  font-weight: 100;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  background: #fdefe6;
+}
+a:visited {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #0f172a;
+  --main-color: #6b7280;
+  --other-color: #334155;
+  --big-font: 4.3rem;
+  --h2-font: 2.2rem;
+  --p-font: 1rem;
+}
+
+header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  right: 0;
+  top: 0;
+  width: 100%;
+  padding: 17px 11%;
+  transition: all 0.45s ease;
+  height: 200px;
+  background-color: #4984c1;
+  margin-bottom: 100px;
+}
+
+header h2 {
+  font-size: 32px;
+  font-family: "lemon white";
+  position: absolute;
+  top: 100px;
+  left: 11%;
+  color: white;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "caviar dreams bold";
+  width: 250px;
+}
+
+.icons i {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 22px;
+  transition: all 0.45s ease;
+  font-family: "caviar dreams bold";
+}
+
+.icons h1 {
+  font-size: 19px;
+  color: white;
+}
+.icons i:hover {
+  transform: scale(0.9);
+  background-color: white;
+  color: #4984c1;
+  font-family: "caviar dreams bold";
+}
+
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: #3c3755;
+  padding: 100px 11% 90px;
+  margin-top: 100px;
+  margin-right: 0;
+}
+
+#footer-div {
+  background-color: #3c3755;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+
+#colorlib {
+  font-family: "caviar dreams";
+  color: white;
+  width: 28%;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 180px;
+  font-family: "caviar dreams";
+  color: white;
+}
+
+.footer-row3 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100px;
+  font-family: "caviar dreams";
+  color: white;
+}
+
+#colorlib h1 {
+  margin-bottom: 25px;
+}
+
+#contact-us-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  display: inline-block;
+  background: #3c3755;
+  color: var(--bg-color);
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  transition: all 0.45s ease;
+  font-family: "lemon white";
+  vertical-align: middle;
+  text-align: center;
+  padding: 18px;
+  width: 12vw;
+  height: 60px;
+}
+
+.btn:hover {
+  letter-spacing: 2px;
+  opacity: o.8;
+}
+
+.btn:visited {
+  color: white;
+}
+
+#social-media {
+  height: 50px;
+  width: 80%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#social-media a img {
+  height: 25px;
+  width: auto;
+}
+
+footer h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: "caviar dreams";
+  color: white;
+  margin-top: 20px;
+  font-weight: 100;
+}
+
+#contact-us-btn {
+  background-color: #ee737d;
+}
+
+/* width */
+::-webkit-scrollbar {
+  border: 5px solid #fdefe6;
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border: 5px solid #fdefe6;
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fdefe6;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e97a5285;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+.methods {
+  padding: 10px 0;
+}
+
+.methods div {
+  padding: 7px 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.methods div:hover {
+  box-shadow: 0 0 10px rgba(172 255, 47, 0.196);
+}
+
+.methods div::after {
+  content: "";
+  display: inline-block;
+  color: greenyellow;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 4px 0 4px 4px;
+  border-left-color: var(--var-fondy-success);
+  margin-left: 10px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 22px;
+  color: #aaa;
+  background-color: white;
+}
+
+.center {
+  display: flex;
+  width: 100%;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  height: 70vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "caviar dreams bold";
+}
+
+#cc-logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  height: 100px;
+}
+.details {
+  padding: 20px 20px;
+}
+
+.card-details {
+  padding: 20px 80px;
+  width: 50%;
+}
+
+.card-details .c-number {
+  width: 100%;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  margin-top: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+#c-number input {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding-left: 10px;
+}
+
+input {
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+.c-details {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.cc-exp {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  height: 50px;
+  margin-top: 10px;
+  padding: 12px;
+  width: 150px;
+}
+
+.c-details .cvv-box {
+  border: 1px solid #aaa;
+  margin-top: 10px;
+  padding: 12px;
+  height: 50px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  width: 108px;
+}
+
+.cc-cvv {
+  width: 60px;
+}
+
+.cc-cvv input {
+  width: 100%;
+}
+
+#cvv {
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#cvv-box {
+  padding: 0px;
+  width: 100px;
+  height: 50px;
+  background-color: white;
+}
+
+.email input {
+  width: 100%;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 12px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+button {
+  width: 100%;
+  border: none;
+  height: 50px;
+  border-radius: 3px;
+  margin-top: 30px;
+  font-size: 18px;
+  color: #444;
+  background-color: #ee737d;
+  font-family: "lemon white";
+  color: white;
+}
+
+button:hover {
+  background-color: #3c3755;
+  color: white;
+  cursor: pointer;
+}
+
+form {
+  width: 100%;
+}
