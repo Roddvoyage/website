@@ -169,6 +169,13 @@ section p {
   margin-bottom: 200px;
 }
 
+#h2andslider h4{
+font-size: 9pt;
+font-family: "CenturyGothic";
+color:white;
+margin-top: 20px;
+}
+
 #h2andslider p{
   font-family: "CenturyGothic";
  color:white;
@@ -430,13 +437,22 @@ section p {
    #h2andslider a{
     font-size: 12pt;
    }
+
+       #h2andslider h1{
+    font-size: 10pt;
+   }
+
+   .logo {
+    height: 50px;
+  }
+  
 }
 
 
 
 @media (max-width: 400px) {
   #h2andslider{
-    top:250%; 
+    top:240%; 
    }
 }
 @keyframes fadeIn {
