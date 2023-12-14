@@ -1,0 +1,550 @@
+@font-face {
+  font-family: "lemon white";
+  src: url("LEMONMILK-Bold.otf");
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "caviar dreams";
+  src: url("CaviarDreams.ttf");
+  font-style: regular;
+}
+
+@font-face {
+  font-family: "caviar dreams bold";
+  src: url("CaviarDreams_Bold.ttf");
+  font-style: regular;
+}
+
+@font-face {
+  font-family: "montserrat-thin";
+  src: url("Montserrat-VariableFont_wght.ttf");
+  font-style: thin;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "oswald";
+  src: url("Oswald-VariableFont_wght.ttf");
+  font-style: thin;
+  font-weight: 100;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  background: #fdefe6;
+}
+a:visited {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #0f172a;
+  --main-color: #6b7280;
+  --other-color: #334155;
+  --big-font: 4.3rem;
+  --h2-font: 2.2rem;
+  --p-font: 1rem;
+}
+
+header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  right: 0;
+  top: 0;
+  width: 100%;
+  padding: 17px 11%;
+  transition: all 0.45s ease;
+  height: 100px;
+  background-color: #399fb9;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "caviar dreams bold";
+  width: 250px;
+}
+
+.icons i {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 22px;
+  transition: all 0.45s ease;
+  font-family: "caviar dreams bold";
+}
+
+.icons h1 {
+  font-size: 19px;
+  color: white;
+}
+.icons i:hover {
+  transform: scale(0.9);
+  background-color: white;
+  color: #399fb9;
+  font-family: "caviar dreams bold";
+}
+
+section {
+  padding: 17px 11%;
+  background-color: #fdefe6;
+  width: 100%;
+  height: 1600px;
+  color: black;
+  font-size: 11px;
+  font-family: "caviar dreams";
+  font-weight: 100;
+  margin-top: 50px;
+}
+
+section h2 {
+  font-weight: 100;
+}
+#leftside {
+  height: 1200px;
+  width: 50%;
+  background-color: #fdefe6;
+}
+
+#photos {
+  background-color: #fdefe6;
+  width: 100%;
+  height: 420px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-bottom: 80px;
+  margin-top: 40px;
+}
+
+#non-selected-photos img {
+  height: 100px;
+  width: auto;
+}
+
+#non-selected-photos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 420px;
+}
+
+#selected-photo img {
+  height: 420px;
+  width: auto;
+}
+
+#description {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 20px;
+  font-size: 21px;
+  color: black;
+  height: 100%;
+  text-align: justify;
+  overflow: scroll;
+  text-overflow: ellipsis;
+}
+
+#description-div {
+  height: 900px;
+  width: 100%;
+}
+
+#description p {
+  line-height: 25px;
+}
+
+#product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 80px;
+}
+
+#rightside {
+  height: 1200px;
+  width: 45%;
+  background-color: #fdefe6;
+}
+
+#rightside h1 {
+  font-family: "lemon white";
+  font-size: 36px;
+  color: #3c3755;
+}
+
+.rating-stars {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 60%;
+  margin-top: 10px;
+  gap: 0.1rem;
+  font-size: 18px;
+  color: #ee737d;
+}
+
+.rating-stars .ri-star-fill {
+  width: 25px;
+  height: 25px;
+  background-color: #fdefe6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-stars .ri-star-fill::before {
+  width: auto;
+  height: 60px;
+  color: #ee737d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+#rightside h3 {
+  font-family: "caviar dreams";
+  font-size: 24px;
+  font-weight: 100;
+}
+
+#quantity-cart {
+  width: 90%;
+  height: 100px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#quantity {
+  height: 35px;
+  width: 120px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px 30px;
+  background: #3c3755;
+  color: var(--bg-color);
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  transition: all 0.45s ease;
+  font-family: "lemon white";
+}
+
+.btn:hover {
+  letter-spacing: 2px;
+  opacity: o.8;
+}
+
+#rightside h4 {
+  font-size: 21px;
+  font-weight: 100;
+  margin-top: 15px;
+}
+
+#reviews {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  text-align: justify;
+  margin-top: 120px;
+  width: 90%;
+}
+
+#reviews h5 {
+  font-size: 24px;
+  color: black;
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.review-stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #3c3755;
+  width: 25%;
+  height: 30px;
+  gap: 0.1px;
+  margin-top: 50px;
+}
+
+.review-stars .ri-star-fill i {
+  width: 100%;
+  height: 100%;
+  background-color: #fdefe6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.review-stars .ri-star-fill::before i {
+  width: 40px;
+  height: 40px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-stars .ri-star-fill::before {
+  width: 40px;
+  height: 40px;
+  font-size: 19px;
+}
+
+#rightside h6 {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+section {
+  padding: 100px 11% 90px;
+}
+
+#best-selling-mugs h2 {
+  font-family: "lemon white";
+  font-size: 32px;
+  color: #3c3755;
+}
+
+#mugs {
+  margin-top: 50px;
+  background: #fdefe6;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mug {
+  background-color: #fdefe6;
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mug h1 {
+  margin-top: 20px;
+  font-family: "lemon white";
+  font-size: 1rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.mug p {
+  margin-top: 5px;
+  font-family: "caviar dreams";
+  font-size: 1rem;
+}
+
+.mug img {
+  height: auto;
+  width: 100%;
+}
+.price-stars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 10px;
+  gap: 0.1rem;
+}
+
+.price-stars h3 {
+  font-family: "lemon white";
+  font-size: 21px;
+  border: 3px solid #ee737d;
+  border-radius: 5%;
+  width: 7rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ee737d;
+}
+
+.price-stars .ri-star-fill i {
+  width: 100%;
+  height: 100%;
+  background-color: #fdefe6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.price-stars .ri-star-fill::before i {
+  width: 40px;
+  height: 40px;
+  color: #ee737d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-stars .ri-star-fill::before {
+  width: 40px;
+  height: 40px;
+  font-size: 19px;
+  font-size: 24px;
+  color: #ee737d;
+}
+
+#best-selling-mugs {
+  height: 400px;
+  padding: 17px 11%;
+  background-color: #fdefe6;
+  width: 100%;
+  color: black;
+  font-size: 11px;
+  font-family: "caviar dreams";
+  font-weight: 100;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: #3c3755;
+  padding: 100px 11% 90px;
+  margin-top: 300px;
+  margin-right: 0;
+}
+
+#footer-div {
+  background-color: #3c3755;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+
+#colorlib {
+  font-family: "caviar dreams";
+  color: white;
+  width: 28%;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 180px;
+  font-family: "caviar dreams";
+  color: white;
+}
+
+.footer-row3 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100px;
+  font-family: "caviar dreams";
+  color: white;
+}
+
+#colorlib h1 {
+  margin-bottom: 25px;
+}
+
+#contact-us-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+#social-media {
+  height: 50px;
+  width: 80%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#social-media a img {
+  height: 25px;
+  width: auto;
+}
+
+footer h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: "caviar dreams";
+  color: white;
+  margin-top: 20px;
+  font-weight: 100;
+}
+
+#contact-us-btn {
+  background-color: #ee737d;
+}
+
+/* width */
+::-webkit-scrollbar {
+  border: 5px solid #fdefe6;
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border: 5px solid #fdefe6;
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fdefe6;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e97a5285;
+}
