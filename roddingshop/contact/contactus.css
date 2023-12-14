@@ -1,0 +1,639 @@
+@font-face {
+  font-family: "lemon white";
+  src: url("LEMONMILK-Bold.otf");
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "caviar dreams";
+  src: url("CaviarDreams.ttf");
+  font-style: regular;
+}
+
+@font-face {
+  font-family: "caviar dreams bold";
+  src: url("CaviarDreams_Bold.ttf");
+  font-style: regular;
+}
+
+@font-face {
+  font-family: "montserrat-thin";
+  src: url("Montserrat-VariableFont_wght.ttf");
+  font-style: thin;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "oswald";
+  src: url("Oswald-VariableFont_wght.ttf");
+  font-style: thin;
+  font-weight: 100;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  background: #fdefe6;
+}
+a:visited {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #0f172a;
+  --main-color: #6b7280;
+  --other-color: #334155;
+  --big-font: 4.3rem;
+  --h2-font: 2.2rem;
+  --p-font: 1rem;
+}
+
+header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  right: 0;
+  top: 0;
+  width: 100%;
+  padding: 17px 11%;
+  transition: all 0.45s ease;
+  height: 200px;
+  background-color: #f7b961;
+  margin-bottom: 100px;
+}
+
+header h2 {
+  font-size: 32px;
+  font-family: "lemon white";
+  position: absolute;
+  top: 100px;
+  left: 11%;
+  color: white;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "caviar dreams bold";
+  width: 250px;
+}
+
+.icons i {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 22px;
+  transition: all 0.45s ease;
+  font-family: "caviar dreams bold";
+}
+
+.icons h1 {
+  font-size: 19px;
+  color: white;
+}
+.icons i:hover {
+  transform: scale(0.9);
+  background-color: white;
+  color: #f7b961;
+  font-family: "caviar dreams bold";
+}
+
+section {
+  padding: 17px 11%;
+  background-color: #fdefe6;
+  width: 100%;
+  height: 800px;
+  color: black;
+  font-size: 18px;
+  font-family: "caviar dreams";
+  font-weight: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+section img {
+  height: 80%;
+  width: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 30%;
+}
+
+form input {
+  height: 80px;
+  margin-top: 10px;
+  width: 25%;
+  background-color: #334155;
+  border: 2px solid #334155;
+}
+
+#submit {
+  font-family: "lemon white";
+  color: white;
+  display: block;
+  margin-left: 75%;
+  width: 25%;
+}
+
+section h1 {
+  font-family: "caviar dreams bold";
+  font-size: 24px;
+  font-weight: 200;
+  margin-bottom: 40px;
+}
+
+#fname {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.fname-input {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid #0f172a;
+  background-color: #fdefe6;
+  height: 20px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.fname-input:focus {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid #0f172a;
+  background-color: #fdefe6;
+  height: 20px;
+  outline: none;
+}
+
+.lname-input {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid #0f172a;
+  background-color: #fdefe6;
+  height: 20px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.lname-input:focus {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid #0f172a;
+  background-color: #fdefe6;
+  height: 20px;
+  outline: none;
+}
+
+.email-input {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid #0f172a;
+  background-color: #fdefe6;
+  height: 20px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.email-input:focus {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid #0f172a;
+  background-color: #fdefe6;
+  height: 20px;
+  outline: none;
+}
+#lname {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+#email {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+#message {
+  margin-top: 10px;
+  font-size: 18px;
+  outline: none;
+  padding: 4px;
+}
+
+section p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 100;
+  text-align: justify;
+}
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: #3c3755;
+  padding: 100px 11% 90px;
+  margin-top: 0px;
+  margin-right: 0;
+}
+
+#footer-div {
+  background-color: #3c3755;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+
+#colorlib {
+  font-family: "caviar dreams";
+  color: white;
+  width: 28%;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 180px;
+  font-family: "caviar dreams";
+  color: white;
+}
+
+.footer-row3 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100px;
+  font-family: "caviar dreams";
+  color: white;
+}
+
+#colorlib h1 {
+  margin-bottom: 25px;
+}
+
+#contact-us-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  display: inline-block;
+  background: #3c3755;
+  color: var(--bg-color);
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  transition: all 0.45s ease;
+  font-family: "lemon white";
+  vertical-align: middle;
+  text-align: center;
+  padding: 18px;
+  width: 12vw;
+  height: 60px;
+}
+
+.btn:hover {
+  letter-spacing: 2px;
+  opacity: o.8;
+}
+
+#social-media {
+  height: 50px;
+  width: 80%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#social-media a img {
+  height: 25px;
+  width: auto;
+}
+
+footer h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: "caviar dreams";
+  color: white;
+  margin-top: 20px;
+  font-weight: 100;
+}
+
+#contact-us-btn {
+  background-color: #ee737d;
+}
+
+/* width */
+::-webkit-scrollbar {
+  border: 5px solid #fdefe6;
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border: 5px solid #fdefe6;
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fdefe6;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e97a5285;
+}
+
+@media (max-width: 1380px) {
+  section img {
+    height: 80%;
+    width: auto;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 45%;
+  }
+  #message {
+    font-size: 18px;
+    outline: none;
+    padding: 4px;
+  }
+
+  #email {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  #fname {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  #lname {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  section {
+    height: 700px;
+  }
+}
+
+@media (max-width: 1210px) {
+}
+
+@media (max-width: 940px) {
+  footer {
+    width: 100%;
+    height: 500px;
+    background-color: #3c3755;
+    padding: 100px 11% 90px;
+  }
+
+  #footer-div {
+    background-color: #3c3755;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+  }
+
+  #colorlib {
+    font-family: "caviar dreams";
+    color: white;
+    width: 25%;
+    margin-right: 20px;
+  }
+
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 140px;
+    font-family: "caviar dreams";
+    color: white;
+    font-size: 11px;
+  }
+
+  .footer-row3 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100px;
+    font-family: "caviar dreams";
+    color: white;
+  }
+
+  #colorlib h1 {
+    font-size: 21px;
+    margin-bottom: 14px;
+  }
+
+  #colorlib p {
+    font-size: 11px;
+    line-height: 18px;
+  }
+
+  #contact-us-div {
+    position: absolute;
+    top: 1240px;
+    right: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 20%;
+  }
+
+  #social-media {
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #social-media a img {
+    height: 20px;
+    width: auto;
+  }
+
+  footer h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-family: "caviar dreams";
+    color: white;
+    margin-top: 20px;
+    font-weight: 100;
+  }
+
+  #contact-us-btn {
+    background-color: #ee737d;
+    width: 100%;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    font-size: 9px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    transition: all 0.45s ease;
+    margin-top: 5px;
+    font-family: "lemon white";
+    height: 40px;
+  }
+  section img {
+    height: 80%;
+    width: auto;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 45%;
+  }
+  #message {
+    font-size: 18px;
+    outline: none;
+    padding: 4px;
+  }
+
+  #email {
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  #fname {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  #lname {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  section {
+    height: 700px;
+    font-size: 16px;
+    padding-top: 50px;
+    gap: 4%;
+  }
+
+  #submit {
+    font-size: 9px;
+    width: 40%;
+    margin-left: 60%;
+    height: 140px;
+  }
+}
+
+@media (max-width: 710px) {
+  section img {
+    display: none;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  section {
+    height: 700px;
+    font-size: 16px;
+    padding-top: 0px;
+    padding-bottom: 100px;
+  }
+
+  #submit {
+    font-size: 11px;
+    width: 30%;
+    margin-left: 70%;
+    height: 60px;
+  }
+
+  header h2 {
+    top: 120px;
+    font-size: 24px;
+  }
+
+  #social-media a img {
+    height: 15px;
+    width: auto;
+  }
+
+  #social-media {
+    height: 20px;
+    width: 90%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 5%;
+  }
+
+  #contact-us-div {
+    position: absolute;
+    top: 1260px;
+    right: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 20%;
+  }
+
+  #colorlib p {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  #colorlib {
+    width: 30%;
+  }
+}
