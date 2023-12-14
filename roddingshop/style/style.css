@@ -1,0 +1,1903 @@
+@font-face {
+  font-family: "lemon white";
+  src: url("LEMONMILK-Bold.otf");
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "caviar dreams";
+  src: url("CaviarDreams.ttf");
+  font-style: regular;
+}
+
+@font-face {
+  font-family: "caviar dreams bold";
+  src: url("CaviarDreams_Bold.ttf");
+  font-style: regular;
+}
+
+@font-face {
+  font-family: "montserrat-thin";
+  src: url("Montserrat-VariableFont_wght.ttf");
+  font-style: thin;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "oswald";
+  src: url("Oswald-VariableFont_wght.ttf");
+  font-style: thin;
+  font-weight: 100;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #0f172a;
+  --main-color: #6b7280;
+  --other-color: #334155;
+  --big-font: 4.3rem;
+  --h2-font: 2.2rem;
+  --p-font: 1rem;
+}
+
+html {
+  background: #fdefe6;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 100px;
+  background: transparent;
+  padding: 17px 11%;
+  transition: all 0.45s ease;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+  font-family: "caviar dreams bold";
+  font-weight: 400;
+}
+
+.navbar a {
+  font-size: -var(--p-font);
+  color: white;
+  padding: 10px 25px;
+  margin: 0 5px;
+  background: transparent;
+  border-radius: 30px;
+  transition: all 0.45s ease;
+  font-family: "caviar dreams bold";
+  font-weight: 400;
+}
+
+.navbar a:hover {
+  background-color: #f7f9fb;
+  font-family: "caviar dreams bold";
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+#main-top-img {
+  height: 85vh;
+  width: 100%;
+  position: absolute;
+}
+
+.home-img {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  width: 900px;
+  height: 800px;
+}
+
+.home-img img {
+  width: 100%;
+  height: auto;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons i {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 22px;
+  margin-right: 25px;
+  margin-left: 10px;
+  transition: all 0.45s ease;
+}
+
+.icons i:hover {
+  transform: scale(0.9);
+  background-color: white;
+  color: black;
+}
+
+#menu-icon {
+  color: var(--other-color);
+  font-size: 33px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+  margin: 25px 0 20px;
+  font-family: "lemon white";
+}
+
+section {
+  padding: 100px 11% 90px;
+}
+.home {
+  height: 85vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.home-text {
+  width: 100%;
+}
+
+.home-text h4 {
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  font-family: "caviar dreams";
+}
+.home-text h1 {
+  font-size: var(--big-font);
+  color: white;
+  width: 600px;
+  line-height: 1.2;
+  margin: 25px 0 20px;
+  font-family: "lemon white";
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px 30px;
+  background: var(--text-color);
+  color: var(--bg-color);
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  transition: all 0.45s ease;
+  margin: 25px 0 20px;
+  font-family: "lemon white";
+}
+
+.btn:hover {
+  letter-spacing: 2px;
+  opacity: o.8;
+}
+
+header.sticky {
+  background: var(--bg-color);
+  padding: 14px 11%;
+}
+
+.middle-text h2 {
+  font-size: var(--h2-font);
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+span {
+  color: var(--main-color);
+}
+
+.feature-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  height: 400px;
+}
+
+.row {
+  background-color: transparent;
+  transition: all 0.45s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row h1 {
+  font-family: "lemon white";
+  font-size: 18px;
+  position: absolute;
+  height: 220px;
+  color: white;
+}
+
+.row img {
+  width: 120%;
+}
+
+.row:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+#random-quote {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-family: "caviar dreams";
+  font-weight: 100;
+}
+
+#best-selling-mugs h2 {
+  font-family: "lemon white";
+}
+
+#mugs {
+  margin-top: 50px;
+  background: #fdefe6;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mug {
+  background-color: #fdefe6;
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mug h1 {
+  margin-top: 20px;
+  font-family: "lemon white";
+  font-size: 1rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.mug p {
+  margin-top: 5px;
+  font-family: "caviar dreams";
+  font-size: 1rem;
+}
+
+.mug img {
+  height: auto;
+  width: 100%;
+}
+.price-stars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 10px;
+  gap: 0.1rem;
+}
+
+.ri-star-fill {
+  width: 20px;
+  height: 25px;
+  background-color: #fdefe6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ri-star-fill::before {
+  width: auto;
+  height: 100%;
+  color: #ee737d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.price-stars h3 {
+  font-family: "lemon white";
+  font-size: 18px;
+  border: 3px solid #ee737d;
+  border-radius: 5%;
+  width: 5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ee737d;
+}
+
+#see-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+#discounts {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  overflow: hidden;
+  padding: 10px 11% 90px;
+}
+
+#discounts h2 {
+  position: absolute;
+  font-size: 34px;
+  right: 15%;
+  height: 400px;
+  font-family: "lemon white";
+  color: #3c3755;
+}
+#discounts p {
+  position: absolute;
+  font-size: 21px;
+  right: 15%;
+  height: 300px;
+  width: 400px;
+  font-family: "caviar dreams";
+  color: #3c3755;
+  display: flex;
+  text-align: right;
+}
+#discounts img {
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+}
+
+#discover-more {
+  position: absolute;
+  font-size: 32px;
+  right: 15%;
+  height: 400px;
+  font-family: "lemon white";
+  margin-top: 220px;
+}
+
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: #3c3755;
+  padding: 100px 11% 90px;
+}
+
+#footer-div {
+  background-color: #3c3755;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+
+#colorlib {
+  font-family: "caviar dreams";
+  color: white;
+  width: 28%;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 180px;
+  font-family: "caviar dreams";
+  color: white;
+}
+
+.footer-row3 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100px;
+  font-family: "caviar dreams";
+  color: white;
+}
+
+#colorlib h1 {
+  margin-bottom: 25px;
+}
+
+#contact-us-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+#social-media {
+  height: 50px;
+  width: 150px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#social-media a img {
+  height: 25px;
+  width: auto;
+}
+
+footer h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: "caviar dreams";
+  color: white;
+  margin-top: 20px;
+  font-weight: 100;
+}
+
+#contact-us-btn {
+  background-color: #ee737d;
+}
+/* width */
+::-webkit-scrollbar {
+  border: 5px solid #fdefe6;
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border: 5px solid #fdefe6;
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fdefe6;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e97a5285;
+}
+
+#intro-screen {
+  display: flex;
+  background: #fdefe6;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5000;
+  justify-content: center;
+  align-items: center;
+}
+
+#caneca {
+  display: block;
+  position: absolute;
+  right: 50px;
+  height: 100px;
+  width: auto;
+  z-index: 5001;
+}
+
+#roddingShop {
+  display: block;
+  background: #fdefe6;
+  border-right: solid 150px #fdefe6;
+  position: absolute;
+  left: 0;
+  height: 150px;
+  width: auto;
+  z-index: 5003;
+}
+
+#first-square {
+  display: block;
+  height: 150px;
+  width: 200px;
+  background: #fdefe6;
+  z-index: 5004;
+}
+
+#second-square {
+  display: block;
+  height: 150px;
+  width: 200px;
+  background: #fdefe6;
+  z-index: 5002;
+}
+.remove-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+#square {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  width: 400px;
+  background-color: transparent;
+  position: relative;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+@media (max-width: 1350px) {
+  .feature-content {
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  }
+  .home-img {
+    position: absolute;
+    right: 0;
+    top: 200px;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .home-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .home-text h4 {
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    font-family: "caviar dreams";
+    width: 80%;
+  }
+  .home-text {
+    width: 100%;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .navbar a {
+    font-size: 12pt;
+    color: white;
+    padding: 5px 15px;
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 1290px) {
+  .feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .feature-content {
+    grid-template-columns: repeat(auto-fit, minmax(330px, auto));
+    justify-content: center;
+    gap: 3rem;
+    height: 800px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .navbar a {
+    font-size: 9pt;
+  }
+  .feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .feature-content {
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    justify-content: center;
+    gap: 3rem;
+    height: 700px;
+    width: 90%;
+  }
+  .home-text h4 {
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    font-family: "caviar dreams";
+    width: 70%;
+  }
+
+  .home-text h1 {
+    margin: 0px 0 20px;
+    font-family: "lemon white";
+  }
+
+  .home-text {
+    margin-top: -100px;
+    width: 100%;
+  }
+
+  #mugs {
+    margin-top: 50px;
+    background: #fdefe6;
+    height: 1000px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .mug {
+    background-color: #fdefe6;
+    height: 450px;
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mug h1 {
+    margin-top: 20px;
+    font-family: "lemon white";
+    font-size: 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 90%;
+  }
+
+  .mug p {
+    font-family: "caviar dreams";
+    font-size: 21px;
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  .mug img {
+    height: auto;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .price-stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    margin-top: 40px;
+    gap: 0.1rem;
+  }
+
+  .ri-star-fill {
+    width: 30px;
+    height: 30px;
+    background-color: #fdefe6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ri-star-fill::before {
+    width: auto;
+    height: 100%;
+    color: #ee737d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  .price-stars .ri-star-fill::before i {
+    font-size: 28px;
+  }
+
+  .price-stars h3 {
+    font-family: "lemon white";
+    font-size: 16px;
+    border: 3px solid #ee737d;
+    border-radius: 5%;
+    width: 5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ee737d;
+  }
+}
+
+@media (max-width: 1025px) {
+  .feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .feature-content {
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    justify-content: center;
+    gap: 3rem;
+    height: 700px;
+    width: 90%;
+  }
+  .home-img {
+    position: absolute;
+    right: 0;
+    top: 280px;
+    width: 700px;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .home-text h4 {
+    font-size: 21px;
+    font-weight: 500;
+    color: white;
+    font-family: "caviar dreams";
+    width: 60%;
+  }
+
+  .home-text h1 {
+    margin: 0px 0 20px;
+    font-family: "lemon white";
+  }
+
+  .home-text {
+    margin-top: -120px;
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+    height: 500px;
+    background-color: #3c3755;
+    padding: 100px 11% 90px;
+  }
+
+  #footer-div {
+    background-color: #3c3755;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+  }
+
+  #colorlib {
+    font-family: "caviar dreams";
+    color: white;
+    width: 30%;
+    margin-right: 20px;
+  }
+
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 180px;
+    font-family: "caviar dreams";
+    color: white;
+    font-size: 14px;
+  }
+
+  .footer-row3 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100px;
+    font-family: "caviar dreams";
+    color: white;
+  }
+
+  #colorlib h1 {
+    font-size: 21px;
+    margin-bottom: 14px;
+  }
+
+  #colorlib p {
+    font-size: 11px;
+    line-height: 18px;
+  }
+
+  #contact-us-div {
+    position: absolute;
+    top: 3940px;
+    right: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #social-media {
+    height: 40px;
+    width: 120px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #social-media a img {
+    height: 20px;
+    width: auto;
+  }
+
+  footer h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-family: "caviar dreams";
+    color: white;
+    margin-top: 20px;
+    font-weight: 100;
+  }
+
+  #contact-us-btn {
+    background-color: #ee737d;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    transition: all 0.45s ease;
+    margin-top: 5px;
+    font-family: "lemon white";
+    height: 40px;
+  }
+
+  .navbar a {
+    font-size: 9pt;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 5px;
+  }
+
+  .icons i {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 22px;
+    margin-right: 5px;
+    margin-left: 10px;
+    transition: all 0.45s ease;
+  }
+
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+}
+
+@media (max-width: 880px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul a {
+    display: none;
+    opacity: animation;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 0;
+    background: #2c3e50;
+    top: 80px;
+    left: 0;
+    text-align: center;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: row;
+  }
+  nav ul li {
+    display: flex;
+    margin: 0px 0;
+    line-height: 30px;
+    width: 100%;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 24pt;
+    transition: display 1s ease-out;
+  }
+  #check:checked ~ ul {
+    height: 5vh;
+  }
+
+  #check:checked ~ ul a {
+    display: flex;
+    animation: fadeIn 1s;
+  }
+  .feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .feature-content {
+    grid-template-columns: repeat(auto-fit, minmax(215px, auto));
+    height: 600px;
+    justify-content: center;
+    gap: 3rem;
+    width: 90%;
+  }
+  .home-text h4 {
+    font-size: 19px;
+    font-weight: 500;
+    color: white;
+    font-family: "caviar dreams";
+    width: 60%;
+  }
+  .home-img {
+    position: absolute;
+    right: 0;
+    top: 330px;
+    width: 650px;
+    height: 450px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  footer {
+    width: 100%;
+    height: 500px;
+    background-color: #3c3755;
+    padding: 100px 11% 90px;
+  }
+
+  #footer-div {
+    background-color: #3c3755;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+  }
+
+  #colorlib {
+    font-family: "caviar dreams";
+    color: white;
+    width: 35%;
+    margin-right: 20px;
+  }
+
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 180px;
+    font-family: "caviar dreams";
+    color: white;
+    font-size: 14px;
+  }
+
+  .footer-row3 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100px;
+    font-family: "caviar dreams";
+    color: white;
+  }
+
+  #colorlib h1 {
+    font-size: 21px;
+    margin-bottom: 14px;
+  }
+
+  #colorlib p {
+    font-size: 11px;
+    line-height: 18px;
+  }
+
+  #contact-us-div {
+    position: absolute;
+    top: 3840px;
+    right: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #social-media {
+    height: 40px;
+    width: 120px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #social-media a img {
+    height: 20px;
+    width: auto;
+  }
+
+  footer h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-family: "caviar dreams";
+    color: white;
+    margin-top: 20px;
+    font-weight: 100;
+  }
+
+  #contact-us-btn {
+    background-color: #ee737d;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    transition: all 0.45s ease;
+    margin-top: 5px;
+    font-family: "lemon white";
+    height: 40px;
+  }
+}
+
+@media (max-width: 760px) {
+  .feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .feature-content {
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    justify-content: center;
+    gap: 2rem;
+    height: 500px;
+    width: 85%;
+  }
+  .home-img {
+    position: absolute;
+    right: 0;
+    top: 240px;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  #see-all {
+    margin-top: 0px;
+  }
+
+  #mugs {
+    height: 900px;
+  }
+
+  footer {
+    width: 100%;
+    height: 500px;
+    background-color: #3c3755;
+    padding: 100px 11% 90px;
+  }
+
+  #footer-div {
+    background-color: #3c3755;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+  }
+
+  #colorlib {
+    font-family: "caviar dreams";
+    color: white;
+    width: 30%;
+    margin-right: 20px;
+  }
+
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 140px;
+    font-family: "caviar dreams";
+    color: white;
+    font-size: 14px;
+  }
+
+  .footer-row3 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100px;
+    font-family: "caviar dreams";
+    color: white;
+  }
+
+  #colorlib h1 {
+    font-size: 21px;
+    margin-bottom: 14px;
+  }
+
+  #colorlib p {
+    font-size: 11px;
+    line-height: 18px;
+  }
+
+  #contact-us-div {
+    position: absolute;
+    top: 3670px;
+    right: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #social-media {
+    height: 40px;
+    width: 120px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #social-media a img {
+    height: 20px;
+    width: auto;
+  }
+
+  footer h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-family: "caviar dreams";
+    color: white;
+    margin-top: 20px;
+    font-weight: 100;
+  }
+
+  #contact-us-btn {
+    background-color: #ee737d;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    transition: all 0.45s ease;
+    margin-top: 5px;
+    font-family: "lemon white";
+    height: 40px;
+  }
+
+  html {
+    width: 100%;
+  }
+  #main-top-img {
+    width: 105%;
+  }
+
+  footer {
+    width: 105%;
+  }
+
+  #discounts {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    overflow: hidden;
+    padding: 10px 11% 90px;
+  }
+
+  #discounts h2 {
+    position: absolute;
+    font-size: 28px;
+    right: 15%;
+    height: 400px;
+    font-family: "lemon white";
+    color: #3c3755;
+  }
+  #discounts p {
+    position: absolute;
+    font-size: 16px;
+    right: 15%;
+    height: 300px;
+    width: 300px;
+    font-family: "caviar dreams";
+    color: #3c3755;
+    display: flex;
+    text-align: right;
+  }
+  #discounts img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+  }
+
+  #discover-more {
+    position: absolute;
+    font-size: 32px;
+    right: 15%;
+    height: 400px;
+    font-family: "lemon white";
+    margin-top: 220px;
+  }
+
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    right: 5%;
+    top: 425%;
+  }
+
+  #social-media {
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #social-media a img {
+    height: 25px;
+    width: auto;
+  }
+}
+
+@media (max-width: 628px) {
+  #random-quote {
+    display: none;
+  }
+
+  .feature-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+    width: 500px;
+  }
+
+  .row {
+    background-color: transparent;
+    transition: all 0.45s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+
+  .row h1 {
+    font-family: "lemon white";
+    font-size: 14px;
+    position: absolute;
+    height: 200px;
+    color: white;
+  }
+
+  .row img {
+    width: 80%;
+  }
+
+  html {
+    width: 110%;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+  #main-top-img {
+    width: 110%;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  #discounts {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    overflow: hidden;
+    padding: 10px 11% 90px;
+  }
+
+  #discounts h2 {
+    position: absolute;
+    font-size: 28px;
+    right: 5%;
+    height: 400px;
+    font-family: "lemon white";
+    color: #3c3755;
+  }
+  #discounts p {
+    position: absolute;
+    font-size: 16px;
+    right: 5%;
+    height: 300px;
+    width: 300px;
+    font-family: "caviar dreams";
+    color: #3c3755;
+    display: flex;
+    text-align: right;
+  }
+  #discounts img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+  }
+
+  #discover-more {
+    position: absolute;
+    font-size: 32px;
+    right: 5%;
+    height: 400px;
+    font-family: "lemon white";
+    margin-top: 220px;
+  }
+
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    right: 2%;
+    top: 430%;
+  }
+
+  #social-media {
+    height: 35px;
+    width: 110px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #social-media a img {
+    height: 15px;
+    width: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #random-quote {
+    display: none;
+  }
+
+  .feature-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 600px;
+  }
+
+  .row {
+    background-color: transparent;
+    transition: all 0.45s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+
+  .row h1 {
+    font-family: "lemon white";
+    font-size: 14px;
+    position: absolute;
+    height: 190px;
+    color: white;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .row img {
+    width: 100%;
+  }
+
+  html {
+    width: 130%;
+  }
+  #main-top-img {
+    width: 130%;
+  }
+
+  #discounts {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    overflow: hidden;
+    padding: 10px 11% 90px;
+  }
+
+  #discounts h2 {
+    position: absolute;
+    font-size: 28px;
+    right: -10%;
+    height: 400px;
+    font-family: "lemon white";
+    color: #3c3755;
+  }
+  #discounts p {
+    position: absolute;
+    font-size: 16px;
+    right: -10%;
+    height: 300px;
+    width: 300px;
+    font-family: "caviar dreams";
+    color: #3c3755;
+    display: flex;
+    text-align: right;
+  }
+  #discounts img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+  }
+
+  #discover-more {
+    position: absolute;
+    font-size: 32px;
+    right: -10%;
+    height: 400px;
+    font-family: "lemon white";
+    margin-top: 220px;
+  }
+
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    right: -15%;
+    top: 436%;
+  }
+
+  #social-media {
+    height: 35px;
+    width: 110px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #social-media a img {
+    height: 15px;
+    width: auto;
+  }
+  /*
+  .feature {
+    width: 120%;
+  }
+  */
+}
+
+@media (max-width: 490px) {
+  #random-quote {
+    display: none;
+  }
+
+  .feature-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 600px;
+  }
+
+  .row {
+    background-color: transparent;
+    transition: all 0.45s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+
+  .row h1 {
+    font-family: "lemon white";
+    font-size: 14px;
+    position: absolute;
+    height: 190px;
+    color: white;
+  }
+
+  .row img {
+    width: 100%;
+  }
+
+  html {
+    width: 155%;
+  }
+  #main-top-img {
+    width: 155%;
+  }
+
+  #discounts {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    overflow: hidden;
+    padding: 10px 11% 90px;
+  }
+
+  #discounts h2 {
+    position: absolute;
+    font-size: 28px;
+    right: -30%;
+    height: 400px;
+    font-family: "lemon white";
+    color: #3c3755;
+  }
+  #discounts p {
+    position: absolute;
+    font-size: 16px;
+    right: -30%;
+    height: 300px;
+    width: 300px;
+    font-family: "caviar dreams";
+    color: #3c3755;
+    display: flex;
+    text-align: right;
+  }
+  #discounts img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+  }
+
+  #discover-more {
+    position: absolute;
+    font-size: 32px;
+    right: -30%;
+    height: 400px;
+    font-family: "lemon white";
+    margin-top: 220px;
+  }
+  /*
+  .feature {
+    width: 120%;
+  }
+  */
+
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    right: -40%;
+    top: 436%;
+  }
+
+  #social-media {
+    height: 35px;
+    width: 110px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #social-media a img {
+    height: 15px;
+    width: auto;
+  }
+}
+
+@media (max-width: 410px) {
+  #random-quote {
+    display: none;
+  }
+
+  .feature-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, auto));
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 600px;
+  }
+
+  .row {
+    background-color: transparent;
+    transition: all 0.45s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+
+  .row h1 {
+    font-family: "lemon white";
+    font-size: 14px;
+    position: absolute;
+    height: 190px;
+    color: white;
+  }
+
+  .row img {
+    width: 100%;
+  }
+
+  html {
+    width: 170%;
+  }
+  #main-top-img {
+    width: 170%;
+  }
+  /*
+  .feature {
+    width: 120%;
+  }
+  */
+
+  #discounts {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    overflow: hidden;
+    padding: 10px 11% 90px;
+  }
+
+  #discounts h2 {
+    position: absolute;
+    font-size: 28px;
+    right: -45%;
+    height: 400px;
+    font-family: "lemon white";
+    color: #3c3755;
+  }
+  #discounts p {
+    position: absolute;
+    font-size: 16px;
+    right: -45%;
+    height: 300px;
+    width: 300px;
+    font-family: "caviar dreams";
+    color: #3c3755;
+    display: flex;
+    text-align: right;
+  }
+  #discounts img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+  }
+
+  #discover-more {
+    position: absolute;
+    font-size: 32px;
+    right: -45%;
+    height: 400px;
+    font-family: "lemon white";
+    margin-top: 220px;
+  }
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    right: -52%;
+    top: 425%;
+  }
+}
+
+@media (max-width: 356px) {
+  #random-quote {
+    display: none;
+  }
+
+  .feature-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, auto));
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 600px;
+  }
+
+  .row {
+    background-color: transparent;
+    transition: all 0.45s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+
+  .row h1 {
+    font-family: "lemon white";
+    font-size: 14px;
+    position: absolute;
+    height: 190px;
+    color: white;
+  }
+
+  .row img {
+    width: 100%;
+  }
+
+  html {
+    width: 220%;
+  }
+  #main-top-img {
+    width: 220%;
+  }
+  /*
+  .feature {
+    width: 120%;
+  }
+  */
+
+  #discounts {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    overflow: hidden;
+    padding: 10px 11% 90px;
+  }
+
+  #discounts h2 {
+    position: absolute;
+    font-size: 28px;
+    right: -80%;
+    height: 400px;
+    font-family: "lemon white";
+    color: #3c3755;
+  }
+  #discounts p {
+    position: absolute;
+    font-size: 16px;
+    right: -80%;
+    height: 300px;
+    width: 300px;
+    font-family: "caviar dreams";
+    color: #3c3755;
+    display: flex;
+    text-align: right;
+  }
+  #discounts img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+  }
+
+  #discover-more {
+    position: absolute;
+    font-size: 32px;
+    right: -80%;
+    height: 400px;
+    font-family: "lemon white";
+    margin-top: 220px;
+  }
+
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    right: -95%;
+    top: 425%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
