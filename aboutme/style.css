@@ -62,8 +62,8 @@ header img {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  width: 60vw;
-  font-size: 12pt;
+  width: 70vw;
+  font-size: 11pt;
 }
 .checkbtn {
   font-size: 30px;
@@ -323,8 +323,7 @@ margin-top: 20px;
     background: #f2eee9;
     top: 140px;
     left: 0;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
     text-align: center;
     transition: all 0.5s;
     display: flex;
@@ -345,8 +344,8 @@ margin-top: 20px;
   #check:checked ~ ul {
     height: 5vh;
     width: 800px;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 10%;
     color: rgb(20, 19, 19);
   }
 
@@ -382,7 +381,7 @@ margin-top: 20px;
 
   section{
     flex-direction: column-reverse;
-    margin-top:25vh;
+    margin-top:30vh;
   }
 
 
@@ -417,19 +416,20 @@ margin-top: 20px;
   .navbar ul {
     padding-left: 10%;
     padding-right: 10%;
-    width: 90%;
+    width: 95%;
   }
 
   nav ul li a {
     line-height: 40px;
-    font-size: 7pt;
+    font-size: 6pt;
   }
   #h2andslider{
     top:170%; 
    }
-  .}
+}
 
-  @media (max-width: 440px) {
+
+@media (max-width: 440px) {
   #h2andslider{
     top:220%; 
    }
@@ -438,7 +438,7 @@ margin-top: 20px;
     font-size: 12pt;
    }
 
-       #h2andslider h1{
+   #h2andslider h1{
     font-size: 10pt;
    }
 
@@ -449,12 +449,13 @@ margin-top: 20px;
 }
 
 
-
 @media (max-width: 400px) {
   #h2andslider{
     top:240%; 
    }
 }
+
+
 @keyframes fadeIn {
   from {
     opacity: 0;
