@@ -11,15 +11,18 @@
 
 html {
   background: url(portfoliobackground.png);
-  position: absolute;
+  background-position:top;
+  position:absolute;
   top:0;
   left:0;
   right:0;
   margin:0 auto;
   height:100%;
+  padding:0 auto;
 }
 
 body {
+  background-position: fixed;
   position: absolute;
   top:0;
   left:0;
@@ -196,6 +199,7 @@ footer h2{
 
 #digital-marketing{
   margin-top:40px;
+  margin-bottom:40px;
   opacity:0.5;
 }
 #digital-marketing:hover{
@@ -283,6 +287,7 @@ footer div{
 .slider-nav a:hover{
  opacity:1;
 }
+
 @media (max-width: 1620px) {
   footer {
     top:190%;
@@ -294,6 +299,7 @@ footer div{
       top:270%;
     }
     }
+
 @media (max-width: 960px) {
   html {
     height: 100%;
@@ -318,14 +324,11 @@ footer div{
     line-height: 20pt;
   }
 }
-
-
 @media (max-width: 915px) {
   footer {
     top:500%;
   }
   }
-
 @media (max-width: 800px) {
   .checkbtn {
     display: block;
@@ -343,7 +346,6 @@ footer div{
     top: 140px;
     left: 0;
     padding-left: 20%;
-    padding-right: 20%;
     text-align: center;
     transition: all 0.5s;
     display: flex;
@@ -365,7 +367,6 @@ footer div{
     height: 5vh;
     width: 800px;
     padding-left: 20%;
-    padding-right: 20%;
     color: rgb(20, 19, 19);
   }
 
@@ -378,6 +379,32 @@ footer div{
 
   .navbar {
     width: 800px;
+  }
+
+  footer{
+    top:650%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer div{
+    display:flex;
+    flex-direction: column;
+    gap:0;
+  }
+
+  footer h2{
+    font-size:10pt;
+    line-height:14pt;
+  }
+
+  #date{
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:0px;
+
   }
 }
 
@@ -393,6 +420,9 @@ width:100%;
 }
 
 @media (max-width: 650px) {
+  html {
+    background-size: 1400%;
+  }
   nav ul li a {
     line-height: 40px;
     font-size: 9pt;
@@ -409,7 +439,7 @@ width:100%;
 
   nav ul li a {
     line-height: 40px;
-    font-size: 7pt;
+    font-size: 6pt;
   }
 
   .container{
@@ -428,6 +458,22 @@ width:100%;
 .slider img{
   height:300px;
   width:auto;
+  }
+
+  section{
+    margin-top:5vh;
+  }
+  #back-title{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    width:80vw;
+    margin-bottom:20px;
+  }
+
+  #next{
+    display:none;
   }
 }
 
