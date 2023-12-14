@@ -11,23 +11,9 @@
 
 html {
   background: url(portfoliobackground.png);
-  background-position:top;
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  margin:0 auto;
-  height:100%;
-  padding:0 auto;
 }
 
 body {
-  background-position: fixed;
-  position: absolute;
-  top:0;
-  left:0;
-  right:0;
-  margin:0 auto;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 2%;
@@ -93,18 +79,16 @@ section {
   justify-content: center;
   flex-direction: column;
   position: absolute;
-  top:25vh;
-  width:100%;
+  top: 0;
+  right: 18%;
+  left: 18%;
+  bottom: 0;
 }
 section img {
   height: 40px;
   width: auto;
   margin: 10px;
   margin-bottom: 20px;
-}
-
-section h1{
-  font-size:14pt;
 }
 
 section p {
@@ -136,177 +120,74 @@ section p {
 
 #back-title{
   display:flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items:center;
-  width:65vw;
-  margin-bottom:20px;
+  align-items: center;
+  width:100%;
+  margin-bottom:10vh;
 }
 
-footer{
+#back-title h1{
   display:flex;
-  justify-content: flex-start;
-  align-items:flex-start;
-  flex-direction: column;
-  position: absolute;
-  top:135%;
-  width:65vw;
-  color:white;
-  font-family: "CenturyGothic";
-}
-
-footer h1{
-  font-family: "OPTIVenus-BoldExtended";
-  font-size: 18pt;
-  background-color: rgb(20, 19, 19);
-  color:white;
-  width: 160px;
-
-}
-
-footer h2{
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   font-size:12pt;
 }
-#next{
-  opacity:0;
+
+#back-title h2{
+  font-size:16pt;
 }
 
 #back{
-  opacity:0.2;
-  font-size:12pt;
+  opacity: 0.4;
+  cursor:pointer;
 }
 
 #back:hover{
-  opacity:1;
-  cursor:pointer
-}
-#product{
-  background-color: rgb(20, 19, 19);
-  width:185px;
-  padding:10px;
+  opacity: 1;
 }
 
-#category{
-  background-color: rgb(20, 19, 19);
-  width:210px;
-  padding:10px;
+#weather-app{
+  opacity: 0.4;
+  cursor:pointer;
 }
 
-#date{
-  background-color: rgb(20, 19, 19);
-  width:105px;
-  padding:10px;
+#weather-app:hover{
+  opacity: 1;
 }
 
-#digital-marketing{
-  margin-top:40px;
-  margin-bottom:40px;
-  opacity:0.5;
-}
-#digital-marketing:hover{
-  opacity:1;
-  cursor:pointer
+#calculator{
+  opacity: 0.4;
+  cursor:pointer;
 }
 
-
-#website{
-  background-color: rgb(20, 19, 19);
-  width:175px;
-  padding:10px;
+#calculator:hover{
+  opacity: 1;
 }
 
-footer div{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap:20px;
+#etch-a-sketch{
+  opacity: 0.4;
+  cursor:pointer;
 }
 
-
-.images{
-  display: flex;
-  justify-content: center;
-  align-items: space-between;
-  height:50vh;
-  width:70vw;
-  gap:1px;
-  flex-wrap: wrap;
+#etch-a-sketch:hover{
+  opacity: 1;
 }
 
-.images img{
-  height:300px;
-  width: 300px;
+#next{
+  opacity: 0;
 }
-
-.slider-wrapper{
-  height:450px;
-  position:relative;
-  max-width:100%;
-  margin: 0 auto;
-}
-
-.slider{
-  display:flex;
-  aspect-ratio: 16/9;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  border-radius: 0.5rem;
-  overflow-x: hidden;
-  height:450px;
-  width:100%;
-}
-
-.slider img{
-  flex: 1 0 100%;
-  scroll-snap-align: start;
-  object-fit:contain;
-  height:400px;
-  width:auto;
-}
-
-.slider-nav{
-  display:flex;
-  column-gap:1rem;
-  position:absolute;
-  bottom:1.25rem;
-  left:50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-.slider-nav a{
- width: 0.5rem;
- height: 0.5rem;
- border-radius: 50%;
- background:#fff;
- opacity: 0.1;
- transition: opacity ease 250ms;
-}
-
-.slider-nav a:hover{
- opacity:1;
-}
-
-@media (max-width: 1620px) {
-  footer {
-    top:190%;
-  }
-  }
-
-  @media (max-width: 1370px) {
-    footer {
-      top:270%;
-    }
-    }
-
 @media (max-width: 960px) {
   html {
     height: 100%;
   }
   section {
     position: absolute;
-    top: 25vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -324,11 +205,7 @@ footer div{
     line-height: 20pt;
   }
 }
-@media (max-width: 915px) {
-  footer {
-    top:500%;
-  }
-  }
+
 @media (max-width: 800px) {
   .checkbtn {
     display: block;
@@ -346,6 +223,7 @@ footer div{
     top: 140px;
     left: 0;
     padding-left: 20%;
+    padding-right: 20%;
     text-align: center;
     transition: all 0.5s;
     display: flex;
@@ -367,6 +245,7 @@ footer div{
     height: 5vh;
     width: 800px;
     padding-left: 20%;
+    padding-right: 20%;
     color: rgb(20, 19, 19);
   }
 
@@ -380,54 +259,13 @@ footer div{
   .navbar {
     width: 800px;
   }
-
-  footer{
-    top:650%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-
-  footer div{
-    display:flex;
-    flex-direction: column;
-    gap:0;
-  }
-
-  footer h2{
-    font-size:10pt;
-    line-height:14pt;
-  }
-
-  #date{
-    display:block;
-    margin-right:auto;
-    margin-left:auto;
-    margin-bottom:0px;
-
-  }
-}
-
-@media (max-width:725px){
-  .slider-wrapper{
-    height:500px;
-    width:100%;
-  }
-.slider{
-height:500px;
-width:100%;
-}
 }
 
 @media (max-width: 650px) {
-  html {
-    background-size: 1400%;
-  }
   nav ul li a {
     line-height: 40px;
     font-size: 9pt;
   }
-
 }
 
 @media (max-width: 520px) {
@@ -439,41 +277,7 @@ width:100%;
 
   nav ul li a {
     line-height: 40px;
-    font-size: 6pt;
-  }
-
-  .container{
-    height:400px;
-  }
-
-  .slider-wrapper{
-    height:300px;
-    width:100%;
-  }
-.slider{
-height:400px;
-width:100%;
-}
-
-.slider img{
-  height:300px;
-  width:auto;
-  }
-
-  section{
-    margin-top:5vh;
-  }
-  #back-title{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items:center;
-    width:80vw;
-    margin-bottom:20px;
-  }
-
-  #next{
-    display:none;
+    font-size: 7pt;
   }
 }
 
