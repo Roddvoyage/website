@@ -214,6 +214,9 @@ section p {
     line-height: 40px;
     font-size: 9pt;
   }
+    #next-page {
+    bottom: 10vh;
+  }
 }
 
 @media (max-width: 520px) {
@@ -227,6 +230,16 @@ section p {
     line-height: 40px;
     font-size: 7pt;
   }
+
+  section{
+  font-size: 12pt;
+}
+
+
+section p {
+  width: 80%;
+  font-size: 12pt;
+}
 }
 
 @keyframes fadeIn {
