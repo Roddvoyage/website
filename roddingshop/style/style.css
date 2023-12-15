@@ -50,6 +50,7 @@
 
 html {
   background: #fdefe6;
+  width:100%;
 }
 
 header {
@@ -204,6 +205,24 @@ section {
 }
 
 .btn:hover {
+  letter-spacing: 2px;
+  opacity: o.8;
+}
+
+.btn-2 {
+  display: inline-block;
+  padding: 16px 30px;
+  background: var(--text-color);
+  color: var(--bg-color);
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  transition: all 0.45s ease;
+  margin: 25px 0 20px;
+  font-family: "lemon white";
+}
+
+.btn-2:hover {
   letter-spacing: 2px;
   opacity: o.8;
 }
@@ -508,6 +527,9 @@ footer h4 {
   background: #fdefe6;
   position: absolute;
   top: 0;
+  left:0;
+  right:0;
+  bottom:0;
   width: 100%;
   height: 100%;
   z-index: 5000;
@@ -856,8 +878,6 @@ footer h4 {
 
   #contact-us-div {
     position: absolute;
-    top: 3940px;
-    right: 100px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -907,6 +927,19 @@ footer h4 {
     height: 40px;
   }
 
+  .btn-2 {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    transition: all 0.45s ease;
+    margin-top: 5px;
+    font-family: "lemon white";
+    height: 40px;
+  }
   .navbar a {
     font-size: 9pt;
     color: white;
@@ -1058,8 +1091,7 @@ footer h4 {
 
   #contact-us-div {
     position: absolute;
-    top: 3840px;
-    right: 80px;
+
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1096,6 +1128,21 @@ footer h4 {
   }
 
   .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    transition: all 0.45s ease;
+    margin-top: 5px;
+    font-family: "lemon white";
+    height: 40px;
+  }
+
+
+  .btn-2 {
     display: inline-block;
     padding: 12px 30px;
     background: var(--text-color);
@@ -1196,8 +1243,6 @@ footer h4 {
 
   #contact-us-div {
     position: absolute;
-    top: 3670px;
-    right: 80px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1231,9 +1276,24 @@ footer h4 {
 
   #contact-us-btn {
     background-color: #ee737d;
+    margin-top:5px;
   }
 
   .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    transition: all 0.45s ease;
+    margin-top: 5px;
+    font-family: "lemon white";
+    height: 40px;
+  }
+
+  .btn-2 {
     display: inline-block;
     padding: 12px 30px;
     background: var(--text-color);
@@ -1309,8 +1369,6 @@ footer h4 {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    right: 5%;
-    top: 425%;
   }
 
   #social-media {
@@ -1428,8 +1486,6 @@ footer h4 {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    right: 2%;
-    top: 430%;
   }
 
   #social-media {
@@ -1445,6 +1501,7 @@ footer h4 {
     height: 15px;
     width: auto;
   }
+  
 }
 
 @media (max-width: 600px) {
@@ -1544,8 +1601,6 @@ footer h4 {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    right: -15%;
-    top: 436%;
   }
 
   #social-media {
@@ -1560,6 +1615,28 @@ footer h4 {
   #social-media a img {
     height: 15px;
     width: auto;
+  }
+
+  .home-text h1{
+    font-size:28pt;
+    width:500px;
+  }
+
+  .home-text h4{
+    font-size:14pt;
+    width:500px;
+  }
+
+  .home-img {
+    display:flex;
+    align-items: flex-start;
+    width: 70%;
+    height:250px;
+    top:240px;
+  }
+
+  .btn{
+    margin-top:20px;
   }
   /*
   .feature {
@@ -1667,12 +1744,10 @@ footer h4 {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    right: -40%;
-    top: 436%;
   }
 
   #social-media {
-    height: 35px;
+    height: 25px;
     width: 110px;
     background-color: transparent;
     display: flex;
@@ -1683,6 +1758,14 @@ footer h4 {
   #social-media a img {
     height: 15px;
     width: auto;
+  }
+
+  .home-img {
+    display:flex;
+    align-items: flex-start;
+    width: 60%;
+    height:200px;
+    top:240px;
   }
 }
 
@@ -1743,6 +1826,7 @@ footer h4 {
     object-fit: cover;
     overflow: hidden;
     padding: 10px 11% 90px;
+    margin-top:50px;
   }
 
   #discounts h2 {
@@ -1755,7 +1839,7 @@ footer h4 {
   }
   #discounts p {
     position: absolute;
-    font-size: 16px;
+    font-size: 11pt;
     right: -45%;
     height: 300px;
     width: 300px;
@@ -1773,7 +1857,7 @@ footer h4 {
 
   #discover-more {
     position: absolute;
-    font-size: 32px;
+    font-size: 18pt;
     right: -45%;
     height: 400px;
     font-family: "lemon white";
@@ -1784,9 +1868,96 @@ footer h4 {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    right: -52%;
-    top: 425%;
   }
+
+  .home-img {
+    display:flex;
+    align-items: flex-start;
+    width: 80%;
+    height:180px;
+    top:250px;
+  }
+
+
+
+  .icons i {
+    width: 20px;
+    height: 20px;
+  }
+
+  header{
+    padding: 15px;
+  }
+
+  .checkbtn{
+    margin-right:5px;
+  }
+
+  .feature-content{
+    width:100%;
+  }
+
+  #mugs{
+    height:1800px;
+    justify-content: center;
+    align-items:center;
+  }
+
+  footer{
+    padding-top:50px;
+    padding-bottom:20px;
+    padding-left:40px;
+    padding-right:40px;
+    height:350px;
+  }
+
+
+  #footer-div p{
+    font-size:9pt;
+  }
+
+  .footer-row a{
+    font-size:9pt;
+  }
+
+  .footer-row {
+    height: 100px;
+  }
+
+  .footer-row3 {
+    height: 60px;
+  }
+
+
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top:120px;
+    margin-left:320px;
+    width:200px;
+  }
+
+
+  .mug {
+    background-color: #fdefe6;
+    height: 450px;
+    width: 250px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #best-selling-mugs {
+    height:2000px;
+    width:100%;
+   margin-top:20px;
+   padding-top:0px;
+  }
+  
+
 }
 
 @media (max-width: 356px) {
@@ -1801,7 +1972,7 @@ footer h4 {
     align-items: center;
     justify-content: center;
     height: 500px;
-    width: 600px;
+    width: 100%;
   }
 
   .row {
@@ -1826,10 +1997,12 @@ footer h4 {
   }
 
   html {
-    width: 220%;
+
+    width: 100%;
   }
   #main-top-img {
-    width: 220%;
+  object-fit: cover;
+    width: 100%;
   }
   /*
   .feature {
@@ -1842,30 +2015,39 @@ footer h4 {
     height: 600px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     object-fit: cover;
     overflow: hidden;
     padding: 10px 11% 90px;
+    gap:20px;
   }
 
   #discounts h2 {
     position: absolute;
-    font-size: 28px;
-    right: -80%;
-    height: 400px;
+    font-size: 21px;
+    left: 0;
+    height: 200px;
     font-family: "lemon white";
     color: #3c3755;
+    width:100%;
+    padding: 50px;
+    padding-top:0px;
+    text-align: right;
+    margin-top:40px;
   }
   #discounts p {
     position: absolute;
-    font-size: 16px;
-    right: -80%;
-    height: 300px;
-    width: 300px;
+    font-size: 11px;
+    height: 150px;
+    left: 0;
+    width:100%;
+    padding: 50px;
+    padding-top:0px;
     font-family: "caviar dreams";
     color: #3c3755;
     display: flex;
     text-align: right;
+    margin-top:80px;
   }
   #discounts img {
     object-fit: cover;
@@ -1876,11 +2058,13 @@ footer h4 {
 
   #discover-more {
     position: absolute;
-    font-size: 32px;
-    right: -80%;
-    height: 400px;
+    font-size: 16px;
+    left: 0;
+    width:100%;
+    padding: 0;
+    height: 100px;
     font-family: "lemon white";
-    margin-top: 220px;
+    margin-top: 0px;
   }
 
   #contact-us-div {
@@ -1888,9 +2072,108 @@ footer h4 {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    right: -95%;
-    top: 425%;
+    margin-top:160px;
+    margin-left:120px;
   }
+  .home{
+    padding-left: 25px;
+    padding-top:20px;
+  }
+
+  .home-text {
+    margin-top: -120px;
+    width: 100%;
+  }
+
+  .home-text h1{
+   font-size:28pt;
+   margin-bottom: 2px;
+   width: 300px;
+  }
+
+  .home-text h4{
+    font-size:11pt;
+    width:100%;
+   }
+
+   .btn{
+    margin-top: 20px;
+   }
+
+   .btn-2{
+    top:200px;
+    margin-top: 120px;
+    margin-left: 40%;
+   }
+
+   #best-selling-mugs {
+    width:100%;
+   margin-top:20px;
+   padding-top:0px;
+  }
+
+  .feature{
+    align-items:flex-start;
+    padding-top:0px;
+    padding-bottom:0px;
+    height:1200px;
+  }
+
+  .feature-content{
+    width:100%;
+  }
+
+  #mugs{
+    height:2000px;
+    justify-content: center;
+    .footer-row3 {
+      height: 60px;
+    }
+  
+  
+    align-items:center;
+  }
+
+  footer{
+    padding-top:50px;
+  }
+
+
+  .mug {
+    background-color: #fdefe6;
+    height: 450px;
+    width: 250px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #footer-div p{
+    font-size:7pt;
+  }
+
+  .footer-row a{
+    font-size:7pt;
+  }
+
+  .footer-row {
+    height: 100px;
+  }
+
+  .footer-row3 {
+    height: 60px;
+  }
+
+    footer{
+    padding-top:50px;
+    padding-bottom:20px;
+    padding-left:20px;
+    padding-right:20px;
+    height:400px;
+  }
+
+
 }
 
 @keyframes fadeIn {
