@@ -4,7 +4,7 @@ const caneca = document.getElementById("caneca");
 const roddingShop = document.getElementById("roddingShop");
 const introScreen = document.getElementById("intro-screen");
 
-let indexRoddingShop = 0;
+let indexRoddingShop = 80;
 let indexCaneca = 0;
 
 function introRoddingShop() {
@@ -24,7 +24,7 @@ function redSquare() {
 
 function introCaneca() {
   const canecaloop = setInterval(() => {
-    if (indexCaneca >= 200) {
+    if (indexCaneca >= 170) {
       clearInterval(canecaloop);
     }
     indexCaneca = indexCaneca + 2;
