@@ -883,6 +883,15 @@ footer h4 {
     align-items: center;
     flex-direction: column;
   }
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top:140px;
+    margin-left:60vw;
+    width:180px;
+  }
 
   #social-media {
     height: 40px;
@@ -1096,6 +1105,16 @@ footer h4 {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+  }
+
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top:150px;
+    margin-left:60vw;
+    width:180px;
   }
 
   #social-media {
@@ -1382,6 +1401,16 @@ margin-top:20px;
     flex-direction: column;
   }
 
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top:140px;
+    margin-left:55vw;
+    width:180px;
+  }
+
   #social-media {
     height: 50px;
     width: 150px;
@@ -1649,7 +1678,7 @@ margin-top:20px;
     align-items: center;
     flex-direction: column;
     margin-top:140px;
-    margin-left:65%;
+    margin-left:70vw;
     width:200px;
   }
 
@@ -1693,6 +1722,43 @@ margin-top:20px;
     width: 120%;
   }
   */
+
+
+#caneca {
+  display: block;
+  position: absolute;
+  right: 50px;
+  height: 50px;
+  width: auto;
+  z-index: 5001;
+}
+
+#roddingShop {
+  display: block;
+  background: #fdefe6;
+  border-right: solid 150px #fdefe6;
+  position: absolute;
+  left: 0;
+  height: 75px;
+  width: auto;
+  z-index: 5003;
+}
+
+#first-square {
+  display: block;
+  height: 150px;
+  width: 100px;
+  background: #fdefe6;
+  z-index: 5004;
+}
+
+#second-square {
+  display: block;
+  height: 150px;
+  width: 100px;
+  background: #fdefe6;
+  z-index: 5002;
+}
 }
 
 @media (max-width: 490px) {
@@ -1802,7 +1868,7 @@ margin-top:20px;
     align-items: center;
     flex-direction: column;
     margin-top:150px;
-    margin-left:90%;
+    margin-left:95vw;
     width:200px;
   }
 
