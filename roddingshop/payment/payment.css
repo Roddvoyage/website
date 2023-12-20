@@ -159,9 +159,10 @@ footer {
 
 #contact-us-div {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  height:200px;
 }
 
 .btn {
@@ -311,7 +312,7 @@ footer h4 {
 
 .card-details {
   padding: 20px 80px;
-  width: 50%;
+  width: 600px;
 }
 
 .card-details .c-number {
@@ -416,4 +417,1073 @@ button:hover {
 
 form {
   width: 100%;
+}
+
+
+
+@media (max-width: 1025px) {
+
+
+.center {
+  display: flex;
+  width: 100%;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  height: 70vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "caviar dreams bold";
+}
+.card-details {
+  padding: 20px 80px;
+  width: 600px;
+}
+  footer {
+    width: 100%;
+    height: 500px;
+    background-color: #3c3755;
+    padding: 100px 11% 90px;
+  }
+
+  #footer-div {
+    background-color: #3c3755;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+  }
+
+  #colorlib {
+    font-family: "caviar dreams";
+    color: white;
+    width: 30%;
+    margin-right: 20px;
+  }
+
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 180px;
+    font-family: "caviar dreams";
+    color: white;
+    font-size: 14px;
+  }
+
+  .footer-row3 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100px;
+    font-family: "caviar dreams";
+    color: white;
+  }
+
+  #colorlib h1 {
+    font-size: 21px;
+    margin-bottom: 14px;
+  }
+
+  #colorlib p {
+    font-size: 11px;
+    line-height: 18px;
+  }
+
+  #contact-us-div {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top:140px;
+    margin-left:60vw;
+    width:180px;
+  }
+
+  #social-media {
+    height: 40px;
+    width: 120px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #social-media a img {
+    height: 15px;
+    width: auto;
+  }
+
+  footer h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-family: "caviar dreams";
+    color: white;
+    margin-top: 20px;
+    font-weight: 100;
+  }
+
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top:140px;
+    margin-left:60vw;
+    width:150px;
+  }
+
+  #contact-us-btn{
+    font-size: 7pt;
+    width:150px;
+    height:50px;
+
+  }
+
+  
+  .icons i {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 22px;
+    margin-right: 5px;
+    margin-left: 10px;
+    transition: all 0.45s ease;
+  }
+
+
+.sidebar {
+  width: 80%;
+  border-radius: 5px;
+  background-color: transparent;
+  text-align: center;
+}
+
+footer{
+  padding-top:50px;
+}
+
+#footer-div p{
+  font-size:11pt;
+}
+
+.footer-row a{
+  font-size:11pt;
+}
+
+.footer-row {
+  height: 100px;
+}
+
+.footer-row3 {
+  height: 60px;
+}
+}
+
+@media (max-width: 880px) {
+
+  footer {
+    width: 100%;
+    height: 500px;
+    background-color: #3c3755;
+    padding: 100px 11% 90px;
+  }
+
+  #footer-div {
+    background-color: #3c3755;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+  }
+
+  #colorlib {
+    font-family: "caviar dreams";
+    color: white;
+    width: 35%;
+    margin-right: 20px;
+  }
+
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 180px;
+    font-family: "caviar dreams";
+    color: white;
+    font-size: 14px;
+  }
+
+  .footer-row3 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100px;
+    font-family: "caviar dreams";
+    color: white;
+  }
+
+  #colorlib h1 {
+    font-size: 21px;
+    margin-bottom: 14px;
+  }
+
+  #colorlib p {
+    font-size: 11px;
+    line-height: 18px;
+  }
+
+  #contact-us-div {
+    position: absolute;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top:150px;
+    margin-left:60vw;
+    width:180px;
+  }
+
+  #social-media {
+    height: 40px;
+    width: 120px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #social-media a img {
+    height: 15px;
+    width: auto;
+  }
+
+  footer h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-family: "caviar dreams";
+    color: white;
+    margin-top: 20px;
+    font-weight: 100;
+  }
+
+
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top:140px;
+    margin-left:60vw;
+    width:150px;
+  }
+
+  #contact-us-btn{
+    font-size: 7pt;
+    width:150px;
+  }
+
+}
+
+@media (max-width: 760px) {
+ 
+
+  footer {
+    width: 100%;
+    height: 500px;
+    background-color: #3c3755;
+    padding: 100px 11% 90px;
+  }
+
+  #footer-div {
+    background-color: #3c3755;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+  }
+
+  #colorlib {
+    font-family: "caviar dreams";
+    color: white;
+    width: 30%;
+    margin-right: 20px;
+  }
+
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 140px;
+    font-family: "caviar dreams";
+    color: white;
+    font-size: 14px;
+  }
+
+  .footer-row3 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100px;
+    font-family: "caviar dreams";
+    color: white;
+  }
+
+  #colorlib h1 {
+    font-size: 21px;
+    margin-bottom: 14px;
+  }
+
+  #colorlib p {
+    font-size: 11px;
+    line-height: 18px;
+  }
+
+  #contact-us-div {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #social-media {
+    height: 40px;
+    width: 120px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #social-media a img {
+    height: 15px;
+    width: auto;
+  }
+
+  footer h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-family: "caviar dreams";
+    color: white;
+    margin-top: 20px;
+    font-weight: 100;
+  }
+
+  #contact-us-btn {
+    background-color: #ee737d;
+    height:40px;
+    margin-top:5px;
+    margin-bottom:0px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    transition: all 0.45s ease;
+    margin-top: 5px;
+    font-family: "lemon white";
+    height: 40px;
+  }
+
+
+  html {
+    width: 100%;
+  }
+  #main-top-img {
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+ 
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top:140px;
+    margin-left:55vw;
+    width:150px;
+  }
+
+  #contact-us-btn{
+    font-size: 7pt;
+    width:150px;
+  }
+
+  #social-media {
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #social-media a img {
+    height: 15px;
+    width: auto;
+  }
+
+
+.sidebar {
+  width: 90%;
+  border-radius: 5px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.mug h1{
+  font-size:11pt;
+  margin-left:10px;
+}
+
+
+footer{
+  padding-top:50px;
+}
+
+#footer-div p{
+  font-size:9pt;
+}
+
+.footer-row a{
+  font-size:9pt;
+}
+
+.footer-row {
+  height: 100px;
+}
+
+.footer-row3 {
+  height: 60px;
+}
+
+button {
+  width: 100%;
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  background-color: goldenrod;
+  padding: 7px 25px;
+  cursor: pointer;
+  color: white;
+  font-size:11pt;
+}
+
+ .icons i {
+    width: 10px;
+    height: 10px;
+    font-size: 12px;
+  }
+
+  .icons{
+    width:150px;
+  }
+}
+
+@media (max-width: 628px) {
+ 
+  .card-details {
+    padding: 20px 80px;
+    width: 450px;
+  }
+
+  #cc-logos img{
+    width: 300px;
+  }
+  
+  html {
+    width: 100%;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+  #main-top-img {
+    width: 110%;
+  }
+
+  footer {
+    width: 100%;
+  }
+  
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top:140px;
+    margin-left:50vw;
+    width:150px;
+  }
+
+  #contact-us-btn{
+    font-size: 7pt;
+    width:150px;
+  }
+
+  #social-media {
+    height: 35px;
+    width: 110px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #social-media a img {
+    height: 15px;
+    width: auto;
+  }
+  
+  .item img {
+    height: 60px;
+    width: auto;
+    margin-right: 10px;
+  }
+
+  .icons i {
+    width: 10px;
+    height: 10px;
+    font-size: 12px;
+  }
+
+  .icons{
+    width:150px;
+  }
+  
+}
+
+@media (max-width: 600px) {
+ 
+  html {
+    width: 100%;
+  }
+  #main-top-img {
+    width: 130%;
+  }
+
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top:140px;
+    margin-left:50vw;
+    width:150px;
+  }
+
+
+  #social-media {
+    height: 35px;
+    width: 110px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #social-media a img {
+    height: 15px;
+    width: auto;
+  }
+
+  .btn{
+    margin-top:20px;
+    width:150px;
+  }
+
+  #contact-us-btn{
+    font-size: 7pt;
+  }
+  /*
+  .feature {
+    width: 120%;
+  }
+  */
+
+  .mug h1{
+    font-size:9pt;
+  }
+
+  .price{
+    font-size:9pt;
+    background-color: white;
+    margin-left:10px;
+  }
+
+  .item img {
+    height: 60px;
+    width: auto;
+    margin-right: 10px;
+  }
+
+  button {
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: goldenrod;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+    font-size:9pt;
+  }
+
+
+.sidebar button {
+  width: 300px;
+  height: 60px;
+  border-radius: 15px;
+  font-family: "lemon white";
+  background-color: #3c3755;
+}
+
+.icons i {
+  width: 10px;
+  height: 10px;
+  font-size: 12px;
+}
+
+.icons{
+  width:150px;
+}
+  
+}
+
+@media (max-width: 490px) {
+
+    .card-details {
+    padding: 20px 20px;
+    width: 400px;
+  }
+
+  #cc-logos img{
+    width: 300px;
+  }
+  
+  html {
+    width: 100%;
+  }
+  #main-top-img {
+    width: 155%;
+  }
+
+  /*
+  .feature {
+    width: 120%;
+  }
+  */
+
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top:125px;
+    margin-left:45vw;
+    width:200px;
+  }
+
+  #social-media {
+    height: 25px;
+    width: 110px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #social-media a img {
+    height: 15px;
+    width: auto;
+  }
+  footer{
+    padding-left:40px;
+    padding-right:40px;
+    padding-top:50px;
+    height:450px;
+  }
+
+  .item img {
+    height: 50px;
+    width: auto;
+    margin-right: 5px;
+  }
+
+
+
+footer{
+  padding-top:50px;
+}
+
+#footer-div p{
+  font-size:7pt;
+}
+
+.footer-row a{
+  font-size:7pt;
+}
+
+.footer-row {
+  height: 100px;
+}
+
+.footer-row3 {
+  height: 60px;
+}
+
+
+button {
+  width: 100%;
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  background-color: goldenrod;
+  padding: 7px 25px;
+  cursor: pointer;
+  color: white;
+  font-size:9pt;
+}
+
+
+.sidebar button {
+  width: 250px;
+  height: 60px;
+  border-radius: 15px;
+  font-family: "lemon white";
+  background-color: #3c3755;
+}
+
+
+header h2 {
+  font-size: 21px;
+  font-family: "lemon white";
+  position: absolute;
+  top: 100px;
+  left: 11%;
+  color: white;
+}
+
+.icons i {
+  width: 10px;
+  height: 10px;
+  font-size: 12px;
+}
+
+.icons{
+  width:150px;
+}
+footer{
+  padding-top:50px;
+  padding-bottom:20px;
+  padding-left:20px;
+  padding-right:20px;
+  height:350px;
+}
+    #contact-us-btn {
+    background-color: #ee737d;
+    height:40px;
+    margin-top:5px;
+    margin-bottom:0px;
+  }
+
+}
+
+@media (max-width: 410px) {
+
+  .card-details {
+    padding: 20px 20px;
+    width: 340px;
+  }
+
+  #cc-logos img{
+    width: 300px;
+  }
+  html {
+    width: 100%;
+  }
+  #main-top-img {
+    height:60vh;
+    width: 100%;
+  }
+  /*
+  .feature {
+    width: 120%;
+  }
+  */
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .icons i {
+    width: 10px;
+    height: 10px;
+    font-size: 12px;
+  }
+
+  .icons{
+    width:150px;
+  }
+
+  header{
+    height:150px;
+    padding: 15px;
+    margin-bottom:50px;
+  }
+
+  
+
+header h2 {
+    font-size: 21px;
+    font-family: "lemon white";
+    position: absolute;
+    top: 100px;
+    left: 11%;
+    color: white;
+}
+
+  footer{
+    padding-top:50px;
+    padding-bottom:20px;
+    padding-left:20px;
+    padding-right:20px;
+    height:350px;
+  }
+
+
+  #footer-div p{
+    font-size:7pt;
+  }
+
+  .footer-row a{
+    font-size:7pt;
+  }
+
+  .footer-row {
+    height: 100px;
+  }
+
+  .footer-row3 {
+    height: 60px;
+  }
+
+
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top:125px;
+    margin-left:50%;
+    width:150px;
+  }
+
+
+  section p{
+    font-size: 9pt;
+  }
+
+  section{
+    height:700px;
+  }
+  #contact-us-btn{
+    font-size: 7pt;
+    width:150px;
+  }
+  .mug h1{
+    font-size:6pt;
+  }
+
+  .price{
+    font-size:7pt;
+    background-color: white;
+    margin-left:10px;
+  }
+  .item img {
+    height: 40px;
+    width: auto;
+    margin-right: 5px;
+  }
+
+
+
+button {
+  width: 100%;
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  background-color: goldenrod;
+  padding: 7px 25px;
+  cursor: pointer;
+  color: white;
+  font-size:9pt;
+}
+
+.sidebar button {
+  width: 80%;
+  height: 60px;
+  border-radius: 15px;
+  font-family: "lemon white";
+  background-color: #3c3755;
+}
+}
+
+@media (max-width: 356px) {
+  .card-details {
+    padding: 20px 20px;
+    width: 300px;
+  }
+
+  #cc-logos img{
+    width: 260px;
+  }
+  html {
+
+    width: 100%;
+  }
+  #main-top-img {
+    height:50vh;
+  object-fit: cover;
+    width: 100%;
+  }
+  /*
+  .feature {
+    width: 120%;
+  }
+  */
+
+  #contact-us-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top:160px;
+    margin-left:40%;
+    width:140px;
+  }
+
+    #contact-us-btn{
+    font-size: 6pt;
+    width:130px;
+  }
+
+   .btn{
+    margin-top: 20px;
+   }
+
+   .btn-2{
+    top:200px;
+    margin-top: 120px;
+    margin-left: 40%;
+   }
+
+  footer{
+    padding-top:50px;
+  }
+
+  #footer-div p{
+    font-size:6pt;
+  }
+
+  .footer-row a{
+    font-size:6pt;
+  }
+
+  .footer-row {
+    height: 100px;
+  }
+
+  .footer-row3 {
+    height: 60px;
+  }
+    footer{
+    padding-top:50px;
+    padding-bottom:20px;
+    padding-left:20px;
+    padding-right:20px;
+    height:400px;
+  }
+
+  .icons i {
+    width: 5px;
+    height: 5px;
+  }
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
