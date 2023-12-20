@@ -65,8 +65,22 @@ header {
   width: 100%;
   padding: 17px 11%;
   transition: all 0.45s ease;
-  height: 100px;
+  height: 250px;
   background-color: #399fb9;
+}
+
+header h2 {
+  font-family: "lemon white";
+  position: absolute;
+  left: 180px;
+  top: 80px;
+  font-size: 60px;
+  color: white;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
 }
 
 .icons {
@@ -102,263 +116,55 @@ header {
 }
 
 section {
-  padding: 17px 11%;
-  background-color: #fdefe6;
-  width: 100%;
-  height: 1600px;
-  color: black;
-  font-size: 11px;
-  font-family: "caviar dreams";
-  font-weight: 100;
-  margin-top: 50px;
-}
-
-section h2 {
-  font-weight: 100;
-}
-#leftside {
-  height: 1200px;
-  width: 50%;
-  background-color: #fdefe6;
-}
-
-#photos {
-  background-color: #fdefe6;
-  width: 100%;
-  height: 420px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: row;
-  margin-bottom: 80px;
-  margin-top: 40px;
-}
-
-#non-selected-photos img {
-  height: 100px;
-  width: auto;
-}
-
-#non-selected-photos {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: column;
-  height: 420px;
-}
-
-#selected-photo img {
-  height: 420px;
-  width: auto;
-}
-
-#description {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: space-between;
-  gap: 20px;
-  font-size: 21px;
-  color: black;
-  height: 100%;
-  text-align: justify;
-  overflow: scroll;
-  text-overflow: ellipsis;
-}
-
-#description-div {
-  height: 900px;
-  width: 100%;
-}
-
-#description p {
-  line-height: 25px;
-}
-
-#product {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  margin-top: 80px;
-}
-
-#rightside {
-  height: 1200px;
-  width: 45%;
-  background-color: #fdefe6;
-}
-
-#rightside h1 {
-  font-family: "lemon white";
-  font-size: 36px;
-  color: #3c3755;
-}
-
-.rating-stars {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  width: 60%;
-  margin-top: 10px;
-  gap: 0.1rem;
-  font-size: 18px;
-  color: #ee737d;
-}
-
-.rating-stars .ri-star-fill {
-  width: 25px;
-  height: 25px;
-  background-color: #fdefe6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.rating-stars .ri-star-fill::before {
-  width: auto;
-  height: 60px;
-  color: #ee737d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-}
-
-#rightside h3 {
-  font-family: "caviar dreams";
-  font-size: 24px;
-  font-weight: 100;
-}
-
-#quantity-cart {
-  width: 90%;
-  height: 100px;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-#quantity {
-  height: 35px;
-  width: 120px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 16px 30px;
-  background: #3c3755;
-  color: var(--bg-color);
-  font-size: 15px;
-  letter-spacing: 1px;
-  border-radius: 30px;
-  transition: all 0.45s ease;
-  font-family: "lemon white";
-}
-
-.btn:hover {
-  letter-spacing: 2px;
-  opacity: o.8;
-}
-
-#rightside h4 {
-  font-size: 21px;
-  font-weight: 100;
-  margin-top: 15px;
-}
-
-#reviews {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-  text-align: justify;
-  margin-top: 120px;
-  width: 90%;
-}
-
-#reviews h5 {
-  font-size: 24px;
-  color: black;
-  border-bottom: 1px solid black;
-  width: 100%;
-  padding-bottom: 20px;
-}
-.review-stars {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  color: #3c3755;
-  width: 25%;
-  height: 30px;
-  gap: 0.1px;
-  margin-top: 50px;
-}
-
-.review-stars .ri-star-fill i {
-  width: 100%;
-  height: 100%;
-  background-color: #fdefe6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-
-.review-stars .ri-star-fill::before i {
-  width: 40px;
-  height: 40px;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.review-stars .ri-star-fill::before {
-  width: 40px;
-  height: 40px;
-  font-size: 19px;
-}
-
-#rightside h6 {
-  font-size: 18px;
-  font-weight: 100;
-}
-
-section {
   padding: 100px 11% 90px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#pages {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: "caviar dreams";
+  font-size: 14px;
+  margin-top: 100px;
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+
+#previous:hover {
+  cursor: pointer;
+}
+
+#next:hover {
+  cursor: pointer;
 }
 
 #best-selling-mugs h2 {
   font-family: "lemon white";
-  font-size: 32px;
-  color: #3c3755;
+  color: #399fb9;
 }
 
-#mugs {
-  margin-top: 50px;
-  background: #fdefe6;
-  height: 400px;
-  display: flex;
-  justify-content: space-between;
+#best-selling-mugs {
+  height: 1750px;
 }
 
 .mug {
-  background-color: #fdefe6;
+  background-color: white;
   height: 100%;
   width: 20%;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 50px;
+  transition: all 0.45s ease;
+}
+
+.mug:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
 }
 
 .mug h1 {
@@ -368,80 +174,69 @@ section {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .mug p {
   margin-top: 5px;
   font-family: "caviar dreams";
   font-size: 1rem;
+  height: 4rem;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .mug img {
+  display: flex;
+  justify-content: center;
   height: auto;
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .price-stars {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  width: 100%;
+  width: 90%;
   margin-top: 10px;
   gap: 0.1rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.ri-star-fill {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ri-star-fill::before {
+  width: auto;
+  height: 100%;
+  color: #ee737d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
 }
 
 .price-stars h3 {
   font-family: "lemon white";
-  font-size: 21px;
+  font-size: 18px;
   border: 3px solid #ee737d;
   border-radius: 5%;
-  width: 7rem;
-  height: 2.5rem;
+  width: 5rem;
+  height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #ee737d;
-}
-
-.price-stars .ri-star-fill i {
-  width: 100%;
-  height: 100%;
-  background-color: #fdefe6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-
-.price-stars .ri-star-fill::before i {
-  width: 40px;
-  height: 40px;
-  color: #ee737d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.price-stars .ri-star-fill::before {
-  width: 40px;
-  height: 40px;
-  font-size: 19px;
-  font-size: 24px;
-  color: #ee737d;
-}
-
-#best-selling-mugs {
-  height: 400px;
-  padding: 17px 11%;
-  background-color: #fdefe6;
-  width: 100%;
-  color: black;
-  font-size: 11px;
-  font-family: "caviar dreams";
-  font-weight: 100;
-  margin-top: 150px;
-  margin-bottom: 100px;
 }
 
 footer {
@@ -449,8 +244,6 @@ footer {
   height: 500px;
   background-color: #3c3755;
   padding: 100px 11% 90px;
-  margin-top: 300px;
-  margin-right: 0;
 }
 
 #footer-div {
@@ -499,10 +292,10 @@ footer {
 
 #social-media {
   height: 50px;
-  width: 80%;
+  width: 150px;
   background-color: transparent;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -526,25 +319,590 @@ footer h4 {
   background-color: #ee737d;
 }
 
-/* width */
-::-webkit-scrollbar {
-  border: 5px solid #fdefe6;
-  width: 10px;
+.btn {
+  display: inline-block;
+  padding: 16px 30px;
+  background: var(--text-color);
+  color: var(--bg-color);
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  transition: all 0.45s ease;
+  margin: 25px 0 20px;
+  font-family: "lemon white";
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  border: 5px solid #fdefe6;
-  background: transparent;
+.btn:hover {
+  letter-spacing: 2px;
+  opacity: o.8;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
+#mugs {
+  margin-top: 0px;
   background: #fdefe6;
-  border-radius: 10px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 100%;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #e97a5285;
+@media (max-width: 1380px) {
+  #best-selling-mugs {
+    height: 1650px;
+  }
+  header h2 {
+    font-family: "lemon white";
+    position: absolute;
+    left: 120px;
+    top: 80px;
+    font-size: 48px;
+    color: white;
+  }
+  .mug {
+    background-color: white;
+    height: 90%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .mug h1 {
+    margin-top: 20px;
+    font-family: "lemon white";
+    font-size: 0.8rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .mug p {
+    margin-top: 5px;
+    font-family: "caviar dreams";
+    font-size: 0.8rem;
+    height: 4rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .mug img {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .price-stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    margin-top: 10px;
+    gap: 0.1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .ri-star-fill {
+    width: 20px;
+    height: 25px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ri-star-fill::before {
+    width: auto;
+    height: 100%;
+    color: #ee737d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .price-stars h3 {
+    font-family: "lemon white";
+    font-size: 14px;
+    border: 3px solid #ee737d;
+    border-radius: 5%;
+    width: 5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ee737d;
+  }
+}
+
+@media (max-width: 1210px) {
+  header h2 {
+    font-family: "lemon white";
+    position: absolute;
+    left: 100px;
+    top: 120px;
+    font-size: 36px;
+    color: white;
+  }
+  #best-selling-mugs {
+    height: 2250px;
+  }
+
+  #mugs {
+    flex-wrap: wrap;
+  }
+  .mug {
+    background-color: white;
+    height: 380px;
+    width: 27%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .mug h1 {
+    margin-top: 20px;
+    font-family: "lemon white";
+    font-size: 0.8rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .mug p {
+    margin-top: 5px;
+    font-family: "caviar dreams";
+    font-size: 0.8rem;
+    height: 4rem;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .mug img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 180px;
+  }
+  .price-stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 85%;
+    margin-top: 10px;
+    gap: 0.1rem;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .ri-star-fill {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ri-star-fill::before {
+    width: auto;
+    height: 100%;
+    color: #ee737d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+  }
+
+  .price-stars h3 {
+    font-family: "lemon white";
+    font-size: 14px;
+    border: 3px solid #ee737d;
+    border-radius: 5%;
+    width: 5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ee737d;
+  }
+}
+
+@media (max-width: 940px) {
+  #best-selling-mugs {
+    height: 3200px;
+  }
+  #mugs {
+    flex-wrap: wrap;
+  }
+  .mug {
+    background-color: white;
+    height: 380px;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .mug h1 {
+    margin-top: 20px;
+    font-family: "lemon white";
+    font-size: 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .mug p {
+    margin-top: 5px;
+    font-family: "caviar dreams";
+    font-size: 0.8rem;
+    height: 4rem;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .mug img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 180px;
+  }
+  .price-stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 85%;
+    margin-top: 10px;
+    gap: 0.1rem;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .ri-star-fill {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ri-star-fill::before {
+    width: auto;
+    height: 100%;
+    color: #ee737d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+  }
+
+  .price-stars h3 {
+    font-family: "lemon white";
+    font-size: 14px;
+    border: 3px solid #ee737d;
+    border-radius: 5%;
+    width: 5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ee737d;
+  }
+
+  footer {
+    width: 100%;
+    height: 500px;
+    background-color: #3c3755;
+    padding: 100px 11% 90px;
+  }
+
+  #footer-div {
+    background-color: #3c3755;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+  }
+
+  #colorlib {
+    font-family: "caviar dreams";
+    color: white;
+    width: 35%;
+    margin-right: 20px;
+  }
+
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 180px;
+    font-family: "caviar dreams";
+    color: white;
+    font-size: 14px;
+  }
+
+  .footer-row3 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100px;
+    font-family: "caviar dreams";
+    color: white;
+  }
+
+  #colorlib h1 {
+    font-size: 21px;
+    margin-bottom: 14px;
+  }
+
+  #colorlib p {
+    font-size: 11px;
+    line-height: 18px;
+  }
+
+  #contact-us-div {
+    position: absolute;
+    top: 3680px;
+    right: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #social-media {
+    height: 40px;
+    width: 120px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #social-media a img {
+    height: 20px;
+    width: auto;
+  }
+
+  footer h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-family: "caviar dreams";
+    color: white;
+    margin-top: 20px;
+    font-weight: 100;
+  }
+
+  #contact-us-btn {
+    background-color: #ee737d;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    transition: all 0.45s ease;
+    margin-top: 5px;
+    font-family: "lemon white";
+    height: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  header h2 {
+    font-family: "lemon white";
+    position: absolute;
+    left: 80px;
+    top: 120px;
+    font-size: 28px;
+    color: white;
+  }
+  #best-selling-mugs {
+    height: 5900px;
+  }
+  #mugs {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+  .mug {
+    background-color: white;
+    height: 360px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .mug h1 {
+    margin-top: 20px;
+    font-family: "lemon white";
+    font-size: 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .mug p {
+    margin-top: 5px;
+    font-family: "caviar dreams";
+    font-size: 0.8rem;
+    height: 4rem;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .mug img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 180px;
+  }
+  .price-stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 85%;
+    margin-top: 10px;
+    gap: 0.1rem;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .ri-star-fill {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ri-star-fill::before {
+    width: auto;
+    height: 100%;
+    color: #ee737d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  .price-stars h3 {
+    font-family: "lemon white";
+    font-size: 16px;
+    border: 3px solid #ee737d;
+    border-radius: 5%;
+    width: 5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ee737d;
+  }
+  #contact-us-div {
+    position: absolute;
+    top: 6450px;
+    right: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 140px;
+  }
+
+  #social-media {
+    height: 40px;
+    width: 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #social-media a img {
+    height: 15px;
+    width: auto;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 8px 30px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    font-size: 10px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    transition: all 0.45s ease;
+    margin-top: 5px;
+    font-family: "lemon white";
+    height: 30px;
+  }
+
+  footer {
+    width: 100%;
+    height: 550px;
+    background-color: #3c3755;
+    padding: 100px 11% 90px;
+  }
+
+  #footer-div {
+    background-color: #3c3755;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+  }
+
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 180px;
+    font-family: "caviar dreams";
+    color: white;
+    font-size: 11px;
+  }
+
+  .footer-row3 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 80px;
+    font-family: "caviar dreams";
+    color: white;
+    font-size: 11px;
+  }
 }
