@@ -611,6 +611,25 @@ html {
   transform: scale(1.1);
 }
 
+.bookDiv{
+  background-color: white;
+  width:340px;
+  height:400px;
+}
+.authorInput{
+  font-size:18pt;
+}
+
+.titleInput{
+  font-size: 16pt;
+}
+
+.pagesInput{
+  font-size:16pt;
+}
+.read{
+  top: 190px;
+}
 @keyframes popup {
   from {
     transform: scale(0);
@@ -627,4 +646,617 @@ html {
   to {
     transform: scale(0);
   }
+}
+@media(max-width:1250px){
+  html{
+    height:100%;
+    width:100%;
+  }
+
+  body{
+    height:100%;
+    width:100%;
+    margin:0;
+}
+}
+
+@media(max-width:900px){
+  html{
+    height:100%;
+    width:100%;
+  }
+
+  body{
+    height:100%;
+    width:100%;
+    margin:0;
+}
+}
+
+@media(max-width:900px){
+
+#album-name {
+  font-size: 28pt;
+
+  margin: 50px;
+  margin-bottom: 50px;
+}
+
+
+#menuDropdown:hover {
+  right: 230px;
+}
+
+}
+
+@media(max-width:860px){
+  .books{
+    justify-content: center;
+  }
+}
+
+@media(max-width:600px){
+
+
+  #removeBook{
+    width:300px;
+    font-size:18pt;
+  }
+
+  #album-name {
+    font-family: CaviarDreams;
+    font-size: 18pt;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-bottom: 50px;
+    color: white;
+    cursor: alias;
+  }
+
+  #logo{
+    margin:0px;
+  }
+
+  #log-in-and-menu {
+    font-size: 11pt;
+  }
+
+
+  #login{
+    width:100px;
+  }
+
+  #menuDropdown:hover {
+    right: 230px;
+  }
+}
+
+@media(max-width:520px){
+  
+
+  #top{
+    height:100px;
+  }
+
+  #logo{
+    height:60px;
+    width:60px;
+  }
+
+  #logIn{
+    font-size:10pt;
+    width:160px;
+  }
+
+
+#menuDropdown:hover {
+  right: 190px;
+}
+
+#log-in-and-menu {
+  margin-left: 60px;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+#adding-new-book {
+  display: none;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  padding: 20px;
+  font-family: CaviarDreams;
+  font-size: 14pt;
+  animation: popup 0.3s;
+}
+
+
+.x1 {
+  position: absolute;
+  margin-right: 350px;
+  margin-bottom: 100px;
+  height: 24px;
+  width: 4px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+
+.x2 {
+  position: absolute;
+  margin-right: 350px;
+  margin-bottom: 200px;
+  height: 24px;
+  width: 4px;
+  background-color: white;
+  transform: rotate(-45deg);
+}
+
+.x {
+  position: absolute;
+  margin-right: 290px;
+  margin-bottom: 300px;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.check {
+  cursor: pointer;
+}
+
+.check1 {
+  position: absolute;
+  margin-left: 150px;
+  margin-top: -12px;
+  height: 20px;
+  width: 4px;
+  background-color: white;
+  transform: rotate(40deg);
+}
+
+.check2 {
+  position: absolute;
+  margin-left: 142px;
+  margin-top: -3px;
+  height: 10px;
+  width: 4px;
+  background-color: white;
+  transform: rotate(-45deg);
+}
+
+#edit-box {
+  display: none;
+  background: rgb(31, 31, 31);
+  height: 250px;
+  width: 250px;
+  font-family: CaviarDreams;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+
+#edit-box h2 {
+  margin-top: 10px;
+  font-size: 11pt;
+}
+
+#edit-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 25%;
+  align-items: center;
+  height: 45%;
+  width: 100%;
+  font-size: 7pt;
+}
+
+
+.x3 {
+  position: absolute;
+  margin-right: 350px;
+  margin-bottom: 100px;
+  height: 12px;
+  width: 2px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+
+.x4 {
+  position: absolute;
+  margin-right: 350px;
+  margin-bottom: 100px;
+  height: 12px;
+  width: 2px;
+  background-color: white;
+  transform: rotate(-45deg);
+}
+
+.check34 {
+  cursor: pointer;
+  position: absolute;
+  margin-right: -15px;
+  margin-bottom: 95px;
+  height: 10px;
+  width: 10px;
+  display: none;
+}
+
+.check3 {
+  position: absolute;
+  margin-left: 105px;
+  margin-top: 10px;
+  height: 10px;
+  width: 2px;
+  background-color: white;
+  transform: rotate(40deg);
+}
+
+.check4 {
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 15px;
+  height: 5px;
+  width: 2px;
+  background-color: white;
+  transform: rotate(-45deg);
+}
+
+.x34 {
+  display: none;
+  position: absolute;
+  margin-right: 210px;
+  margin-top: 10px;
+  height: 10px;
+  width: 10px;
+  cursor: pointer;
+}
+
+#change-color {
+  display: flex;
+  align-items: center;
+  font-size:11pt;
+}
+
+#change-title{
+  font-size:11pt;
+}
+
+
+}
+
+@media(max-width:440px){
+
+  #logo{
+    height:60px;
+    width:60px;
+  }
+
+  #logIn{
+    font-size:9pt;
+    width:120px;
+  }
+  
+
+#menuDropdown:hover {
+  right: 150px;
+}
+#log-in-and-menu {
+  margin-left: 50px;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size:9pt;
+}
+
+.dropdown {
+  width: 140px;
+}
+
+#menuDropdown:hover {
+  width: 140px;
+}
+
+#menu{
+  margin-bottom:0px;
+}
+
+
+
+.x1 {
+  position: absolute;
+  margin-right: 350px;
+  margin-bottom: 100px;
+  height: 24px;
+  width: 4px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+
+.x2 {
+  position: absolute;
+  margin-right: 350px;
+  margin-bottom: 200px;
+  height: 24px;
+  width: 4px;
+  background-color: white;
+  transform: rotate(-45deg);
+}
+
+.x {
+  position: absolute;
+  margin-right: 230px;
+  margin-bottom: 240px;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.check {
+  cursor: pointer;
+}
+
+.check1 {
+  position: absolute;
+  margin-left: 120px;
+  margin-top: -12px;
+  height: 20px;
+  width: 4px;
+  background-color: white;
+  transform: rotate(40deg);
+}
+
+.check2 {
+  position: absolute;
+  margin-left: 112px;
+  margin-top: -3px;
+  height: 10px;
+  width: 4px;
+  background-color: white;
+  transform: rotate(-45deg);
+}
+
+
+
+#adding-new-book {
+  display: none;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+  width: 250px;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  padding: 20px;
+  font-family: CaviarDreams;
+  font-size: 11pt;
+  animation: popup 0.3s;
+}
+
+#bookTitle input {
+  border: 0.5px solid black;
+  border-radius: 0px;
+  height: 35px;
+  width: 250px;
+  font-size: 14pt;
+}
+
+#bookAuthor input {
+  border: 0.5px solid black;
+  border-radius: 0px;
+  height: 35px;
+  width: 250px;
+  font-size: 14pt;
+}
+
+#bookPages input {
+  border: 0.5px solid black;
+  border-radius: 0px;
+  width: 60px;
+  height: 25px;
+  font-size: 14pt;
+}
+
+
+#new-book {
+  font-family: CaviarDreams;
+  font-size: 11pt;
+  margin-left: 40px;
+  color: rgba(0, 0, 0, 1);
+  width: 100px;
+  transition: transform 50ms;
+}
+
+.titleInput{
+  font-size: 14pt;
+}
+
+.authorInput{
+  font-size:14pt;
+}
+
+.pagesInput{
+  font-size:12pt;
+}
+.bookDiv{
+  height:350px;
+  width:300px;
+}
+.read{
+  top: 145px;
+}
+
+#removeBook{
+  width:260px;
+  height:280px;
+  font-size:14pt;
+}
+
+}
+
+@media(max-width:350px){
+
+  #removeBook{
+    width:200px;
+    height:220px;
+    font-size:12pt;
+  }
+
+  .read{
+    top: 90px;
+  }
+
+  .titleInput{
+    font-size: 12pt;
+  }
+  
+  .authorInput{
+    font-size:11pt;
+  }
+
+  .bookDiv{
+    width:280px;
+    height:300px;
+  }
+
+  #logo{
+    height:40px;
+    width:40px;
+  }
+
+  #logIn{
+    font-size:7pt;
+    width:80px;
+  }
+  
+
+#menuDropdown:hover {
+  right: 110px;
+}
+#log-in-and-menu {
+  margin-left: 50px;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size:7pt;
+}
+
+.dropdown {
+  width: 140px;
+}
+
+#menuDropdown:hover {
+  width: 140px;
+}
+
+#album-name {
+  font-size: 18pt;
+  margin: 50px;
+  margin-bottom: 50px;
+}
+
+
+
+
+.x1 {
+  position: absolute;
+  margin-right: 350px;
+  margin-bottom: 100px;
+  height: 12px;
+  width: 2px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+
+.x2 {
+  position: absolute;
+  margin-right: 350px;
+  margin-bottom: 200px;
+  height: 12px;
+  width: 2px;
+  background-color: white;
+  transform: rotate(-45deg);
+}
+
+.x {
+  position: absolute;
+  margin-right: 200px;
+  margin-bottom: 210px;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+.check {
+  cursor: pointer;
+}
+
+.check1 {
+  position: absolute;
+  margin-left: 108px;
+  margin-top: -7px;
+  height: 10px;
+  width: 2px;
+  background-color: white;
+  transform: rotate(40deg);
+}
+
+.check2 {
+  position: absolute;
+  margin-left: 103px;
+  margin-top: -2px;
+  height: 5px;
+  width: 2px;
+  background-color: white;
+  transform: rotate(-45deg);
+}
+
+
+
+#adding-new-book {
+  display: none;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  height: 210px;
+  width: 210px;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  padding: 20px;
+  font-family: CaviarDreams;
+  font-size: 11pt;
+  animation: popup 0.3s;
+}
+
+#bookTitle input {
+  border: 0.5px solid black;
+  border-radius: 0px;
+  height: 30px;
+  width: 210px;
+  font-size: 14pt;
+}
+
+#bookAuthor input {
+  border: 0.5px solid black;
+  border-radius: 0px;
+  height: 30px;
+  width: 210px;
+  font-size: 14pt;
+}
+
+
+
 }
