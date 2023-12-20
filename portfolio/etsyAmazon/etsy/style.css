@@ -38,4 +38,39 @@
 
   img{
     margin-top: 50px;
+    width:110%;
+    height:auto;
+  }
+
+
+
+
+  @media(max-width:1150px){
+    p{
+      font-size:14pt;
+    }
+    a{
+      font-size:21pt;
+    }
+
+   
+  }
+
+  @media(max-width:600px){
+    p{
+      font-size:11pt;
+    }
+    a{
+      font-size:18pt;
+      margin-top:30px;
+    }
+  }
+
+  @media(max-width:400px){
+    p{
+      font-size:9pt;
+    }
+    a{
+      font-size:12pt;
+    }
   }
