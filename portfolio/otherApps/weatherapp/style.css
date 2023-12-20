@@ -587,21 +587,69 @@ nav {
 }
 
 @media (max-width: 400px) {
+  html {
+    padding:0;
+    padding-bottom:0%;
+    background: url("eightb.png");
+    background-position: center;
+  }
   #display {
     top: 160px;
     left: 10%;
   }
   #whiteScreen{
-    width:105vw;
+    width:100vw;
     height:100%;
   }
   html{
     height:100%;
-    width:95%;
+    width:100%;
   }
 
   body{
+    padding:0;
     height:100%;
+    width:100%;
+  }
+  nav{
+    margin-top:160px;
+  }
+
+  #nav-leftSideA h1 img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 150px;
+  }
+
+
+  #nav-leftSideA h1{
+    width: 80%;
+    font-size:42pt;
+  }
+  #intro-screen {
+    background-color: white;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    display:none;
+  }
+
+  #nav-leftSideB {
+    width:90%;
+  }
+  
+  header{
+    margin-left:4%;
+    margin-right:4%;
   }
 }
 
@@ -611,7 +659,7 @@ nav {
     left: 10%;
   }
   #whiteScreen{
-    width:110vw;
+    width:100%;
     height:100%;
   }
   #nav-leftSideB {
@@ -625,8 +673,7 @@ nav {
     left: 10%;
   }
   #whiteScreen{
-    width:110vw;
-    height:100%;
+    width:100%;
   }
 }
 
