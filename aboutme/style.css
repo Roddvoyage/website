@@ -16,9 +16,6 @@
 }
 html {
   background: #303233;
-  background-size: auto ;
-  padding: 0%;
-  margin: 0%;
 }
 
 body {
@@ -29,7 +26,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin: 0%;
 }
 
 a {
@@ -62,8 +58,8 @@ header img {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  width: 70vw;
-  font-size: 11pt;
+  width: 60vw;
+  font-size: 12pt;
 }
 .checkbtn {
   font-size: 30px;
@@ -74,6 +70,7 @@ header img {
   cursor: pointer;
   display: none;
 }
+
 
 #check {
   display: none;
