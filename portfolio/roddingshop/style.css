@@ -10,32 +10,18 @@
 }
 
 html {
-  background: url(portfoliobackground.png);
-  background-position:top;
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  margin:0 auto;
-  height:100%;
-  padding:0 auto;
+  background: #303233;
 }
 
 body {
-  background-position: fixed;
-  position: absolute;
-  top:0;
-  left:0;
-  right:0;
-  margin:0 auto;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 2%;
-  height: 100%;
-  display: flex;
+  display:flex;
   justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
 }
+
 
 a {
   color: #f2eee9;
@@ -56,6 +42,7 @@ header {
   font-weight: bold;
   width: 100%;
   z-index: 2;
+  margin-bottom:100px;
 }
 
 header img {
@@ -92,12 +79,9 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  position: absolute;
-  top:25vh;
   width:100%;
 }
 section img {
-  height: 40px;
   width: auto;
   margin: 10px;
   margin-bottom: 20px;
@@ -147,9 +131,7 @@ footer{
   justify-content: flex-start;
   align-items:flex-start;
   flex-direction: column;
-  position: absolute;
-  top:135%;
-  width:65vw;
+  width:100%;
   color:white;
   font-family: "CenturyGothic";
 }
@@ -199,7 +181,6 @@ footer h2{
 
 #digital-marketing{
   margin-top:40px;
-  margin-bottom:40px;
   opacity:0.5;
 }
 #digital-marketing:hover{
@@ -227,10 +208,10 @@ footer div{
   display: flex;
   justify-content: center;
   align-items: space-between;
-  height:50vh;
   width:70vw;
   gap:1px;
   flex-wrap: wrap;
+  margin-bottom:100px;
 }
 
 .images img{
@@ -288,47 +269,6 @@ footer div{
  opacity:1;
 }
 
-@media (max-width: 1620px) {
-  footer {
-    top:190%;
-  }
-  }
-
-  @media (max-width: 1370px) {
-    footer {
-      top:270%;
-    }
-    }
-
-@media (max-width: 960px) {
-  html {
-    height: 100%;
-  }
-  section {
-    position: absolute;
-    top: 25vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  section h1 {
-    width: 80%;
-  }
-
-  section p {
-    font-size: 14pt;
-    width: 350px;
-    line-height: 20pt;
-  }
-}
-@media (max-width: 915px) {
-  footer {
-    top:500%;
-  }
-  }
 @media (max-width: 800px) {
   .checkbtn {
     display: block;
@@ -346,6 +286,7 @@ footer div{
     top: 140px;
     left: 0;
     padding-left: 20%;
+    padding-right: 20%;
     text-align: center;
     transition: all 0.5s;
     display: flex;
@@ -367,6 +308,7 @@ footer div{
     height: 5vh;
     width: 800px;
     padding-left: 20%;
+    padding-right: 20%;
     color: rgb(20, 19, 19);
   }
 
@@ -381,8 +323,8 @@ footer div{
     width: 800px;
   }
 
+
   footer{
-    top:650%;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -420,9 +362,6 @@ width:100%;
 }
 
 @media (max-width: 650px) {
-  html {
-    background-size: 1400%;
-  }
   nav ul li a {
     line-height: 40px;
     font-size: 9pt;
@@ -431,6 +370,20 @@ width:100%;
 }
 
 @media (max-width: 520px) {
+  #back-title{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    width:100%;
+    margin-bottom:20px;
+  }
+
+  #next{
+    display:none;
+  }
+
+  
   .navbar ul {
     padding-left: 10%;
     padding-right: 10%;
@@ -439,7 +392,7 @@ width:100%;
 
   nav ul li a {
     line-height: 40px;
-    font-size: 6pt;
+    font-size: 7pt;
   }
 
   .container{
@@ -459,21 +412,23 @@ width:100%;
   height:300px;
   width:auto;
   }
+}
 
-  section{
-    margin-top:5vh;
-  }
-  #back-title{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items:center;
-    width:80vw;
-    margin-bottom:20px;
+@media(max-width:420px){
+  .images img{
+    height:250px;
+    width: 250px;
   }
 
-  #next{
-    display:none;
+  .navbar ul {
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 100%;
+  }
+
+  nav ul li a {
+    line-height: 40px;
+    font-size: 5pt;
   }
 }
 
