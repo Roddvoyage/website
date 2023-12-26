@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='javascript.js' defer></script>
+</head>
+<body>
+    <div id="top">
+        <div id="logobackground">
+           <img id="logo" src="b.png">
+        </div>
+        <div id="log-in-and-menu">
+          <div id = 'menuDropdown' onclick = dropdownMenu() onmouseleave = dropdownOff()>
+               <p id="menu">album</p>
+             <div class = 'dropdown'>
+               <li><p id="edit" class = 'firstMenu' style = 'text-decoration: none;'>edit</p></li>
+               <li><p id="change-album" class = 'firstMenu' style = 'text-decoration: none;'>change album</p></li>
+             </div>
+          </div>
+          <p id="logIn">Joao Rodrigues</p> 
+        </div>
+    </div>
+    <h1 id="album-name">Classic literature</h1>
+    <p id="new-book" onclick = addNewBookInput()>+ new book</p>
+    <div class = "books">
+        
+    </div>
+</div>
+    <div id = 'blurr'>
+
+
+        <div id = 'adding-new-book' >
+           <div class = 'x'>
+              <div class = 'x1'></div>
+              <div class = 'x2'></div>
+           </div>
+           <div class = 'check'>
+              <div class = 'check1'></div>
+              <div class = 'check2'></div>
+           </div>
+           <div id = 'bookTitle'>
+              <p>title</p>
+              <input id = 'bookTitleInput' maxlength="55">
+           </div>
+           <div id = 'bookAuthor'>
+              <p>author</p>
+           <input id = 'bookAuthorInput' maxlength="40">
+           </div>
+           <div id = 'bookPages'>
+            <p>pages total</p>
+           <input type = 'number' maxlength = '4' id = 'bookPagesInput'>
+          </div>
+        </div>
+
+        <div id = 'pagesRead' >
+          <div class = 'pagesReadx'>
+             <div class = 'pagesReadx1'></div>
+             <div class = 'pagesReadx2'></div>
+          </div>
+          <div class = 'pagesReadCheck'>
+             <div class = 'pagesReadCheck1'></div>
+             <div class = 'pagesReadCheck2'></div>
+          </div>
+          <div id = 'pagesReadquestion'>
+             <p>how many pages have you read?</p>
+             <input type = 'number' maxlength = '4' id = 'pagesAnswer'>
+          </div>
+        </div>
+
+        <div id = 'removeBook'>
+         <p>Are you sure you want to remove this book?</p>
+         <div id = 'yesOrNo'>
+           <p id = 'yes'>yes</p>
+           <p id = 'no'>no</p>
+         </div>
+       </div>
+
+       <div id="edit-box">
+         <div class = 'x34'>
+            <div class = 'x3'></div>
+            <div class = 'x4'></div>
+         </div>
+         <div class = 'check34'>
+            <div class = 'check3'></div>
+            <div class = 'check4'></div>
+         </div>
+         <h2>edit</h2>
+         <div id="edit-menu">
+            <h1 id="change-color" style="cursor:pointer">change color</h1>
+            <h1 id="change-title" style="cursor:pointer">change title</h1>
+         </div>
+       </div>
+        
+
+
+     </div>
+
+
+     <div id="intro-background" style="background-color: #c53b54;  position:absolute; top:0px; right:0px; bottom:0px; left:0px; display:flex; justify-content:center; align-items: center; z-index:25000; position:absolute;">
+      <img id="introimg" src="b.png" style="height:200px; width:auto;"/>
+     </div>
+
+</body>
+</html>
