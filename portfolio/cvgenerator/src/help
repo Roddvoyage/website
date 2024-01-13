@@ -1,0 +1,289 @@
+I will give you three files in jsx. The first one is App.jsx:
+"import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import mail from '/mail.png'
+import phone from '/phone-call.png'
+import website from '/maps-and-location.png'
+import location from '/local-na-rede-internet.png'
+import triangle from '/triangle.png'
+import './App.css'
+import Settings from './settings.jsx'
+import {settingsList} from './data.jsx'
+import basicInformation from './data';
+import exampleData from './data'
+
+function App() {
+
+  
+  const [count, setCount] = useState(0)
+  const [settings, setSettings] = useState(settingsList);
+
+
+  return (
+    <>
+    <div className="grey-settings">
+    <h1>cv generator</h1>
+    <h2>Create your CV by filling out the forms below
+and once you’re finished, <a>download the pdf</a></h2>
+<div className="settings-div">
+{settings.map(setting => (
+<Settings key={setting.id} setting={setting}/>
+))}
+</div>
+
+    </div>
+    <div className="cv-side">
+      <div className="cv-paper">
+    <div className = "blue-side">
+      <div className="blue-side-top">
+      <div className="basic-info">
+<h1>wara</h1>
+<div className="age-profession">
+<h2>99 years old</h2>
+<h1>designer</h1>
+</div>
+</div>
+       </div>
+       <p>Lorem ipsum dolor sit amet
+consectetur adipisicing elit.
+Accusantium corporis
+eligendi quos natus
+consectetur sint eum nobis
+
+dolore neque error reicien-
+dis explicabo ex minima
+
+quae fugit, corrupti,
+
+temporibus soluta blanditi-
+is.</p>
+<div className="contact-info">
+<div>
+<img src={phone}></img><h3>123 456 789</h3>
+</div>
+<div>
+<img src={mail}></img><h3>email@gmail.com</h3>
+</div>
+<div>
+<img src={location}></img><h3>location</h3>
+</div>
+<div>
+<img src={website}></img><h3>www.website.com</h3>
+</div>
+</div>
+       </div>
+       <div className = "right-side">
+        <div className="education-background">
+          <h4>EDUCATION BACKGROUND</h4>
+          <div className="education-background-list">
+            <h1>Licenciatura em Design</h1>
+              <h2>Universidade de Lisboa - Faculdade de Arquitectura</h2>
+                <h3>2010 - 2016</h3>
+          </div>
+        </div>
+        <div className="work-experience">
+          <h4>WORK EXPERIENCE</h4>
+          <div className="work-experience-list">
+            <h1>First job</h1>
+              <h2>Company name</h2>
+                <h3>February 2017 - March 2019</h3>
+          </div>
+        </div>
+        <div className="technical-skills">
+          <h4>TECHNICAL SKILLS</h4>
+            <h1>
+            </h1>
+        </div>
+
+       </div>
+       </div>
+       </div>
+    </>
+  )
+}
+
+export default App
+"
+
+the second one is called settings.jsx:
+"import BasicInformation from './data';
+import ContactInformation from './contact';
+import EducationBackground from './education';
+import WorkExperience from './work';
+import TechnicalSkills from './skills';
+import { useState } from 'react'
+
+export default function Settings({setting, choosemessage}){
+
+  
+
+  const [val, setVal] = useState('');
+
+  const [message, setMessage] = useState('hello wrold')
+  function choosemessage(msg) {
+   setMessage(msg)
+  }
+ 
+
+
+
+    const [isActive, setIsActive] = useState(false);
+    const [isHovered, setIsHovered] = useState(false);
+
+    const [isBasic, setBasic] = useState(false);
+    const [isContact, setContact] = useState(false);
+    const [isEducation, setEducation] = useState(false);
+    const [isWork, setWork] = useState(false);
+    const [isSkills, setSkills] = useState(false);
+
+
+    const openSetting= (e) => {
+      // 👇️ toggle
+      setIsActive(current => !current);
+      if(e.target.innerText === 'BASIC INFORMATION'){
+        setBasic(current => !current);
+      } else if (e.target.innerText === 'CONTACT INFO'){
+        setContact(current => !current);
+      } else if (e.target.innerText === 'EDUCATION BACKGROUND'){
+        setEducation(current => !current);
+      } else if (e.target.innerText === 'WORK EXPERIENCE'){
+        setWork(current => !current);
+    }else if (e.target.innerText === 'TECHNICAL SKILLS'){
+      setSkills(current => !current);
+  }
+  }
+
+    const changeColor = () => {
+      // 👇️ toggle
+      setIsHovered(current => !current);
+    }
+
+    
+
+    return (
+      <>
+        <div className="settings">
+  <div style={{
+          height: isBasic ? '700px' : isContact ? '520px' : isEducation ? '550px' : isWork ? '550px' : isSkills ? '275px' : '44px',
+          marginBottom: isActive ? '20px' : '0px',
+          border: isBasic ? '#4065af solid 2pt' : isContact ? '#4065af solid 2pt' : isEducation ? '#4065af solid 2pt' : isWork ? '#4065af solid 2pt' : isSkills ? '#4065af solid 2pt' : 'none',
+        }}
+         onMouseOver={changeColor} onMouseOut={changeColor}>
+  <h4 onClick={openSetting} style={{paddingTop: isActive ? '0.5px' : '2px', paddingLeft: isActive ? '4.5px' : '6px'}}>
+            {setting.subject}
+            <img src={setting.url} style={{display: isHovered ? 'flex' : 'none', rotate: isActive ? '90deg' : '0deg', paddingTop: isActive ? '12px' : '7px', paddingRight: isActive ? '1px' : '8px'}}>
+              </img>
+              </h4>
+              <div style={{display: isBasic ? 'flex' : 'none'}}>
+              <div style={{display: 'flex', alignItems:'center', justifyContent:'space-between', height:'655px', flexDirection:'column'}}>
+              <BasicInformation />
+              <button onClick={() => choosemessage(val)} style={{backgroundColor: "#4065af", width: '100px', borderRadius: '0'}}>submit</button>
+              </div>
+              </div>
+              <div style={{display: isContact ? 'flex' : 'none'}}>
+              <ContactInformation/>
+              </div>
+              <div style={{display: isEducation ? 'flex' : 'none'}}>
+              <EducationBackground/>
+              </div>
+              <div style={{display: isWork ? 'flex' : 'none'}}>
+              <WorkExperience/>
+              </div>
+              <div style={{display: isSkills ? 'flex' : 'none'}}>
+              <TechnicalSkills/>
+              </div>
+  </div>
+</div>
+</>
+    )
+}"
+
+and the third one is called data.jsx:
+"import { useState } from 'react'
+import BasicInfoCv from './basicInfocv'
+
+export const settingsList = [{
+    id: 0,
+    selected: 'false',
+    subject:'BASIC INFORMATION',
+    url:'/triangle.png',
+    fields: ['full name', 'professional title', 'professional title']
+},{
+    id: 1,
+    selected: 'false',
+    subject:"CONTACT INFO",
+    url:'/triangle.png',
+    fields:['email',
+    'phone number',
+    'location',
+    'website']
+},{
+    id: 2,
+    selected: 'false',
+    subject:"EDUCATION BACKGROUND",
+    url:'/triangle.png',
+    fields:['university/institution',
+    'degree/certification/program',
+    'starting date',
+    'graduation date']
+},{
+    id: 3,
+    selected: 'false',
+    subject:"WORK EXPERIENCE",
+    url:'/triangle.png',
+    fields:['university/institution',
+    'degree/certification/program',
+    'starting date',
+    'end date']
+},{
+    id: 4,
+    selected: 'false',
+    subject:"TECHNICAL SKILLS",
+    url:'/triangle.png',
+    fields: ['add a skill']
+}]
+
+export const exampleData = {
+    fullNameValue:'warahey'
+}
+    
+
+
+export default function BasicInformation({wara}){
+
+    const [valb, setValb] = useState('');
+
+    const handleChange = event => {
+        setValb(event.target.value)
+        console.log(event.target.value)
+
+        wara = valb
+    }
+
+    return(
+        <>
+        <div style={{display:'flex', flexDirection:'column', width:'500px'}}>
+        <div style={{display: 'flex', flexDirection:'column'}}>
+    <h5 style={{marginLeft:'5%', marginBottom:'4px'}}>first and last name</h5>
+    <input onChange={handleChange} style={{height: '50px', marginLeft:'5%', marginRight:'5%', backgroundColor:'transparent', border: "white 2px solid", fontSize:'14pt', color:'white'}} maxLength={'30'}/>
+    </div>
+    <div style={{display: 'flex', flexDirection:'column'}}>
+    <h5 style={{marginLeft:'5%', marginBottom:'4px'}}>age</h5>
+    <input style={{height: '50px', marginLeft:'5%', marginRight:'5%', backgroundColor:'transparent', border: "white 2px solid", fontSize:'14pt', color:'white', width:'40px'}} type={"number"} onInput={(e) => e.target.value = e.target.value.slice(0, 2)}/>
+    </div>
+    <div style={{display: 'flex', flexDirection:'column'}}>
+    <h5 style={{marginLeft:'5%', marginBottom:'4px'}}>professional title</h5>
+    <input style={{height: '50px', marginLeft:'5%', marginRight:'5%', backgroundColor:'transparent', border: "white 2px solid", fontSize:'14pt', color:'white'}}/>
+    </div>
+    <div style={{display: 'flex', flexDirection:'column'}}>
+    <h5 style={{marginLeft:'5%', marginBottom:'4px'}}>summary about yourself</h5>
+    <textarea style={{height: '210px', marginLeft:'5%', marginRight:'5%', backgroundColor:'transparent', border: "white 2px solid", fontSize:'14pt', color:'white' }} maxLength={'400'}></textarea>
+    </div>
+    </div>
+    </>)
+}
+
+"
+
+I am trying to display on App.jsx the value of an input that's written on data.jsx. I believe App.jsx is parent of settings.jsx which is parent of data.jsx, but there must be a way for me to transfer the value of an input that's on data.jsx so that I can have it written on a h3 tag that's on app.jsx. Do you know a way of how to do this?
