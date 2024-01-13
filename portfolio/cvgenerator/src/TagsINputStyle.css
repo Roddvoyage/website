@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+
+.tags-input {
+	display: flex;
+	align-items: center;
+  justify-content: flex-start;
+	flex-wrap: nowrap;
+	min-height: 48px;
+	width: 85%;
+  height:80px;
+	padding: 0 8px;
+  overflow-x:auto;
+	border: 1px solid none;
+}
+
+.tags-input:focus{
+	border: 1px solid none;
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin:0px;
+}
+
+#tags {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0px 0 0 0;
+}
+
+.tag {
+	width: auto;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	padding: 0 8px;
+	font-size: 14px;
+	list-style: none;
+	border-radius: 6px;
+	margin: 0 8px 0px 0;
+	background: #4065af;
+	.tag-title {
+		margin-top: 0px;
+	}
+	.tag-close-icon {
+		display: block;
+		width: 16px;
+		height: 16px;
+		line-height: 16px;
+		text-align: center;
+		font-size: 14px;
+		margin-left: 8px;
+		color: #4065af;
+		border-radius: 50%;
+		background: #fff;
+		cursor: pointer;
+	}
+}
+
+
+/* width */
+.tags-input::-webkit-scrollbar {
+	height: 5px;
+  }
+  
+  /* Track */
+  .tags-input::-webkit-scrollbar-track {
+	background: transparent;
+  }
+  
+  /* Handle */
+  .tags-input::-webkit-scrollbar-thumb {
+	background: #4065af;
+  }
+  
+  /* Handle on hover */
+  .tags-input::-webkit-scrollbar-thumb:hover {
+	background: #4065af;
+  }
+
+@media screen and (max-width: 567px) {
+	.tags-input {
+		width: calc(100vw - 32px);
+	}
+}

@@ -1,0 +1,499 @@
+
+.container{
+  height:280px;
+  width:100%;
+  position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  .cropper{
+  position:absolute;
+  width:400px;
+  height: 400px;
+  display:flex;
+  align-items: space-between;
+  justify-content: center;
+  border-radius: 0px;
+  overflow: hidden;
+  box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.09);
+  }
+  
+  input[type='radio']{
+    accent-color: #1895B0;
+  }
+  
+  .btn {
+    font-size: 1rem;
+    font-weight: 500;
+    color:#ffffff;
+    background-color: #4065af;
+    padding: 0.5rem 1.5rem;
+    border-radius:0.2rem;
+    border: 2px solid #4065af;
+    cursor: pointer;
+    margin: 1rem;
+  }
+  
+  .btn-outline {
+    color:#ffffff;
+    background-color: #4065af;
+    border: 2px solid #4065af;
+  }
+  .action-btns{
+    padding-bottom: 1rem;
+  }
+  .btn-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cropped-img{
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:280px;
+    height:280px;
+    object-fit: cover;
+    margin-top:2S0px;
+  }
+  
+  .aspect-ratios{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.5rem;
+    font-size: 1rem;
+    font-weight:500;
+  }
+  
+  .img-upload-before{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width:200px;
+    margin-left:35px;
+  }
+  
+  .img-upload-before{
+    height: 200px;
+    width:200px;
+    margin-left:100%;
+  }
+
+  .image-btn{
+    height:280px;
+    width:280px;
+  }
+
+  
+  .reactEasyCrop_CropArea {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+  }
+
+
+.reactEasyCrop_CropAreaGrid::before{
+  position: relative;
+  height: 100%;
+  width:33%;
+margin:0px;
+}
+
+.reactEasyCrop_Contain img{
+  height:100px;
+  width:auto;
+}
+
+
+.reactEasyCrop_Image{
+  height:280px;
+  width:280px;
+  margin:0;
+}
+
+.reactEasyCrop_Contain{
+  height:280px;
+  width:280px;
+}
+
+
+
+.reactEasyCrop_Image.reactEasyCrop_Contain{
+  height:auto;
+  width:100%;
+}
+
+
+.reactEasyCrop_CropArea.reactEasyCrop_CropAreaGrid{
+  height:280px;
+  width:280px;
+}
+
+
+
+.action-btns{
+  display:flex;
+  align-items: flex-end;
+  margin-top:300px;
+  height:100px;
+  z-index: 5;
+}
+
+  
+.reactEasyCrop_CropAreaGrid{
+  height: 200px;
+  width:200px;
+}
+
+
+.reactEasyCrop_CropAreaGrid{
+  height:200px;
+  width:200px;
+}
+
+
+
+
+@media (max-width: 1430px) {
+  
+
+
+.container{
+  height:215px;
+  width:215px;
+  position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cropper{
+  position:absolute;
+  width:400px;
+  height: 400px;
+  display:flex;
+  align-items: space-between;
+  justify-content: center;
+  border-radius: 0px;
+  overflow: hidden;
+  box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.09);
+  }
+  
+  input[type='radio']{
+    accent-color: #1895B0;
+  }
+  
+  .btn {
+    font-size: 1rem;
+    font-weight: 500;
+    color:#ffffff;
+    background-color: #4065af;
+    padding: 0.5rem 1.5rem;
+    border-radius:0.2rem;
+    border: 2px solid #4065af;
+    cursor: pointer;
+    margin: 1rem;
+  }
+  
+  .btn-outline {
+    color:#ffffff;
+    background-color: #4065af;
+    border: 2px solid #4065af;
+  }
+  .action-btns{
+    padding-bottom: 1rem;
+  }
+  .btn-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cropped-img{
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:215px;
+    height:215px;
+    object-fit: cover;
+    margin-top:2S0px;
+  }
+  
+  .aspect-ratios{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.5rem;
+    font-size: 1rem;
+    font-weight:500;
+  }
+  
+  .img-upload-before{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width:200px;
+    margin-left:35px;
+  }
+  
+  .img-upload-before{
+    height: 200px;
+    width:200px;
+    margin-left:100%;
+  }
+
+  .image-btn{
+    height:215px;
+    width:215px;
+  }
+
+  
+  .reactEasyCrop_CropArea {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+  }
+
+
+.reactEasyCrop_CropAreaGrid::before{
+  position: relative;
+  height: 100%;
+  width:33%;
+margin:0px;
+}
+
+.reactEasyCrop_Contain img{
+  height:100px;
+  width:auto;
+}
+
+
+.reactEasyCrop_Image{
+  height:280px;
+  width:280px;
+  margin:0;
+}
+
+.reactEasyCrop_Contain{
+  height:280px;
+  width:280px;
+}
+
+
+
+.reactEasyCrop_Image.reactEasyCrop_Contain{
+  height:auto;
+  width:100%;
+}
+
+
+.reactEasyCrop_CropArea.reactEasyCrop_CropAreaGrid{
+  height:280px;
+  width:280px;
+}
+
+
+
+.action-btns{
+  display:flex;
+  align-items: flex-end;
+  margin-top:300px;
+  height:100px;
+  z-index: 5;
+}
+
+  
+.reactEasyCrop_CropAreaGrid{
+  height: 200px;
+  width:200px;
+}
+
+
+.reactEasyCrop_CropAreaGrid{
+  height:200px;
+  width:200px;
+}
+
+}
+
+@media (max-width:650px){
+  .container{
+    height:150px;
+    width:150px;
+    position: relative;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cropped-img{
+      position:relative;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      width:150px;
+      height:150px;
+      object-fit: cover;
+      margin-top:2S0px;
+    }
+
+
+  .image-btn{
+    height:150px;
+    width:150px;
+  }
+  .cropper{
+    position:absolute;
+    width:300px;
+    height: 300px;
+    display:flex;
+    align-items: space-between;
+    justify-content: center;
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.09);
+    }
+
+    .btn {
+      font-size: 9pt;
+      font-weight: 500;
+      color:#ffffff;
+      background-color: #4065af;
+      padding: 0.5rem 1rem;
+      border-radius:0.1rem;
+      border: 2px solid #4065af;
+      cursor: pointer;
+      margin: 0.5rem;
+    }
+    
+    .btn-outline {
+      color:#ffffff;
+      background-color: #4065af;
+      border: 2px solid #4065af;
+    }
+    .action-btns{
+      padding-bottom: 1rem;
+    }
+    .btn-container{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    
+    .aspect-ratios{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      gap:0.5rem;
+      font-size: 9pt;
+      font-weight:500;
+    }
+
+    .action-btns{
+      display:flex;
+      align-items: flex-end;
+      margin-top:200px;
+      height:100px;
+      z-index: 5;
+    }
+    
+}
+
+
+
+
+@media (max-width:450px){
+  .container{
+    height:75px;
+    width:75px;
+    position: relative;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cropped-img{
+      position:relative;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      width:75px;
+      height:75px;
+      object-fit: cover;
+      margin-top:2S0px;
+    }
+
+
+  .image-btn{
+    height:75px;
+    width:75px;
+  }
+  .cropper{
+    position:absolute;
+    width:150px;
+    height: 150px;
+    display:flex;
+    align-items: space-between;
+    justify-content: center;
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.09);
+    }
+
+    .btn {
+      font-size: 5pt;
+      font-weight: 500;
+      color:#ffffff;
+      background-color: #4065af;
+      padding: 0.25rem 0.5rem;
+      border-radius:0.1rem;
+      border: 1px solid #4065af;
+      cursor: pointer;
+      margin: 0rem;
+    }
+    
+    .btn-outline {
+      color:#ffffff;
+      background-color: #4065af;
+      border: 2px solid #4065af;
+    }
+    .action-btns{
+      padding-bottom: 0.5rem;
+    }
+    .btn-container{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      gap:5px;
+      margin-bottom:2px;
+    }
+
+    
+    .aspect-ratios{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      gap:0.5rem;
+      font-size: 9pt;
+      font-weight:500;
+    }
+
+    .action-btns{
+      display:flex;
+      align-items: flex-end;
+      margin-top:100px;
+      height:50px;
+      z-index: 5;
+    }
+    
+}

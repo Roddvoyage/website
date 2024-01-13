@@ -1,0 +1,2087 @@
+
+@font-face {
+  font-family: futuraHeavy;
+  src: url(Futura-Heavy-font.ttf);
+}
+
+
+@font-face {
+  font-family: futuraBook;
+  src: url(Futura-Book-font.ttf);
+}
+
+@font-face{
+  font-family: futuraBookItalic;
+  src:url(Futura-Book-Italic-font.ttf);
+}
+
+@font-face{
+  font-family: futur;
+  src:url(futur.ttf);
+}
+
+
+#root {
+  display: flex;
+  flex-direction: row;
+  background: #434343;
+  height:100%;
+  width:100%;
+}
+
+html{
+  height:125%;
+  width:100%;
+}
+
+body{
+  height:100%;
+  width:100%;
+}
+
+.grey-settings{
+width:510px;
+background-color: #353535;
+height:100%;
+padding-left:40px;
+padding-right:30px;
+color:white;
+}
+
+
+.grey-settings a{ 
+  cursor:pointer;
+}
+
+.settings{
+width:480px;
+}
+
+.settings:nth-child(1) input, .settings:nth-child(2) input, .settings:nth-child(3) input, .settings:nth-child(4) input, .settings:nth-child(5) input{
+  height: 40px;
+  font-size: 14pt;
+  border: white 1px solid;
+  margin-left:5%;
+  margin-right:5%;
+  background-color:transparent;
+  color:white;
+  }
+
+.settings:nth-child(1) h5, .settings:nth-child(2) h5, .settings:nth-child(3) h5, .settings:nth-child(4) h5, .settings:nth-child(5) h5{
+  font-size: 11pt;
+  margin-left:5%;
+  margin-right:5%;
+  margin-bottom:4px;
+  background-color:transparent;
+  color:white;
+  }
+
+  .settings:nth-child(1) span, .settings:nth-child(2) span, .settings:nth-child(3) span, .settings:nth-child(4) span, .settings:nth-child(5) span{
+    display: 'flex';
+    margin-left:5%;
+    font-size:11pt;
+  }
+  
+
+
+  .settings:nth-child(1) button, .settings:nth-child(2) button, .settings:nth-child(3) button, .settings:nth-child(4) button, .settings:nth-child(5) button{
+    background-color: #4065af;
+    width: 100px;
+    border-radius: 0;
+  }
+  
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4065af;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4065af;
+}
+
+/*
+.phone-logo, .email-logo, .location-logo, .website-logo {
+  display: none;
+}
+*/
+
+.settings-div{
+  margin-top:100px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height:60%;
+  width:510px;
+}
+
+.settings h4{
+  font-family: futuraHeavy;
+  font-size: 12pt;
+  cursor:pointer;
+  display:flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right:10px;
+  align-items:flex-start;
+  padding-top:4px;
+  color:#4065af;
+  margin-top: 0px;
+}
+
+.settings h4:hover{
+background-color:#4065af;
+color:white;
+}
+
+.settings h4 img{
+  height:10px;
+  width:auto;
+}
+
+.settings div h1 {
+  color: #4065af;
+}
+
+.settings div h1:hover {
+  color: white;
+  cursor:pointer;
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.vericaltext {
+  display: inline-block;
+  margin-right: 6px;
+  background-color: #EEE;
+}
+
+.cv-side{
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+  width:75%;
+  height:90%;
+}
+
+.cv-paper{
+  margin-top:20px;
+  display:flex;
+  flex-direction: row;
+  height: 1160px;
+  width:840px;
+  background-color: white;
+}
+
+.blue-side{
+  background-color:#4065af;
+  color:white;
+  width: 35%;
+  padding:20px;
+  text-align: center;
+}
+
+.right-side{
+  height:100%;
+  width:65%;
+  background-color: white;
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family:futuraHeavy;
+  font-size:8pt;
+}
+
+h2{
+  font-family:futuraHeavy;
+  font-size:14pt;
+}
+
+h3{
+  font-family: futuraBook;
+}
+
+p{
+  font-family: futuraBookItalic;
+  font-size:12pt;
+}
+
+img{
+  height:20px;
+  width:auto;
+}
+
+.contact-info div{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  font-size:9pt;
+  gap:10px;
+}
+
+
+.basic-info{
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.basic-info h1{
+  font-size:21pt;
+  margin-bottom:10px;
+  overflow-wrap: break-word;
+  overflow:auto;
+  word-break:break-all;
+  width: 100%;
+  inline-size:100%;
+}
+
+.age-profession h1{
+  margin-top:0px;
+  overflow-wrap: break-word;
+  overflow:auto;
+  word-break:break-all;
+  width: 100%;
+  inline-size:100%;
+}
+
+.blue-side p{
+  height:30%;
+  display:flex;
+  align-items:center;
+  margin-bottom:30px;
+  width: 100%;
+  inline-size:100%;
+  overflow-wrap: break-word;
+  overflow:auto;
+  word-break:break-all;
+}
+
+.education-background h4{
+  display:flex;
+  justify-content: center;
+  text-align:center;
+  font-size:14pt;
+  font-family: futuraHeavy;
+  color:#4065af;
+}
+
+.work-experience h4{
+  display:flex;
+  justify-content: center;
+  text-align:center;
+  font-size:14pt;
+  font-family: futuraHeavy;
+  color:#4065af;
+}
+
+
+.technical-skills h4{
+  display:flex;
+  justify-content: center;
+  text-align:center;
+  font-size:14pt;
+  font-family: futuraHeavy;
+  color:#4065af;
+}
+
+.education-background-list h1{
+  font-family: futuraHeavy;
+  font-size:12pt;
+  width: 100%;
+  inline-size:100%;
+  overflow-wrap: break-word;
+  overflow:hidden;
+  word-break:break-all;
+  margin-top:0;
+  margin-bottom:4px;
+}
+
+.education-background-list h2{
+  font-family: futuraBook;
+  font-size:11pt;
+  width: 100%;
+  inline-size:100%;
+  overflow-wrap: break-word;
+  overflow:hidden;
+  word-break:break-all;
+  line-height:12pt;
+  margin-top:4px;
+  margin-bottom:4px;
+}
+
+.education-background-list h3{
+  font-family: futuraBook;
+  font-size:9pt;
+  margin-top:4px;
+  margin-bottom:10px;
+}
+
+.education-background-list2 h1{
+  font-family: futuraHeavy;
+  font-size:12pt;
+  width: 100%;
+  inline-size:100%;
+  overflow-wrap: break-word;
+  overflow:hidden;
+  word-break:break-all;
+  margin-top:0;
+  margin-bottom:4px;
+  
+}
+
+.education-background-list2 h2{
+  font-family: futuraBook;
+  font-size:11pt;
+  width: 100%;
+  inline-size:100%;
+  overflow-wrap: break-word;
+  overflow:hidden;
+  word-break:break-all;
+  line-height:12pt;
+  margin-top:4px;
+  margin-bottom:4px;
+}
+
+.education-background-list2 h3{
+  font-family: futuraBook;
+  font-size:9pt;
+  margin-top:4px;
+  margin-bottom:10px;
+}
+
+.education-background-list3 h1{
+  font-family: futuraHeavy;
+  font-size:12pt;
+  width: 100%;
+  inline-size:100%;
+  overflow-wrap: break-word;
+  overflow:hidden;
+  word-break:break-all;
+  margin-top:0;
+  margin-bottom:4px;
+}
+
+.education-background-list3 h2{
+  font-family: futuraBook;
+  font-size:11pt;
+  width: 100%;
+  inline-size:100%;
+  overflow-wrap: break-word;
+  overflow:hidden;
+  word-break:break-all;
+  margin-top:4px;
+  margin-bottom:4px;
+  line-height:12pt;
+}
+
+.education-background-list3 h3{
+  font-family: futuraBook;
+  font-size:9pt;
+  margin-top:4px;
+  margin-bottom:10px;
+}
+
+.work-experience-list h1{
+  font-family: futuraHeavy;
+  font-size:12pt;
+  width: 100%;
+  inline-size:100%;
+  overflow-wrap: break-word;
+  overflow:hidden;
+  word-break:break-all;
+  margin-top:0;
+  margin-bottom:4px;
+}
+
+.work-experience-list h2{
+  font-family: futuraBook;
+  font-size:11pt;
+  width: 100%;
+  inline-size:100%;
+  overflow-wrap: break-word;
+  overflow:hidden;
+  word-break:break-all;
+  margin-top:4px;
+  margin-bottom:4px;
+  line-height:12pt;
+}
+
+.work-experience-list h3{
+  font-family: futuraBook;
+  font-size:9pt;
+  margin-top:4px;
+  margin-bottom:10px;
+}
+
+.work-experience-list2 h1{
+  font-family: futuraHeavy;
+  font-size:12pt;
+  width: 100%;
+  inline-size:100%;
+  overflow-wrap: break-word;
+  overflow:hidden;
+  word-break:break-all;
+  margin-top:0;
+  margin-bottom:4px;
+}
+
+.work-experience-list2 h2{
+  font-family: futuraBook;
+  font-size:11pt;
+  width: 100%;
+  inline-size:100%;
+  overflow-wrap: break-word;
+  overflow:hidden;
+  word-break:break-all;
+  margin-top:4px;
+  margin-bottom:4px;
+  line-height:12pt;
+}
+
+.work-experience-list2 h3{
+  font-family: futuraBook;
+  font-size:9pt;
+  margin-top:4px;
+  margin-bottom:10px;
+}
+
+.work-experience-list3 h1{
+  font-family: futuraHeavy;
+  font-size:12pt;
+  width: 100%;
+  inline-size:100%;
+  overflow-wrap: break-word;
+  overflow:hidden;
+  word-break:break-all;
+  margin-top:0;
+  margin-bottom:4px;
+}
+
+.work-experience-list3 h2{
+  font-family: futuraBook;
+  font-size:11pt;
+  width: 100%;
+  inline-size:100%;
+  overflow-wrap: break-word;
+  overflow:hidden;
+  word-break:break-all;
+  margin-top:4px;
+  margin-bottom:4px;
+  line-height:12pt;
+}
+
+.work-experience-list3 h3{
+  font-family: futuraBook;
+  font-size:9pt;
+  margin-top:4px;
+  margin-bottom:10px;
+}
+
+
+
+
+.education-background{
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+ width:80%;
+}
+
+.work-experience{
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  width:80%;
+}
+
+.education-background-list{
+  margin-bottom:0px;
+}
+
+.work-experience-list{
+  margin-bottom:0px;
+}
+
+
+.technical-skills{
+  width:80%;
+}
+
+.technical-skills h1{
+  font-family: futuraHeavy;
+  font-size:12pt;
+}
+
+.technical-skills-input{
+  font-size: 10pt;
+}
+
+
+@media (max-width: 1650px){
+  
+  html{
+    height:145%;
+  }
+  
+
+  .cv-side{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    width:75%;
+    height:90%;
+  }
+}
+
+
+@media (max-width: 1500px){
+  
+  html{
+    height:145%;
+  }
+
+  
+}
+
+@media (max-width: 1430px){
+  
+  html{
+    height:110%;
+  }
+
+  .settings{
+    width:99%;
+    }
+
+
+    .settings-div{
+      width:420px;
+    }
+
+
+  
+  .grey-settings{
+    width:420px;
+    }
+
+
+
+      .settings:nth-child(1) textarea{
+        font-size: 9pt;
+        border: white 0.5px solid;
+        margin-left:5%;
+        margin-right:5%;
+        background-color:transparent;
+        color:white;
+        }
+
+
+
+.settings:nth-child(1) input, .settings:nth-child(2) input, .settings:nth-child(3) input, .settings:nth-child(4) input, .settings:nth-child(5) input{
+  height: 25px;
+  font-size: 9pt;
+  border: white 0.5px solid;
+  margin-left:5%;
+  margin-right:5%;
+  background-color:transparent;
+  color:white;
+  }
+
+.settings:nth-child(1) h5, .settings:nth-child(2) h5, .settings:nth-child(3) h5, .settings:nth-child(4) h5, .settings:nth-child(5) h5{
+  font-size: 9pt;
+  margin-left:5%;
+  margin-right:5%;
+  margin-bottom:4px;
+  background-color:transparent;
+  color:white;
+  }
+
+  .settings:nth-child(1) span, .settings:nth-child(2) span, .settings:nth-child(3) span, .settings:nth-child(4) span, .settings:nth-child(5) span{
+    display: 'flex';
+    margin-left:5%;
+    font-size:9pt;
+  }
+  
+
+
+  .settings:nth-child(1) button, .settings:nth-child(2) button, .settings:nth-child(3) button, .settings:nth-child(4) button, .settings:nth-child(5) button{
+    background-color: #4065af;
+    width: 100px;
+    border-radius: 0;
+  }
+  
+
+.cv-paper{
+  margin-top:20px;
+  display:flex;
+  flex-direction: row;
+  height: 870px;
+  width:630px;
+  background-color: white;
+}
+
+.blue-side{
+  background-color:#4065af;
+  color:white;
+  width: 35%;
+  padding:20px;
+  text-align: center;
+}
+
+.right-side{
+  height:100%;
+  width:65%;
+  background-color: white;
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size:6pt;
+}
+
+h2{
+  font-family:futuraHeavy;
+  font-size:11pt;
+}
+
+h3{
+  font-family: futuraBook;
+}
+
+p{
+  font-family: futuraBookItalic;
+  font-size:9pt;
+}
+
+img{
+  height:20px;
+  width:auto;
+}
+
+.contact-info div{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  font-size:8pt;
+  gap:8px;
+}
+
+
+.basic-info{
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.basic-info h1{
+  font-size:16pt;
+  margin-bottom:10px;
+}
+
+.age-profession h1{
+  margin-top:0px;
+}
+
+.blue-side p{
+  height:30%;
+  display:flex;
+  align-items:center;
+  margin-bottom:10px;
+  margin-top:0px;
+
+}
+
+.education-background h4{
+  display:flex;
+  justify-content: center;
+  text-align:center;
+  font-size:11pt;
+  font-family: futuraHeavy;
+  color:#4065af;
+}
+
+.work-experience h4{
+  display:flex;
+  justify-content: center;
+  text-align:center;
+  font-size:11pt;
+  font-family: futuraHeavy;
+  color:#4065af;
+}
+
+
+.technical-skills h4{
+  display:flex;
+  justify-content: center;
+  text-align:center;
+  font-size:11pt;
+  font-family: futuraHeavy;
+  color:#4065af;
+}
+
+.education-background-list h1{
+  font-family: futuraHeavy;
+  font-size:9pt;
+  margin-top:0;
+  margin-bottom:3px;
+}
+
+.education-background-list h2{
+  font-family: futuraBook;
+  font-size:8pt;
+  line-height:10pt;
+  margin-top:3px;
+  margin-bottom:3px;
+}
+
+.education-background-list h3{
+  font-family: futuraBook;
+  font-size:6pt;
+  margin-top:3px;
+  margin-bottom:8px;
+}
+
+.education-background-list2 h1{
+  font-family: futuraHeavy;
+  font-size:9pt;
+  margin-top:0px;
+  margin-bottom:3px;
+}
+
+.education-background-list2 h2{
+  font-family: futuraBook;
+  font-size:8pt;
+  line-height:10pt;
+    margin-top:3px;
+  margin-bottom:3px;
+}
+
+.education-background-list2 h3{
+  font-family: futuraBook;
+  font-size:6pt;
+    margin-top:3px;
+  margin-bottom:8px;
+}
+
+.education-background-list3 h1{
+  font-family: futuraHeavy;
+  font-size:9pt;
+  margin-top:0px;
+  margin-bottom:3px;
+}
+
+.education-background-list3 h2{
+  font-family: futuraBook;
+  font-size:8pt;
+  line-height:10pt;
+  margin-top:3px;
+  margin-bottom:3px;
+}
+
+.education-background-list3 h3{
+  font-family: futuraBook;
+  font-size:6pt;
+  margin-top:3px;
+  margin-bottom:8px;
+}
+
+.work-experience-list h1{
+  font-family: futuraHeavy;
+  font-size:9pt;
+  margin-top:0px;
+  margin-bottom:3px;
+}
+
+.work-experience-list h2{
+  font-family: futuraBook;
+  font-size:8pt;
+  line-height:10pt;
+  margin-top:3px;
+  margin-bottom:3px;
+}
+
+.work-experience-list h3{
+  font-family: futuraBook;
+  font-size:6pt;
+  margin-top:3px;
+  margin-bottom:8px;
+}
+
+.work-experience-list2 h1{
+  font-family: futuraHeavy;
+  font-size:9pt;
+  margin-top:0px;
+  margin-bottom:3px;
+}
+
+.work-experience-list2 h2{
+  font-family: futuraBook;
+  font-size:8pt;
+  line-height:10pt;
+  margin-top:3px;
+  margin-bottom:3px;
+}
+
+.work-experience-list2 h3{
+  font-family: futuraBook;
+  font-size:6pt;
+  margin-top:3px;
+  margin-bottom:8px;
+}
+
+.work-experience-list3 h1{
+  font-family: futuraHeavy;
+  font-size:9pt;
+  margin-top:0px;
+  margin-bottom:3px;
+}
+
+.work-experience-list3 h2{
+  font-family: futuraBook;
+  font-size:8pt;
+  line-height:10pt;
+  margin-top:3px;
+  margin-bottom:3px;
+}
+
+.work-experience-list3 h3{
+  font-family: futuraBook;
+  font-size:6pt;
+  margin-top:3px;
+  margin-bottom:8px;
+}
+
+
+
+
+.education-background{
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+ width:80%;
+}
+
+.work-experience{
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  width:80%;
+}
+
+.education-background-list{
+  margin-bottom:0px;
+}
+
+.work-experience-list{
+  margin-bottom:0px;
+}
+
+
+.technical-skills{
+  width:80%;
+}
+
+.technical-skills h1{
+  font-family: futuraHeavy;
+  font-size:9pt;
+}
+
+
+.technical-skills-input{
+  font-size: 7pt;
+}
+
+}
+
+@media (max-width: 1120px){
+
+  #root {
+    flex-direction: column-reverse;
+  }
+  
+  html{
+    height:200%;
+    width:100%;
+  }
+
+  .settings{
+    flex-direction: row;
+    }
+
+
+    .settings-div{
+      width:95%;
+      display:flex;
+      flex-direction: 'row';
+      overflow-y: auto;
+      overflow-x: auto;
+      margin-left:20px;
+    }
+
+
+  
+  .grey-settings{
+    position: relative;
+    width:100vw;
+    background-color: #353535;
+    height:800px;
+    padding-left:0px;
+    padding-right:0px;
+    color:white;
+    }
+
+
+
+      .settings:nth-child(1) textarea{
+        font-size: 9pt;
+        border: white 0.5px solid;
+        margin-left:5%;
+        margin-right:5%;
+        background-color:transparent;
+        color:white;
+        }
+
+
+
+.settings:nth-child(1) input, .settings:nth-child(2) input, .settings:nth-child(3) input, .settings:nth-child(4) input, .settings:nth-child(5) input{
+  height: 25px;
+  font-size: 9pt;
+  border: white 0.5px solid;
+  margin-left:5%;
+  margin-right:5%;
+  background-color:transparent;
+  color:white;
+  }
+
+.settings:nth-child(1) h5, .settings:nth-child(2) h5, .settings:nth-child(3) h5, .settings:nth-child(4) h5, .settings:nth-child(5) h5{
+  font-size: 9pt;
+  margin-left:5%;
+  margin-right:5%;
+  margin-bottom:4px;
+  background-color:transparent;
+  color:white;
+  }
+
+  .settings:nth-child(1) span, .settings:nth-child(2) span, .settings:nth-child(3) span, .settings:nth-child(4) span, .settings:nth-child(5) span{
+    display: 'flex';
+    margin-left:5%;
+    font-size:9pt;
+  }
+  
+
+
+  .settings:nth-child(1) button, .settings:nth-child(2) button, .settings:nth-child(3) button, .settings:nth-child(4) button, .settings:nth-child(5) button{
+    background-color: #4065af;
+    width: 100px;
+    border-radius: 0;
+  }
+
+  
+  .cv-side{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:940px;
+
+  }
+
+.cv-paper{
+  margin-top:20px;
+  display:flex;
+  flex-direction: row;
+  height: 870px;
+  width:630px;
+  background-color: white;
+}
+
+.blue-side{
+  background-color:#4065af;
+  color:white;
+  width: 35%;
+  padding:20px;
+  text-align: center;
+}
+
+.right-side{
+  height:100%;
+  width:375px;
+  background-color: white;
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size:6pt;
+  width:400px;
+  margin-left:0px;
+  margin-right:0px
+}
+
+h2{
+  font-family:futuraHeavy;
+  font-size:11pt;
+  width:100%;
+  margin-left:0px;
+  margin-right:0px;
+  margin-top:0px;
+}
+
+h3{
+  font-family: futuraBook;
+}
+
+p{
+  font-family: futuraBookItalic;
+  font-size:9pt;
+}
+
+img{
+  height:15px;
+  width:auto;
+}
+
+.contact-info div{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  font-size:8pt;
+  gap:8px;
+}
+
+
+.basic-info{
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.basic-info h1{
+  font-size:16pt;
+  margin-bottom:10px;
+}
+
+.age-profession h1{
+  margin-top:0px;
+}
+
+.blue-side p{
+  height:30%;
+  display:flex;
+  align-items:center;
+  margin-bottom:10px;
+  margin-top:0px;
+
+}
+
+.education-background h4{
+  display:flex;
+  justify-content: center;
+  text-align:center;
+  font-size:11pt;
+  font-family: futuraHeavy;
+  color:#4065af;
+}
+
+.work-experience h4{
+  display:flex;
+  justify-content: center;
+  text-align:center;
+  font-size:11pt;
+  font-family: futuraHeavy;
+  color:#4065af;
+}
+
+
+.technical-skills h4{
+  display:flex;
+  justify-content: center;
+  text-align:center;
+  font-size:11pt;
+  font-family: futuraHeavy;
+  color:#4065af;
+}
+
+.education-background-list h1{
+  font-family: futuraHeavy;
+  font-size:9pt;
+  margin-top:0;
+  margin-bottom:3px;
+}
+
+.education-background-list h2{
+  font-family: futuraBook;
+  font-size:8pt;
+  line-height:10pt;
+  margin-top:3px;
+  margin-bottom:3px;
+}
+
+.education-background-list h3{
+  font-family: futuraBook;
+  font-size:6pt;
+  margin-top:3px;
+  margin-bottom:8px;
+}
+
+.education-background-list2 h1{
+  font-family: futuraHeavy;
+  font-size:9pt;
+  margin-top:0px;
+  margin-bottom:3px;
+}
+
+.education-background-list2 h2{
+  font-family: futuraBook;
+  font-size:8pt;
+  line-height:10pt;
+    margin-top:3px;
+  margin-bottom:3px;
+}
+
+.education-background-list2 h3{
+  font-family: futuraBook;
+  font-size:6pt;
+    margin-top:3px;
+  margin-bottom:8px;
+}
+
+.education-background-list3 h1{
+  font-family: futuraHeavy;
+  font-size:9pt;
+  margin-top:0px;
+  margin-bottom:3px;
+}
+
+.education-background-list3 h2{
+  font-family: futuraBook;
+  font-size:8pt;
+  line-height:10pt;
+  margin-top:3px;
+  margin-bottom:3px;
+}
+
+.education-background-list3 h3{
+  font-family: futuraBook;
+  font-size:6pt;
+  margin-top:3px;
+  margin-bottom:8px;
+}
+
+.work-experience-list h1{
+  font-family: futuraHeavy;
+  font-size:9pt;
+  margin-top:0px;
+  margin-bottom:3px;
+}
+
+.work-experience-list h2{
+  font-family: futuraBook;
+  font-size:8pt;
+  line-height:10pt;
+  margin-top:3px;
+  margin-bottom:3px;
+}
+
+.work-experience-list h3{
+  font-family: futuraBook;
+  font-size:6pt;
+  margin-top:3px;
+  margin-bottom:8px;
+}
+
+.work-experience-list2 h1{
+  font-family: futuraHeavy;
+  font-size:9pt;
+  margin-top:0px;
+  margin-bottom:3px;
+}
+
+.work-experience-list2 h2{
+  font-family: futuraBook;
+  font-size:8pt;
+  line-height:10pt;
+  margin-top:3px;
+  margin-bottom:3px;
+}
+
+.work-experience-list2 h3{
+  font-family: futuraBook;
+  font-size:6pt;
+  margin-top:3px;
+  margin-bottom:8px;
+}
+
+.work-experience-list3 h1{
+  font-family: futuraHeavy;
+  font-size:9pt;
+  margin-top:0px;
+  margin-bottom:3px;
+}
+
+.work-experience-list3 h2{
+  font-family: futuraBook;
+  font-size:8pt;
+  line-height:10pt;
+  margin-top:3px;
+  margin-bottom:3px;
+}
+
+.work-experience-list3 h3{
+  font-family: futuraBook;
+  font-size:6pt;
+  margin-top:3px;
+  margin-bottom:8px;
+}
+
+
+
+
+.education-background{
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+ width:80%;
+}
+
+.work-experience{
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  width:80%;
+}
+
+.education-background-list{
+  margin-bottom:0px;
+}
+
+.work-experience-list{
+  margin-bottom:0px;
+}
+
+
+.technical-skills{
+  width:80%;
+}
+
+.technical-skills h1{
+  font-family: futuraHeavy;
+  font-size:9pt;
+}
+
+.grey-settings h1{
+  margin-left:20px;
+  margin-right:20px;
+}
+
+.grey-settings h2{
+  margin-left:20px;
+  margin-right:20px;
+  width:80%;
+}
+}
+
+@media (max-width: 650px){
+  
+  html{
+    height:140%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .settings{
+    flex-direction: column;
+    }
+
+
+    .settings-div{
+      height:300px;
+      width:420px;
+      display:flex;
+      flex-direction: column;
+      margin-left:20px;
+      margin-top: 40px;
+      margin-bottom: 50px;
+    }
+
+
+  
+  .grey-settings{
+    position: relative;
+    width:100%;
+    height:600px;
+    padding-left:0px;
+    padding-right:0px;
+    }
+
+
+
+      .settings:nth-child(1) textarea{
+        font-size: 9pt;
+        border: white 0.5px solid;
+        margin-left:5%;
+        margin-right:5%;
+        background-color:transparent;
+        color:white;
+        }
+
+
+
+.settings:nth-child(1) input, .settings:nth-child(2) input, .settings:nth-child(3) input, .settings:nth-child(4) input, .settings:nth-child(5) input{
+  height: 25px;
+  font-size: 9pt;
+  border: white 0.5px solid;
+  margin-left:5%;
+  margin-right:5%;
+  background-color:transparent;
+  color:white;
+  }
+
+.settings:nth-child(1) h5, .settings:nth-child(2) h5, .settings:nth-child(3) h5, .settings:nth-child(4) h5, .settings:nth-child(5) h5{
+  font-size: 9pt;
+  margin-left:5%;
+  margin-right:5%;
+  margin-bottom:4px;
+  background-color:transparent;
+  color:white;
+  }
+
+  .settings:nth-child(1) span, .settings:nth-child(2) span, .settings:nth-child(3) span, .settings:nth-child(4) span, .settings:nth-child(5) span{
+    display: 'flex';
+    margin-left:5%;
+    font-size:9pt;
+  }
+  
+
+
+  .settings:nth-child(1) button, .settings:nth-child(2) button, .settings:nth-child(3) button, .settings:nth-child(4) button, .settings:nth-child(5) button{
+    background-color: #4065af;
+    width: 100px;
+    border-radius: 0;
+  }
+
+  
+  .cv-side{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    width:100%;
+    height:800px;
+  }
+
+.cv-paper{
+  margin-top:20px;
+  display:flex;
+  flex-direction: row;
+  height: 580px;
+  width:420px;
+  background-color: white;
+}
+
+.blue-side{
+  background-color:#4065af;
+  color:white;
+  width: 35%;
+  padding:10px;
+  text-align: center;
+}
+
+.right-side{
+  height:100%;
+  width:250px;
+  background-color: white;
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size:6pt;
+  width:400px;
+  margin-left:0px;
+  margin-right:0px
+}
+
+h2{
+  font-family:futuraHeavy;
+  font-size:11pt;
+  width:90%;
+  margin-left:0px;
+  margin-right:0px;
+  margin-top:0px;
+}
+
+h3{
+  font-family: futuraBook;
+}
+
+p{
+  font-family: futuraBookItalic;
+  font-size:6pt;
+}
+
+img{
+  height:10px;
+  width:auto;
+}
+
+.contact-info div{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  font-size:5pt;
+  gap:8px;
+}
+
+
+.basic-info{
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.basic-info h1{
+  font-size:11pt;
+  margin-bottom:10px;
+}
+
+.age-profession h1{
+  margin-top:0px;
+}
+
+.blue-side p{
+  height:30%;
+  display:flex;
+  align-items:center;
+  margin-bottom:10px;
+  margin-top:0px;
+
+}
+
+.education-background h4{
+  display:flex;
+  justify-content: center;
+  text-align:center;
+  font-size:8pt;
+  font-family: futuraHeavy;
+  color:#4065af;
+}
+
+.work-experience h4{
+  display:flex;
+  justify-content: center;
+  text-align:center;
+  font-size:8pt;
+  font-family: futuraHeavy;
+  color:#4065af;
+}
+
+
+.technical-skills h4{
+  display:flex;
+  justify-content: center;
+  text-align:center;
+  font-size:8pt;
+  font-family: futuraHeavy;
+  color:#4065af;
+}
+
+.education-background-list h1{
+  font-family: futuraHeavy;
+  font-size:6pt;
+  margin-top:0;
+  margin-bottom:3px;
+}
+
+.education-background-list h2{
+  font-family: futuraBook;
+  font-size:5pt;
+  line-height:5pt;
+  margin-top:3px;
+  margin-bottom:3px;
+}
+
+.education-background-list h3{
+  font-family: futuraBook;
+  font-size:4pt;
+  margin-top:3px;
+  margin-bottom:8px;
+}
+
+.education-background-list2 h1{
+  font-family: futuraHeavy;
+  font-size:6pt;
+  margin-top:0px;
+  margin-bottom:3px;
+}
+
+.education-background-list2 h2{
+  font-family: futuraBook;
+  font-size:5pt;
+  line-height:5pt;
+    margin-top:3px;
+  margin-bottom:3px;
+}
+
+.education-background-list2 h3{
+  font-family: futuraBook;
+  font-size:4pt;
+    margin-top:3px;
+  margin-bottom:8px;
+}
+
+.education-background-list3 h1{
+  font-family: futuraHeavy;
+  font-size:6pt;
+  margin-top:0px;
+  margin-bottom:3px;
+}
+
+.education-background-list3 h2{
+  font-family: futuraBook;
+  font-size:5pt;
+  line-height:5pt;
+  margin-top:3px;
+  margin-bottom:3px;
+}
+
+.education-background-list3 h3{
+  font-family: futuraBook;
+  font-size:4pt;
+  margin-top:3px;
+  margin-bottom:8px;
+}
+
+.work-experience-list h1{
+  font-family: futuraHeavy;
+  font-size:6pt;
+  margin-top:0px;
+  margin-bottom:3px;
+}
+
+.work-experience-list h2{
+  font-family: futuraBook;
+  font-size:5pt;
+  line-height:5pt;
+  margin-top:3px;
+  margin-bottom:3px;
+}
+
+.work-experience-list h3{
+  font-family: futuraBook;
+  font-size:4pt;
+  margin-top:3px;
+  margin-bottom:8px;
+}
+
+.work-experience-list2 h1{
+  font-family: futuraHeavy;
+  font-size:6pt;
+  margin-top:0px;
+  margin-bottom:3px;
+}
+
+.work-experience-list2 h2{
+  font-family: futuraBook;
+  font-size:5pt;
+  line-height:5pt;
+  margin-top:3px;
+  margin-bottom:3px;
+}
+
+.work-experience-list2 h3{
+  font-family: futuraBook;
+  font-size:4pt;
+  margin-top:3px;
+  margin-bottom:8px;
+}
+
+.work-experience-list3 h1{
+  font-family: futuraHeavy;
+  font-size:6pt;
+  margin-top:0px;
+  margin-bottom:3px;
+}
+
+.work-experience-list3 h2{
+  font-family: futuraBook;
+  font-size:5pt;
+  line-height:5pt;
+  margin-top:3px;
+  margin-bottom:3px;
+}
+
+.work-experience-list3 h3{
+  font-family: futuraBook;
+  font-size:4pt;
+  margin-top:3px;
+  margin-bottom:8px;
+}
+
+
+
+
+.education-background{
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+ width:80%;
+}
+
+.work-experience{
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  width:80%;
+}
+
+.education-background-list{
+  margin-bottom:0px;
+}
+
+.work-experience-list{
+  margin-bottom:0px;
+}
+
+
+.technical-skills{
+  width:80%;
+}
+
+.technical-skills h1{
+  font-family: futuraHeavy;
+  font-size:6pt;
+}
+
+.technical-skills-input{
+  font-size: 5pt;
+}
+}
+
+
+@media (max-width:450px) {
+  
+  html{
+    height:120%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+    .settings-div{
+      height:300px;
+      width:280px;
+      margin-left:20px;
+      margin-top: 30px;
+    }
+
+
+  
+  .grey-settings{
+    height:500px;
+    }
+
+    .settings h4{
+      font-family: futuraHeavy;
+      font-size: 10pt;
+      cursor:pointer;
+      display:flex;
+      justify-content: space-between;
+      padding-left: 10px;
+      padding-right:10px;
+      align-items:flex-start;
+      padding-top:4px;
+      color:#4065af;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+      .settings:nth-child(1) textarea{
+        font-size: 9pt;
+        border: white 0.5px solid;
+        margin-left:5%;
+        margin-right:5%;
+        background-color:transparent;
+        color:white;
+        }
+
+
+
+.settings:nth-child(1) input, .settings:nth-child(2) input, .settings:nth-child(3) input, .settings:nth-child(4) input, .settings:nth-child(5) input{
+  height: 25px;
+  font-size: 9pt;
+  border: white 0.5px solid;
+  margin-left:5%;
+  margin-right:5%;
+  background-color:transparent;
+  color:white;
+  }
+
+.settings:nth-child(1) h5, .settings:nth-child(2) h5, .settings:nth-child(3) h5, .settings:nth-child(4) h5, .settings:nth-child(5) h5{
+  font-size: 9pt;
+  margin-left:5%;
+  margin-right:5%;
+  margin-bottom:4px;
+  background-color:transparent;
+  color:white;
+  }
+
+  .settings:nth-child(1) span, .settings:nth-child(2) span, .settings:nth-child(3) span, .settings:nth-child(4) span, .settings:nth-child(5) span{
+    display: 'flex';
+    margin-left:5%;
+    font-size:9pt;
+  }
+  
+
+
+  .settings:nth-child(1) button, .settings:nth-child(2) button, .settings:nth-child(3) button, .settings:nth-child(4) button, .settings:nth-child(5) button{
+    background-color: #4065af;
+    width: 100px;
+    border-radius: 0;
+  }
+/*
+  .settings:nth-child(1):nth-child(1):nth-child(0){
+width:300px;
+    }
+
+    .settings-div:nth-child(1):nth-child(0):nth-child(2):nth-child(0):nth-child(0){
+      width:300px;
+    }
+  */
+  .cv-side{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:500px;
+    height:40%;
+  }
+
+.cv-paper{
+  margin-top:0px;
+  display:flex;
+  flex-direction: row;
+  height: 290px;
+  width:210px;
+  background-color: white;
+}
+
+.blue-side{
+  background-color:#4065af;
+  color:white;
+  width: 35%;
+  padding:10px;
+  text-align: center;
+}
+
+.right-side{
+  height:100%;
+  width:250px;
+  background-color: white;
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size:6pt;
+  width:100%;
+  margin-left:0px;
+  margin-right:0px
+}
+
+h2{
+  font-family:futuraHeavy;
+  font-size:11pt;
+  width:90%;
+  margin-left:0px;
+  margin-right:0px;
+  margin-top:0px;
+}
+
+h3{
+  font-family: futuraBook;
+}
+
+p{
+  font-family: futuraBookItalic;
+  font-size:6pt;
+}
+
+img{
+  height:5px;
+  width:auto;
+}
+
+.contact-info div{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  font-size:5pt;
+  gap:8px;
+}
+
+
+.basic-info{
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.basic-info h1{
+  font-size:11pt;
+  margin-bottom:10px;
+}
+
+.age-profession h1{
+  margin-top:0px;
+}
+
+.blue-side p{
+  height:30%;
+  display:flex;
+  align-items:center;
+  margin-bottom:10px;
+  margin-top:0px;
+
+}
+
+.education-background h4{
+  display:flex;
+  justify-content: center;
+  text-align:center;
+  font-size:4pt;
+  font-family: futuraHeavy;
+  color:#4065af;
+}
+
+.work-experience h4{
+  display:flex;
+  justify-content: center;
+  text-align:center;
+  font-size:4pt;
+  font-family: futuraHeavy;
+  color:#4065af;
+}
+
+
+.technical-skills h4{
+  display:flex;
+  justify-content: center;
+  text-align:center;
+  font-size:4pt;
+  font-family: futuraHeavy;
+  color:#4065af;
+}
+
+.education-background-list h1{
+  font-family: futuraHeavy;
+  font-size:3pt;
+  margin-top:0;
+  margin-bottom:1.5px;
+}
+
+.education-background-list h2{
+  font-family: futuraBook;
+  font-size:2.5pt;
+  line-height:2.5pt;
+  margin-top:1.5px;
+  margin-bottom:1.5px;
+}
+
+.education-background-list h3{
+  font-family: futuraBook;
+  font-size:2pt;
+  margin-top:1.5px;
+  margin-bottom:4px;
+}
+
+.education-background-list2 h1{
+  font-family: futuraHeavy;
+  font-size:3pt;
+  margin-top:0px;
+  margin-bottom:1.5px;
+}
+
+.education-background-list2 h2{
+  font-family: futuraBook;
+  font-size:2.5pt;
+  line-height:2.5pt;
+    margin-top:1.5px;
+  margin-bottom:1.5px;
+}
+
+.education-background-list2 h3{
+  font-family: futuraBook;
+  font-size:2pt;
+    margin-top:1.5px;
+  margin-bottom:4px;
+}
+
+.education-background-list3 h1{
+  font-family: futuraHeavy;
+  font-size:3pt;
+  margin-top:0px;
+  margin-bottom:1.5px;
+}
+
+.education-background-list3 h2{
+  font-family: futuraBook;
+  font-size:2.5pt;
+  line-height:2.5pt;
+  margin-top:1.5px;
+  margin-bottom:1.5px;
+}
+
+.education-background-list3 h3{
+  font-family: futuraBook;
+  font-size:2pt;
+  margin-top:1.5px;
+  margin-bottom:4px;
+}
+
+.work-experience-list h1{
+  font-family: futuraHeavy;
+  font-size:3pt;
+  margin-top:0px;
+  margin-bottom:1.5px;
+}
+
+.work-experience-list h2{
+  font-family: futuraBook;
+  font-size:2.5pt;
+  line-height:2.5pt;
+  margin-top:1.5px;
+  margin-bottom:1.5px;
+}
+
+.work-experience-list h3{
+  font-family: futuraBook;
+  font-size:2pt;
+  margin-top:1.5px;
+  margin-bottom:1.5px;
+}
+
+.work-experience-list2 h1{
+  font-family: futuraHeavy;
+  font-size:3pt;
+  margin-top:0px;
+  margin-bottom:1.5px;
+}
+
+.work-experience-list2 h2{
+  font-family: futuraBook;
+  font-size:2.5pt;
+  line-height:2.5pt;
+  margin-top:1.5px;
+  margin-bottom:1.5px;
+}
+
+.work-experience-list2 h3{
+  font-family: futuraBook;
+  font-size:2pt;
+  margin-top:1.5px;
+  margin-bottom:4px;
+}
+
+.work-experience-list3 h1{
+  font-family: futuraHeavy;
+  font-size:3pt;
+  margin-top:0px;
+  margin-bottom:1.5px;
+}
+
+.work-experience-list3 h2{
+  font-family: futuraBook;
+  font-size:2.5pt;
+  line-height:2.5pt;
+  margin-top:1.5px;
+  margin-bottom:1.5px;
+}
+
+.work-experience-list3 h3{
+  font-family: futuraBook;
+  font-size:2pt;
+  margin-top:1.5px;
+  margin-bottom:4px;
+}
+
+
+
+
+.education-background{
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+ width:80%;
+}
+
+.work-experience{
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  width:80%;
+}
+
+.education-background-list{
+  margin-bottom:0px;
+}
+
+.work-experience-list{
+  margin-bottom:0px;
+}
+
+
+.technical-skills{
+  width:80%;
+}
+
+.technical-skills h1{
+  font-family: futuraHeavy;
+  font-size:3pt;
+}
+
+.grey-settings h1{
+  margin-left:20px;
+  margin-right:5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size:24pt;
+  width:80%;
+}
+
+.grey-settings h2{
+  margin-left:20px;
+  margin-right:20px;
+  font-size:7pt;
+}
+.technical-skills-input{
+  font-size: 2pt;
+}
+}
